@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "original_file": "0704.0138.tex",
+    "extraction_method": "pattern",
+    "timestamp": "20250520_084843"
+  },
+  "results": {
+    "title": "Circular and non-circular nearly horizon-skimming orbits in\n  Kerr spacetimes",
+    "abstract": "We have performed a detailed analysis of orbital motion in the\n  vicinity of a nearly extremal Kerr black hole.  For very rapidly\n  rotating black holes --- spin parameter $a \\equiv J/M > 0.9524M$ ---\n  we have found a class of very strong field eccentric orbits whose\n  orbital angular momentum $L_z$ increases with the orbit's\n  inclination with respect to the equatorial plane, while keeping\n  latus rectum and eccentricity fixed.  This behavior is in contrast\n  with Newtonian intuition, and is in fact opposite to the ``normal''\n  behavior of black hole orbits.  Such behavior was noted previously\n  for circular orbits; since it only applies to orbits very close to\n  the black hole, they were named ``nearly horizon-skimming orbits''.\n  Our current analysis generalizes this result, mapping out the full\n  generic (inclined and eccentric) family of nearly horizon-skimming\n  orbits.  The earlier work on circular orbits reported that, under\n  gravitational radiation emission, nearly horizon-skimming orbits\n  exhibit unusual inspiral, tending to evolve to smaller orbit\n  inclination, toward prograde equatorial configuration.  Normal\n  orbits, by contrast, always demonstrate slowly {\\it growing} orbit\n  inclination --- orbits evolve toward the retrograde equatorial\n  configuration.  Using up-to-date Teukolsky-based fluxes, we have\n  concluded that the earlier result was incorrect --- all circular orbits, {\\it\n  including nearly horizon-skimming ones}, exhibit growing orbit\n  inclination under radiative backreaction. Using kludge fluxes based on\n  a Post-Newtonian expansion corrected with fits to circular and to equatorial Teukolsky-based fluxes,\n  we argue that the inclination grows also for eccentric nearly horizon-skimming orbits.\n  We also find that the inclination change is, in any case, very small.  As such, we\n  conclude that these orbits are {\\it not} likely to have a clear\n  and peculiar imprint on the gravitational waveforms expected to be\n  measured by the space-based detector LISA.",
+    "year": null,
+    "main_text_sample": {
+      "first_500": "Introduction} The space-based gravitational-wave detector LISA~ will be a unique tool to probe the nature of supermassive black holes (SMBHs), making it possible to map in detail their spacetimes. This goal is expected to be achieved by observing gravitational waves emitted by compact stars or black holes with masses $ 1 - 100\\,M_$ spiraling into the SMBHs which reside in the center of galaxies~ (particularly the low end of the galactic center black hole mass function, ). Such events are known a",
+      "last_500": "here _i(x) a_d^i+b_d^i\\,x^{-1/2}+c_d^i\\,x^{-1}\\;, i=1,,8, _i(x) a_h^i+b_h^i\\,x^{-1/2}\\;, i=1,2 and the numerical coefficients are given by and by the following table Note that the functional form of these fits was obtained from Eqs.\\ (57) and (58) of Ref.~ by setting (, in their notation) to . Finally, we give expressions for the fits to the equatorial Teukolsky data of tables , and (data with , columns with header ``Teukolsky''): where the numerical coefficients are given by the following table"
+    },
+    "citations": [
+      {
+        "key": "LISA",
+        "label": null,
+        "text": "http://lisa.nasa.gov/; http://sci.esa.int/home/lisa/"
+      },
+      {
+        "key": "SMBH",
+        "label": null,
+        "text": "J.\\ Kormendy and D.\\ Richstone, \\ 33, 581 (1995)."
+      },
+      {
+        "key": "gair_event_rates",
+        "label": null,
+        "text": "J.\\ R.\\ Gair, L.\\ Barack, T.\\ Creighton, C.\\ Cutler, S.\\ L.\\ Larson, E.\\ S.\\ Phinney, and M.\\ Vallisneri, \\ 21, S1595 (2004)."
+      },
+      {
+        "key": "shapiro",
+        "label": null,
+        "text": "S.\\ L.\\ Shapiro, \\ 620, 59 (2005)."
+      },
+      {
+        "key": "rezzolla03",
+        "label": null,
+        "text": "L.\\ Rezzolla, T.\\ W.\\ Maccarone, S.\\ Yoshida, and O.\\ Zanotti, \\ 344, L37 (2003)."
+      },
+      {
+        "key": "shafee_etal",
+        "label": null,
+        "text": "R.\\ Shafee, J.\\ E.\\ McClintock, R.\\ Narayan, S.\\ W.\\ Davis, L.-X.\\ Li, and R.\\ A.\\ Remilland, Astrophys.\\ J.\\ 636, L113 (2006)."
+      },
+      {
+        "key": "mcclintock_etal",
+        "label": null,
+        "text": "J.\\ E.\\ McClintock, R.\\ Shafee, R.\\ Narayan, R.\\ A.\\ Remilland, S.\\ W.\\ Davis, and L.-X.\\ Li, Astrophys.\\ J.\\ 652, 518 (2006)."
+      },
+      {
+        "key": "iron_line_rev",
+        "label": null,
+        "text": "A.\\ C.\\ Fabian and G.\\ Miniutti, G.\\ 2005, to appear in Kerr Spacetime: Rotating Black Holes in General Relativity, edited by D.\\ L.\\ Wiltshire, M.\\ Visser, and S.\\ M.\\ Scott; astro-ph/0507409."
+      },
+      {
+        "key": "iron_line_res",
+        "label": null,
+        "text": "L.\\ W.\\ Brenneman and C.\\ S.\\ Reynolds, Astrophys.\\ J.\\ 652, 1028 (2006)."
+      },
+      {
+        "key": "spin_measurements",
+        "label": null,
+        "text": "L.\\ Barack and C.\\ Cutler, \\ 69, 082005 (2004)."
+      },
+      {
+        "key": "volonteri",
+        "label": null,
+        "text": "M.\\ Volonteri, P.\\ Madau, E.\\ Quataert, and M.\\ J.\\ Rees, \\ 620, 69 (2005)."
+      },
+      {
+        "key": "wilkins",
+        "label": null,
+        "text": "D.\\ C.\\ Wilkins, \\ 5, 814 (1972)."
+      },
+      {
+        "key": "bpt",
+        "label": null,
+        "text": "J.\\ M.\\ Bardeen, W.\\ H.\\ Press, and S.\\ A.\\ Teukolsky, \\ 178, 347 (1972)."
+      },
+      {
+        "key": "skimming",
+        "label": null,
+        "text": "S.\\ A.\\ Hughes, \\ 63, 064016 (2001)."
+      },
+      {
+        "key": "membrane",
+        "label": null,
+        "text": "K.\\ S.\\ Thorne, R.\\ H.\\ Price, and D.\\ A.\\ MacDonald, Black Holes: The Membrane Paradigm (Yale University Press, New Haven, CT, 1986)."
+      },
+      {
+        "key": "fintan_circ",
+        "label": null,
+        "text": "F.\\ D.\\ Ryan, \\ 52, R3159 (1995)."
+      },
+      {
+        "key": "first_code",
+        "label": null,
+        "text": "S.\\ A.\\ Hughes, \\ 61, 084004 (2000)."
+      },
+      {
+        "key": "Carter",
+        "label": null,
+        "text": "B.\\ Carter, Phys.\\ Rev.\\ 174, 1559 (1968)."
+      },
+      {
+        "key": "thorne_spin",
+        "label": null,
+        "text": "K.\\ S.\\ Thorne, \\ 191, 507 (1974)."
+      },
+      {
+        "key": "Mino_adiabatic",
+        "label": null,
+        "text": "Y. Mino, Phys.\\ Rev.\\ D 67, 084027 (2003)"
+      },
+      {
+        "key": "hughes_drasco",
+        "label": null,
+        "text": "S.\\ Drasco and S.\\ A.\\ Hughes, \\ 73, 024027 (2006)."
+      },
+      {
+        "key": "sago",
+        "label": null,
+        "text": "N.\\ Sago, T.\\ Tanaka, W.\\ Hikida, and H.\\ Nakano, Prog.\\ Theor.\\ Phys.\\ 114, 509 (2005); N.\\ Sago, T.\\ Tanaka, W.\\ Hikida, K.\\ Ganz, and H.\\ Nakano, Prog.\\ Theor.\\ Phys.\\ 115, 873 (2006)."
+      },
+      {
+        "key": "kludge_hughes",
+        "label": null,
+        "text": "K.\\ Glampedakis, S.\\ A.\\ Hughes, and D.\\ Kennefick, \\ 66, 064005 (2002)."
+      },
+      {
+        "key": "GG_kludge_fluxes",
+        "label": null,
+        "text": "J.\\ R.\\ Gair and K.\\ Glampedakis, \\ 73, 064037 (2006)."
+      },
+      {
+        "key": "MTW",
+        "label": null,
+        "text": "C.\\ W.\\ Misner, K.\\ S.\\ Thorne, and J.\\ A.\\ Wheeler, Gravitation (Freeman, San Francisco, 1973)."
+      },
+      {
+        "key": "schmidt",
+        "label": null,
+        "text": "W.\\ Schmidt, \\ 19, 2743 (2002)."
+      },
+      {
+        "key": "Thorne_Ori",
+        "label": null,
+        "text": "A. Ori and K. S. Thorne, Phys.\\ Rev.\\ D 62, 124022 (2000)"
+      },
+      {
+        "key": "teukolsky",
+        "label": null,
+        "text": "S.\\ A.\\ Teukolsky, \\ 185, 635 (1973)."
+      },
+      {
+        "key": "sasaknak",
+        "label": null,
+        "text": "M.\\ Sasaki and T.\\ Nakamura, Prog.\\ Theor.\\ Phys.\\ 67, 1788 (1982)."
+      },
+      {
+        "key": "ryan_circ",
+        "label": null,
+        "text": "F.\\ D.\\ Ryan, Phys.\\ Ref.\\ D 53, 3064 (1996)."
+      },
+      {
+        "key": "kennefick_ori",
+        "label": null,
+        "text": "D.\\ Kennefick and A.\\ Ori, Phys.\\ Rev.\\ D 53, 4319 (1996)."
+      },
+      {
+        "key": "mino_circ",
+        "label": null,
+        "text": "Y.\\ Mino, unpublished Ph.\\ D.\\ thesis, Kyoto University, 1996."
+      },
+      {
+        "key": "data",
+        "label": null,
+        "text": "Data available at http://gmunu.mit.edu/sdrasco/snapshots/"
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "}\n\\newcommand{\\eeq}{",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\varpi^2 \\equiv r^2 + a^2\\;.",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "r_{\\rm ap}\\equiv\\frac{p}{1-e}\\;,\\quad r_{\\rm\nperi}\\equiv\\frac{p}{1+e}\\;.",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\tilde{E} =\n  \\sqrt{\\frac{\\kappa\\rho+2\\epsilon\\sigma - \n        2D\\sqrt{\\sigma(\\sigma\\epsilon^{2}+\\rho\\epsilon\\kappa-\\eta\\kappa^{2})}\n        }{\\rho^{2}+4\\eta\\sigma}}\\;.\\label{energy_def}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\tilde{Q} = z_{-}\\left[\\tilde{a}^2(1-\\tilde{E}^2) +\n  \\frac{\\tilde{L}_z^2}{1-z_{-}}\\right]\\;.",
+        "is_display": true,
+        "is_equation": true
+      }
+    ],
+    "inline_equations": [],
+    "tables": [
+      {
+        "caption": "Unknown caption",
+        "content": "\\begin{table}[h]\n\\begin{tabular}{|c|c|c|c|c|c|c|c|c|}\n\\hline\n\\T \\B$i$ & \\B1 &\\B2 &\\B3 &\\B4 &\\B5 &\\B6 &\\B7 &\\B8\\\\\n\\hline\n\\T \\B$a_d^i$ & 15.8363 & 445.4418 & $-$2027.7797 & 3089.1709 & $-$2045.2248 & 498.6411 & $-$8.7220 & 50.8345 \\\\\n\\T \\B$b_d^i$ & $-$55.6777 & $-$1333.2461 & 5940.4831 & $-$9103.4472 & 6113.1165 & $-$1515.8506 & $-$50.8950 & $-$131.6422 \\\\\n\\T \\B$c_d^i$ & 38.6405  & 1049.5637 & $-$4513.0879 & 6926.3191 &-4714.9633 & 1183.5875 & 251.4025& 83.0834\\\\\n\\hline\n\\end{tabular}\n\\label{table:a_d_i_coefficients}\n\\end{table}"
+      }
+    ],
+    "extraction_method": {
+      "title": "pattern",
+      "abstract": "pattern",
+      "year": null,
+      "main_text": "pattern",
+      "citations": "pattern",
+      "display_equations": "pattern",
+      "inline_equations": null,
+      "tables": "pattern"
+    }
+  }
+}

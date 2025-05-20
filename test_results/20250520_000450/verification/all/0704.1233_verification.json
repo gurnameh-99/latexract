@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "original_file": "0704.1233.tex",
+    "extraction_method": "all",
+    "verification_timestamp": "20250520_090735"
+  },
+  "verifications": {
+    "title": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "Residual entropy in a model for the unfolding of single polymer chains"
+    },
+    "abstract": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "We study the unfolding of a single polymer chain due to an external force. We\nuse a simplified model..."
+    },
+    "year": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "2007"
+    },
+    "main_text": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "Text sample available"
+    },
+    "display_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "inline_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "citations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 18
+    },
+    "tables": {
+      "is_valid": true,
+      "reason": "No tables to validate",
+      "count": 0
+    }
+  },
+  "overall_score": 100.0
+}

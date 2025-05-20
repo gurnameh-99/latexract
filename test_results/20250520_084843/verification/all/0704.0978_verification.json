@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "original_file": "0704.0978.tex",
+    "extraction_method": "all",
+    "verification_timestamp": "20250520_090138"
+  },
+  "verifications": {
+    "title": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "Distribution of the molecular absorption in front of the quasar B0218+357"
+    },
+    "abstract": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "The line of sight to the quasar B0218+357, one of the most studied lensed systems,\nintercepts a $z =..."
+    },
+    "year": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "2007"
+    },
+    "main_text": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "Text sample available"
+    },
+    "display_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 1
+    },
+    "inline_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "citations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 24
+    },
+    "tables": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 1
+    }
+  },
+  "overall_score": 100.0
+}

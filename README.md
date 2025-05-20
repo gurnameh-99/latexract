@@ -18,6 +18,25 @@ The extraction is performed using three different methods, which can be used ind
 2. Pattern-based extraction (medium speed, regex-based)
 3. LLM-based extraction (most flexible, but slower)
 
+## Extraction Framework
+
+The main extraction script (`test_extraction_methods.py`) allows testing different extraction methods on LaTeX files:
+
+```bash
+python test_extraction_methods.py
+```
+
+The script processes files in the `data` directory and saves results in timestamped directories in `test_results`.
+
+## Testing and Verification
+
+For testing the extraction quality, the system includes:
+
+- **Verification tools** (`verify_extraction_results.py`): Validates extraction results against common criteria
+- **Visualization utilities** (`visualize_verification.py`): Generates charts and statistics for comparative analysis
+
+For details on the verification process, see `README_verification.md`.
+
 ## Installation
 
 1. Clone the repository:
@@ -211,6 +230,12 @@ If a LaTeX file is malformed or cannot be processed, the extraction system will:
 }
 ```
 
+## Additional Documentation
+
+For more detailed information:
+- See `README_verification.md` for the verification process and validation criteria
+- See `README_PATTERNS.md` for details on the pattern-based extraction system
+
 ## Project Structure
 
 ```
@@ -221,9 +246,10 @@ latex_extract/
 │   └── llm_extractor.py
 ├── tests/               # Test files
 ├── data/               # Sample LaTeX files
-├── results/            # Output directory
+├── test_results/        # Extraction and verification results
 ├── extract_with_method.py  # Main script
 ├── extract_controller.py   # Controller logic
+├── verify_extraction_results.py # Verification script
 └── requirements.txt    # Dependencies
 ```
  

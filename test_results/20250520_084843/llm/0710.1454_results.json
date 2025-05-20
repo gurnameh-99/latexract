@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "original_file": "0710.1454.tex",
+    "extraction_method": "llm",
+    "timestamp": "20250520_084843"
+  },
+  "results": {
+    "title": "Constraining Right-Handed Scale Through Kaon Mixing Supersymmetric Left-Right Model",
+    "abstract": "We study flavor-changing neutral current and CP violations in the minimal supersymmetric left-right model. We calculate the beyond-standard-model contributions to the neutral kaon mixing $ M_K$ and $$, and find possible to have a numerical cancelation between the contributions from the right-handed gauge boson and supersymmetric box diagram. With the cancelation, the right-handed $W$-boson mass scale can be lowered to about 2 TeV, well within the search limit of LHC.",
+    "year": "2023",
+    "main_text_sample": {
+      "first_500": null,
+      "last_500": null
+    },
+    "citations": [
+      {
+        "key": "lrmodel",
+        "text": "R.~N.~Mohapatra and J.~C.~Pati, %\"Left-Right Gauge Symmetry And An Isoconjugate Model Of CP Violation,\" Phys.Rev.D {bf 11}, 566 (1975); R.~N.~Mohapatra and J.~C.~Pati, %\"A Natural Left-Right Symmetry,\" Phys.Rev.D {bf 11}, 2558 (1975); G.~Senjanovic and R.~N.~Mohapatra, %\"Exact Left-Right Symmetry And Spontaneous Violation Of Parity,\" Phys.Rev.D {bf 12}, 1502 (1975); Rabindra N. Mohapatra, { CP Violation}, World Scientific Publ. Co., C. Jarlskog, Ed."
+      },
+      {
+        "key": "lee",
+        "text": "T. D. Lee, talk given at the Center for High-Energy Physics, Peking University, Nov. 2006."
+      },
+      {
+        "key": "scpv",
+        "text": "D.~Chang, %\"A Minimal Model Of Spontaneous CP Violation With The Gauge Group SU(2)-L X SU(2)-R X U(1)-(B-L),\" Nucl.Phys.B {bf 214}, 435 (1983); J.~M.~Frere, J.~Galand, A.~Le Yaouanc, L.~Oliver, O.~Pene and J.~C.~Raynal, %\"K0 anti-K0 in the SU(2)-L x SU(2)-R x U(1) model of CP violation,\" Phys.Rev.D {bf 46}, 337 (1992); G.~Barenboim, J.~Bernabeu and M.~Raidal, %\"Spontaneous CP-violation in the left-right model and the kaon system,\" Nucl.Phys.B {bf 478}, 527 (1996); P.~Ball, J.~M.~Frere and J.~Matias, %\"Anatomy of mixing-induced CP asymmetries in left-right-symmetric models with spontaneous CP violation,\" Nucl.Phys.B {bf 572}, 3 (2000);"
+      },
+      {
+        "key": "our paper",
+        "text": "Y.~Zhang, H.~An, X.~Ji and R.~N.~Mohapatra, %\"Right-handed quark mixings in minimal left-right symmetric model with general CP violation,\" arXiv:0704.1662 [hep-ph]."
+      },
+      {
+        "key": "PDG",
+        "text": "W.-M.Yao et al. (Particle Data Group), J. Phys. G 33, 1 (2006)"
+      },
+      {
+        "key": "Frank:2003yi",
+        "text": "M.~Frank and S.~q.~Nie, %\"Delta(M(K)) and epsilon(K) in the left-right supersymmetric model,\" Phys.Rev.D {bf 67}, 115008 (2003) [arXiv:hep-ph/0303115];"
+      },
+      {
+        "key": "Francis:1990pi",
+        "text": "R.~M.~Francis, M.~Frank and C.~S.~Kalman, %\"Anomalous magnetic moment of the muon arising from the extensions of the supersymmetric standard model based on left-right symmetry,\" Phys.Rev.D {bf 43}, 2369 (1991)."
+      },
+      {
+        "key": "Wu:2007kt",
+        "text": "Y.~L.~Wu and Y.~F.~Zhou, %\"Two Higgs Bi-doublet Left-Right Model With Spontaneous P and CP Violation,\" arXiv:0709.0042 [hep-ph]."
+      },
+      {
+        "key": "Basecq:1985cr",
+        "text": "J.~Basecq, L.~F.~Li and P.~B.~Pal, %\"Gauge Invariant Calculation Of The K(L) K(S) Mass Difference In The Left-Right Model,\" Phys.Rev.D {bf 32}, 175 (1985)."
+      },
+      {
+        "key": "susylr",
+        "text": "R.~N.~Mohapatra, A.~Rasin and G.~Senjanovic, %\"P, C and strong CP,\" Phys.Rev.Lett.{bf 79}, 4744 (1997) [arXiv:hep-ph/9707281]. R.~N.~Mohapatra and A.~Rasin, %\"A Supersymmetric Solution to CP Problems,\" Phys.Rev.D {bf 54}, 5835 (1996) [arXiv:hep-ph/9604445]. R.~N.~Mohapatra and A.~Rasin, %\"Simple supersymmetric solution to the strong CP problem,\" Phys.Rev.Lett.{bf 76}, 3490 (1996) [arXiv:hep-ph/9511391]. R.~Kuchimanchi, %\"Solution to the Strong CP Problem: Supersymmetry with Partiy,\" Phys.Rev.Lett.{bf 76}, 3486 (1996) [arXiv:hep-ph/9511376]."
+      },
+      {
+        "key": "susylr2",
+        "text": "R.~Kuchimanchi and R.~N.~Mohapatra, %\"No Parity Violation Without R-Parity Violation,\" Phys.Rev.D {bf 48}, 4352 (1993) [arXiv:hep-ph/9306290]."
+      },
+      {
+        "key": "Aulakh:1997ba",
+        "text": "C.~S.~Aulakh, K.~Benakli and G.~Senjanovic, %\"Reconciling supersymmetry and left-right symmetry,\" Phys.Rev.Lett.{bf 79}, 2188 (1997) [arXiv:hep-ph/9703434]; C.~S.~Aulakh, A.~Melfo, A.~Rasin and G.~Senjanovic, %\"Supersymmetry and large scale left-right symmetry,\" Phys.Rev.D {bf 58}, 115007 (1998) [arXiv:hep-ph/9712551]; C.~S.~Aulakh, A.~Melfo and G.~Senjanovic, %\"Minimal supersymmetric left-right model,\" Phys.Rev.D {bf 57}, 4174 (1998) [arXiv:hep-ph/9707256]."
+      },
+      {
+        "key": "RpVpaper",
+        "text": "X.~Ji and R.~N.~Mohapatra, S.~Nussinov and Y.~Zhang to be published."
+      },
+      {
+        "key": "Masip:1995sm",
+        "text": "M.~Masip and A.~Rasin, %\"Spontaneous CP violation in supersymmetric models with four Higgs doublets,\" Phys.Rev.D {bf 52}, 3768 (1995) [arXiv:hep-ph/9506471]."
+      },
+      {
+        "key": "Dugan:1984qf",
+        "text": "M.~Dugan, B.~Grinstein and L.~J.~Hall, %\"CP Violation In The Minimal N=1 Supergravity Theory,\" Nucl.Phys.B {bf 255}, 413 (1985). J.~R.~Ellis and M.~K.~Gaillard, %\"Strong And Weak CP Violation,\" Nucl.Phys.B {bf 150}, 141 (1979)."
+      },
+      {
+        "key": "Babu:2001se",
+        "text": "K.~S.~Babu, B.~Dutta and R.~N.~Mohapatra, %\"Solving the strong CP and the SUSY phase problems with parity symmetry,\" Phys.Rev.D {bf 65}, 016005 (2002) [arXiv:hep-ph/0107100]."
+      },
+      {
+        "key": "Kiers:2002cz",
+        "text": "K.~Kiers, J.~Kolb, J.~Lee, A.~Soni and G.~H.~Wu, %\"Ubiquitous CP violation in a top-inspired left-right model,\" Phys.Rev.D {bf 66}, 095002 (2002) [arXiv:hep-ph/0205082]."
+      },
+      {
+        "key": "gluino",
+        "text": "J.~S.~Hagelin, S.~Kelley and T.~Tanaka, %\"Supersymmetric flavor changing neutral currents: Exact amplitudes and phenomenological analysis,\" Nucl.Phys.B {bf 415}, 293 (1994). F.~Gabbiani, E.~Gabrielli, A.~Masiero and L.~Silvestrini, %\"A complete analysis of FCNC and CP constraints in general SUSY extensions of the standard model,\" Nucl.Phys.B {bf 477}, 321 (1996) [arXiv:hep-ph/9604387]."
+      },
+      {
+        "key": "mssm",
+        "text": "S.~Baek, J.~H.~Jang, P.~Ko and J.~h.~Park, %\"Fully supersymmetric CP violations in the kaon system,\" Phys.Rev.D {bf 62}, 117701 (2000) [arXiv:hep-ph/9907572]."
+      },
+      {
+        "key": "rge",
+        "text": "N.~Setzer and S.~Spinner, %\"One-loop RGEs for two left-right SUSY models,\" Phys.Rev.D {bf 71}, 115010 (2005) [arXiv:hep-ph/0503244]."
+      },
+      {
+        "key": "Mohapatra:2008gz",
+        "text": "R.~N.~Mohapatra, N.~Setzer and S.~Spinner, %\"Seesaw Extended MSSM and Anomaly Mediation without Tachyonic Sleptons,\" JHEP {bf 0804}, 091 (2008) [arXiv:0802.1208 [hep-ph]]."
+      },
+      {
+        "key": "Khalil:2001wr",
+        "text": "S.~Khalil and O.~Lebedev, %\"Chargino contributions to epsilon and epsilon',\"' Phys.Lett.B {bf 515}, 387 (2001) [arXiv:hep-ph/0106023]."
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "Q_L &=& ( {c} u_L d_L ) (2, 1, {3}), Q_R^c = ( {c} u_R^c d_R^c ) (1, 2, -{3}) L_L &=& ( {c} _L l_L ) (2, 1, -1), L_R^c = ( {c} _R^c l_R^c ) (1, 2, 1) \\",
+        "is_display": true
+      },
+      {
+        "latex": "W &=& Y_a ~Q_L^T _2 _a _2 Q_R^c + Y_a^l~ L_L^T _2 _a _2 L_R^c &+& f L_L^T i _2 _L L_L + f_c L_R^{cT} i _2 _R^c L_R &+& {2} _{ab}{~ Tr}( _2 _a^T _2 _b ) +_L{~ Tr}( _L _L ) &+& _R{~ Tr}( _R^c _R^c )\\",
+        "is_display": true
+      },
+      {
+        "latex": "_{a} &=& ( {cc} _{a1}^0 & _{a2}^+ , _{a1}^- & _{a2}^0 ) (2, 2, 0) , _L &=& ( {cc} _{L}^+ / & _{L}^{++} _{L}^{0} & - _{L}^+ / ) (3, 1, 2) , _L &=& ( {cc} _{L}^- / & _{L}^{0} _{L}^{–} & - _{L}^- / ) (3, 1, -2) , _R^c &=& ( {cc} _{R}^- / & _{R}^{–} _{R}^{0} & -_{R}^- / ) (1, 3, -2) , _R^c &=& ( {cc} _{R}^+ / & _{R}^{0} _{R}^{++} & - _{R}^+ / ) (1, 3, 2) .",
+        "is_display": true
+      },
+      {
+        "latex": "_{ soft} &=& q_L^ m_{ Q_L}^2 q_L + q_R^{c} m_{ Q_R}^2 q_R^c & + & l_L^ m_{ l_L}^2 l_L + ^{c } m_{ l_L}^2 ^c + m^2_{_{ab}}{~ Tr}(_a^ _b) & + & m_{_L}^2 {~ Tr}(_L^ _L) + m_{_L}^2{~ Tr}(_L^ _L) & + & m_{_R}^2{~ Tr}(_R^{c} _R^c) + m_{_R}^2{~ Tr}(_R^{c} _R^c) & + & & + &",
+        "is_display": true
+      },
+      {
+        "latex": "&&Q_L Q_R^{c*}, _{u,d} _{u,d}^{},_L _R^{c*} && W_L W_R^{*},",
+        "is_display": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "M_K",
+        "is_display": false
+      },
+      {
+        "latex": "",
+        "is_display": false
+      },
+      {
+        "latex": "W",
+        "is_display": false
+      },
+      {
+        "latex": "SU(2)_R",
+        "is_display": false
+      },
+      {
+        "latex": "V^R_{ CKM}",
+        "is_display": false
+      }
+    ],
+    "tables": [
+      {
+        "caption": "Unknown caption",
+        "content": "{c} u_L d_L"
+      }
+    ],
+    "extraction_method": {
+      "title": "llm",
+      "abstract": "llm",
+      "year": "llm",
+      "main_text": null,
+      "citations": "llm",
+      "display_equations": "llm",
+      "inline_equations": "llm",
+      "tables": "llm"
+    }
+  }
+}

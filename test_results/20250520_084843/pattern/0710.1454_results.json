@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "original_file": "0710.1454.tex",
+    "extraction_method": "pattern",
+    "timestamp": "20250520_084843"
+  },
+  "results": {
+    "title": "Constraining Right-Handed Scale Through Kaon Mixing \\\\in Supersymmetric Left-Right Model",
+    "abstract": "We study flavor-changing neutral current and CP violations in the minimal supersymmetric\nleft-right model. We calculate the beyond-standard-model contributions to the neutral\nkaon mixing $\\Delta M_K$ and $\\epsilon$, and find possible to have a numerical cancelation\nbetween the contributions from the right-handed gauge boson and supersymmetric box\ndiagram. With the cancelation, the right-handed $W$-boson mass\nscale can be lowered to about 2 TeV, well within the search limit of LHC.",
+    "year": null,
+    "main_text_sample": {
+      "first_500": "Physics beyond the standard model (SM) has been actively pursued by both theorists and experimentalists for decades. New physics is needed at TeV scale to explain a number of salient features of SM, particulary the origin of the scale at which the electroweak symmetry is spontaneously broken. From the phenomenological point of view, candidates of new physics have to confront constraints from the existing low-energy data. Flavor-changing neutral currents (FCNC) and the combined charge-conjugation",
+      "last_500": " are mostly interested in low-scale left-right symmetry. We iterate once to solve equation (9), taking $m_{ Q_L}^2 = m_{ Q_R}^2 = m_0^2_{ij}m_{_{ab}}^2 = m_0^2 _{ab} M_L = M_R = M_V = M_3 = m_{1/2}A_a = A_0 h_a$ on the righthand side of (). The leading order solution reads\\ , where contains additional flavor diagonal contribution from RG running. At low energy, the mass spectrum for squarks can be written as where and we can define $( M^{2}_{q AB} )_{ij} m_{ q}^2 (^q_{ij})_{AB}, \\ A,B=L,R$. So }"
+    },
+    "citations": [
+      {
+        "key": "lrmodel",
+        "label": null,
+        "text": "R. N. Mohapatra and J. C. Pati, Phys.\\ Rev.\\ D 11, 566 (1975); R. N. Mohapatra and J. C. Pati, Phys.\\ Rev.\\ D 11, 2558 (1975); G. Senjanovic and R. N. Mohapatra, Phys.\\ Rev.\\ D 12, 1502 (1975); Rabindra N. Mohapatra, CP Violation, World Scientific Publ. Co., C. Jarlskog, Ed."
+      },
+      {
+        "key": "lee",
+        "label": null,
+        "text": "T. D. Lee, talk given at the Center for High-Energy Physics, Peking University, Nov. 2006."
+      },
+      {
+        "key": "scpv",
+        "label": null,
+        "text": "D. Chang, Nucl.\\ Phys.\\ B 214, 435 (1983); J. M. Frere, J. Galand, A. Le Yaouanc, L. Oliver, O. Pene and J. C. Raynal, Phys.\\ Rev.\\ D 46, 337 (1992); G. Barenboim, J. Bernabeu and M. Raidal, Nucl.\\ Phys.\\ B 478, 527 (1996); P. Ball, J. M. Frere and J. Matias, Nucl.\\ Phys.\\ B 572, 3 (2000);"
+      },
+      {
+        "key": "our paper",
+        "label": null,
+        "text": "Y. Zhang, H. An, X. Ji and R. N. Mohapatra, arXiv:0704.1662 [hep-ph]."
+      },
+      {
+        "key": "PDG",
+        "label": null,
+        "text": "W.-M.Yao et al. (Particle Data Group), J. Phys. G 33, 1 (2006)"
+      },
+      {
+        "key": "Frank:2003yi",
+        "label": null,
+        "text": "M. Frank and S. q. Nie, Phys.\\ Rev.\\ D 67, 115008 (2003) [arXiv:hep-ph/0303115]; R. M. Francis, M. Frank and C. S. Kalman, Phys.\\ Rev.\\ D 43, 2369 (1991)."
+      },
+      {
+        "key": "Wu:2007kt",
+        "label": null,
+        "text": "Y. L. Wu and Y. F. Zhou, arXiv:0709.0042 [hep-ph]."
+      },
+      {
+        "key": "Basecq:1985cr",
+        "label": null,
+        "text": "J. Basecq, L. F. Li and P. B. Pal, Phys.\\ Rev.\\ D 32, 175 (1985)."
+      },
+      {
+        "key": "susylr",
+        "label": null,
+        "text": "R. N. Mohapatra, A. Rasin and G. Senjanovic, Phys.\\ Rev.\\ Lett.\\ 79, 4744 (1997) [arXiv:hep-ph/9707281]. R. N. Mohapatra and A. Rasin, Phys.\\ Rev.\\ D 54, 5835 (1996) [arXiv:hep-ph/9604445]. R. N. Mohapatra and A. Rasin, Phys.\\ Rev.\\ Lett.\\ 76, 3490 (1996) [arXiv:hep-ph/9511391]. R. Kuchimanchi, Phys.\\ Rev.\\ Lett.\\ 76, 3486 (1996) [arXiv:hep-ph/9511376]."
+      },
+      {
+        "key": "susylr2",
+        "label": null,
+        "text": "R. Kuchimanchi and R. N. Mohapatra, Phys.\\ Rev.\\ D 48, 4352 (1993) [arXiv:hep-ph/9306290]."
+      },
+      {
+        "key": "Aulakh:1997ba",
+        "label": null,
+        "text": "C. S. Aulakh, K. Benakli and G. Senjanovic, Phys.\\ Rev.\\ Lett.\\ 79, 2188 (1997) [arXiv:hep-ph/9703434]; C. S. Aulakh, A. Melfo, A. Rasin and G. Senjanovic, Phys.\\ Rev.\\ D 58, 115007 (1998) [arXiv:hep-ph/9712551]; C. S. Aulakh, A. Melfo and G. Senjanovic, Phys.\\ Rev.\\ D 57, 4174 (1998) [arXiv:hep-ph/9707256]."
+      },
+      {
+        "key": "RpVpaper",
+        "label": null,
+        "text": "X. Ji and R. N. Mohapatra, S. Nussinov and Y. Zhang to be published."
+      },
+      {
+        "key": "Masip:1995sm",
+        "label": null,
+        "text": "M. Masip and A. Rasin, Phys.\\ Rev.\\ D 52, 3768 (1995) [arXiv:hep-ph/9506471]."
+      },
+      {
+        "key": "Dugan:1984qf",
+        "label": null,
+        "text": "M. Dugan, B. Grinstein and L. J. Hall, Nucl.\\ Phys.\\ B 255, 413 (1985). J. R. Ellis and M. K. Gaillard, Nucl.\\ Phys.\\ B 150, 141 (1979)."
+      },
+      {
+        "key": "Babu:2001se",
+        "label": null,
+        "text": "K. S. Babu, B. Dutta and R. N. Mohapatra, Phys.\\ Rev.\\ D 65, 016005 (2002) [arXiv:hep-ph/0107100]."
+      },
+      {
+        "key": "Kiers:2002cz",
+        "label": null,
+        "text": "K. Kiers, J. Kolb, J. Lee, A. Soni and G. H. Wu, Phys.\\ Rev.\\ D 66, 095002 (2002) [arXiv:hep-ph/0205082]."
+      },
+      {
+        "key": "gluino",
+        "label": null,
+        "text": "J. S. Hagelin, S. Kelley and T. Tanaka, Nucl.\\ Phys.\\ B 415, 293 (1994). F. Gabbiani, E. Gabrielli, A. Masiero and L. Silvestrini, Nucl.\\ Phys.\\ B 477, 321 (1996) [arXiv:hep-ph/9604387]."
+      },
+      {
+        "key": "mssm",
+        "label": null,
+        "text": "S. Baek, J. H. Jang, P. Ko and J. h. Park, Phys.\\ Rev.\\ D 62, 117701 (2000) [arXiv:hep-ph/9907572]."
+      },
+      {
+        "key": "rge",
+        "label": null,
+        "text": "N. Setzer and S. Spinner, Phys.\\ Rev.\\ D 71, 115010 (2005) [arXiv:hep-ph/0503244]."
+      },
+      {
+        "key": "Mohapatra:2008gz",
+        "label": null,
+        "text": "R. N. Mohapatra, N. Setzer and S. Spinner, JHEP 0804, 091 (2008) [arXiv:0802.1208 [hep-ph]]."
+      },
+      {
+        "key": "Khalil:2001wr",
+        "label": null,
+        "text": "S. Khalil and O. Lebedev, Phys.\\ Lett.\\ B 515, 387 (2001) [arXiv:hep-ph/0106023]."
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "Q_L &=& \\left( \\begin{array}{c} u_L \\\\ d_L \\\\ \\end{array} \\right) \\in \\left(2, 1,\n\\frac{1}{3}\\right), \\ Q_R^c = \\left(\n\\begin{array}{c} u_R^c\n\\\\ d_R^c \\\\ \\end{array} \\right) \\in \\left(1, 2,\n-\\frac{1}{3}\\right) \\nonumber\\\\\nL_L &=& \\left( \\begin{array}{c} \\nu_L \\\\\nl_L \\\\ \\end{array} \\right) \\in \\left(2, 1, -1\\right), \\ L_R^c = \\left(\n\\begin{array}{c} \\nu_R^c\n\\\\ l_R^c \\\\ \\end{array} \\right) \\in \\left(1, 2, 1\\right) \\ ,",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\label{super}\nW &=& Y_a ~Q_L^T \\tau_2 \\Phi_a \\tau_2 Q_R^c + Y_a^l~ L_L^T \\tau_2 \\Phi_a\n\\tau_2 L_R^c \\nonumber \\\\\n&+& f L_L^T i \\tau_2 \\Delta_L L_L + f_c L_R^{cT} i \\tau_2 \\Delta_R^c L_R \\nonumber \\\\\n&+& \\frac{1}{2} \\mu_{ab}{~\\rm Tr}\\left( \\tau_2 \\Phi_a^T \\tau_2 \\Phi_b \\right)\n+\\mu_L{~\\rm Tr}\\left( \\Delta_L \\delta_L \\right) \\nonumber \\\\\n&+& \\mu_R{~\\rm Tr}\\left( \\Delta_R^c \\delta_R^c \\right)\\ ,",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\Phi_{a} &=& \\left( \\begin{array}{cc} \\Phi_{a1}^0 & \\Phi_{a2}^+ \\ ,  \\\\\n\\Phi_{a1}^- & \\Phi_{a2}^0 \\end{array} \\right) \\in \\left(2, 2, 0\\right)\n\\ , \\nonumber\\\\\n\\Delta_L &=& \\left( \\begin{array}{cc} \\Delta_{L}^+ / \\sqrt{2} & \\Delta_{L}^{++} \\\\ \\Delta_{L}^{0} & - \\Delta_{L}^+ / \\sqrt{2}\\\\\n\\end{array} \\right) \\in \\left(3, 1, 2\\right) \\ , \\nonumber \\\\\n\\delta_L &=& \\left( \\begin{array}{cc} \\delta_{L}^- / \\sqrt{2} & \\delta_{L}^{0} \\\\ \\delta_{L}^{--} & - \\delta_{L}^- / \\sqrt{2}\\\\\n\\end{array} \\right) \\in \\left(3, 1, -2\\right) \\ , \\nonumber \\\\\n\\Delta_R^c &=& \\left( \\begin{array}{cc} \\Delta_{R}^- / \\sqrt{2} & \\Delta_{R}^{--} \\\\ \\Delta_{R}^{0} & -\\Delta_{R}^- / \\sqrt{2} \\\\\n\\end{array} \\right) \\in \\left(1, 3, -2\\right) \\ , \\nonumber\\\\\n\\delta_R^c &=& \\left( \\begin{array}{cc} \\delta_{R}^+ / \\sqrt{2} & \\delta_{R}^{0} \\\\ \\delta_{R}^{++} & - \\delta_{R}^+ / \\sqrt{2}\\\\\n\\end{array} \\right) \\in \\left(1, 3, 2\\right) \\ .",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\mathscr{V}_{\\rm soft} &=& \\widetilde q_L^\\dag m_{\\widetilde Q_L}^2 \\widetilde q_L +\n\\widetilde q_R^{c\\dag} m_{\\widetilde Q_R}^2\n\\widetilde q_R^c \\nonumber \\\\\n& + & \\widetilde l_L^\\dag m_{\\widetilde l_L}^2 \\widetilde\nl_L + \\widetilde{l_R}^{c \\dag} m_{\\widetilde l_L}^2 \\widetilde{l_R}^c + m^2_{\\phi_{ab}}{~\\rm Tr}(\\phi_a^\\dag \\phi_b) \\nonumber \\\\\n& + & m_{\\Delta_L}^2 {~\\rm Tr}(\\Delta_L^\\dag \\Delta_L) +\nm_{\\delta_L}^2{~\\rm Tr}(\\delta_L^\\dag \\delta_L) \\nonumber \\\\\n& + & m_{\\Delta_R}^2{~\\rm Tr}(\\Delta_R^{c\\dag} \\Delta_R^c) +\nm_{\\delta_R}^2{~\\rm Tr}(\\delta_R^{c\\dag} \\delta_R^c) \\nonumber \\\\\n& + & \\left[ \\frac{1}{2} \\left(  M_L \\lambda_L^a \\lambda^a_L + M_R\n\\lambda_R^a \\lambda^a_R + M_V \\lambda_V \\lambda_V + M_3 \\lambda_g\n\\lambda_g \\right) \\right.  \\nonumber\\\\\n& + & \\left. \\widetilde q_L^T \\tau_2 A_u \\phi_u \\tau_2 \\widetilde\nq_R^c + \\widetilde q_L^T \\tau_2 A_d \\phi_d \\tau_2 \\widetilde q_R^c +\n\\widetilde l_L^T \\tau_2 A_l \\phi \\tau_2 \\widetilde l_R^c \\right. \\nonumber \\\\\n& + & \\left. i v \\left( \\widetilde l_L^T \\tau_2 \\Delta_L \\widetilde l_L + \\widetilde\nl_R^{cT} \\tau_2 \\Delta_R^c \\widetilde l_R^c \\right) + h.c. \\right] \\nonumber \\\\\n& + & \\left[  B \\mu_{ab} {\\rm Tr}\\left( \\tau_2 \\phi_a^T \\tau_2 \\phi_b\n\\right) + B_L \\mu_L {\\rm Tr}\\left( \\Delta_L \\delta_L \\right) \\right. \\nonumber \\\\\n& + & \\left.  B_R \\mu_R {\\rm Tr}\\left( \\Delta_R^c \\delta_R^c \\right)  + {\\rm h.c.}\n\\right]",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "&&Q_L \\leftrightarrow Q_R^{c*}, \\ \\Phi_{u,d} \\leftrightarrow\n\\Phi_{u,d}^{\\dag},\\ \\Delta_L \\leftrightarrow \\Delta_R^{c*} \\nonumber \\\\\n&& W_L \\leftrightarrow W_R^{*}, \\ \\theta \\rightarrow \\overline\n\\theta",
+        "is_display": true,
+        "is_equation": true
+      }
+    ],
+    "inline_equations": [],
+    "tables": [],
+    "extraction_method": {
+      "title": "pattern",
+      "abstract": "pattern",
+      "year": null,
+      "main_text": "pattern",
+      "citations": "pattern",
+      "display_equations": "pattern",
+      "inline_equations": null,
+      "tables": null
+    }
+  }
+}

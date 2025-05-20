@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "original_file": "0704.0138.tex",
+    "extraction_method": "ast",
+    "verification_timestamp": "20250520_090138"
+  },
+  "verifications": {
+    "title": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "Circular and non-circular nearly horizon-skimming orbits in Kerr spacetimes"
+    },
+    "abstract": {
+      "is_valid": false,
+      "reason": "Not extracted",
+      "extracted_value": null
+    },
+    "year": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "2025"
+    },
+    "main_text": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "Text sample available"
+    },
+    "display_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "inline_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "citations": {
+      "is_valid": true,
+      "reason": "No citations to validate",
+      "count": 0
+    },
+    "tables": {
+      "is_valid": true,
+      "reason": "No tables to validate",
+      "count": 0
+    }
+  },
+  "overall_score": 87.5
+}

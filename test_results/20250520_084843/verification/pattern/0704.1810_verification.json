@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "original_file": "0704.1810.tex",
+    "extraction_method": "pattern",
+    "verification_timestamp": "20250520_090138"
+  },
+  "verifications": {
+    "title": {
+      "is_valid": false,
+      "reason": "Title contains newlines",
+      "extracted_value": "A Cascade Model for Particle Concentration \nand Enstrophy in Fully Developed Turbulence with Mass Loading Feedback"
+    },
+    "abstract": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "A cascade model is described based on multiplier distributions determined from\n3D direct numerical s..."
+    },
+    "year": {
+      "is_valid": false,
+      "reason": "Not extracted",
+      "extracted_value": null
+    },
+    "main_text": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "Text sample available"
+    },
+    "display_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "inline_equations": {
+      "is_valid": true,
+      "reason": "No equations to validate",
+      "count": 0
+    },
+    "citations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 31
+    },
+    "tables": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 1
+    }
+  },
+  "overall_score": 75.0
+}

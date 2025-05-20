@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "original_file": "0710.1454.tex",
+    "extraction_method": "all",
+    "verification_timestamp": "20250520_090735"
+  },
+  "verifications": {
+    "title": {
+      "is_valid": false,
+      "reason": "Title contains newlines",
+      "extracted_value": "Constraining Right-Handed Scale Through Kaon Mixing\nin Supersymmetric Left-Right Model"
+    },
+    "abstract": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "We study flavor-changing neutral current and CP violations in the minimal supersymmetric\nleft-right ..."
+    },
+    "year": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "2007"
+    },
+    "main_text": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "Text sample available"
+    },
+    "display_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "inline_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "citations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 21
+    },
+    "tables": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 1
+    }
+  },
+  "overall_score": 87.5
+}

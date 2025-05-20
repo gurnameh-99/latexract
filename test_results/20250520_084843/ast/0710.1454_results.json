@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "original_file": "0710.1454.tex",
+    "extraction_method": "ast",
+    "timestamp": "20250520_084843"
+  },
+  "results": {
+    "title": "Constraining Right-Handed Scale Through Kaon Mixing\nin Supersymmetric Left-Right Model",
+    "abstract": null,
+    "year": "2025",
+    "main_text_sample": {
+      "first_500": "Physics beyond the standard model (SM) has been actively pursued by both theorists and experimentalists for decades. New physics is needed at TeV scale to explain a number of salient features of SM, particulary the origin of the scale at which the electroweak symmetry is spontaneously broken. From the phenomenological point of view, candidates of new physics have to confront constraints from the existing low-energy data. Flavor-changing neutral currents (FCNC) and the combined charge-conjugation",
+      "last_500": "mass scale can be lowered to 2 TeV range where the right-handed gauge boson can be copiously produced at LHC . We also found a corresponding upper bounds on the soft mass parameter [MATH: m_0] in the model.\nWe thank R. N. Mohapatra for many useful discussions, and O. Lebedev for pointing out possible large contribution from the charginos. This work was supported by the U. S. Department of Energy via grant DE-FG02-93ER-40762. Y. Zhang acknowledges a support from NSFC grants 10421503 and 10625521."
+    },
+    "citations": [],
+    "display_equations": [
+      {
+        "latex": "\\begin{aligned}\nQ_L &=& \\left( \\begin{array}{c} u_L \\\\ d_L \\\\ \\end{array} \\right) \\in \\left(2, 1,\n\\frac{1}{3}\\right), \\ Q_R^c = \\left(\n\\begin{array}{c} u_R^c\n\\\\ d_R^c \\\\ \\end{array} \\right) \\in \\left(1, 2,\n-\\frac{1}{3}\\right) \\nonumber\\\\\nL_L &=& \\left( \\begin{array}{c} \\nu_L \\\\\nl_L \\\\ \\end{array} \\right) \\in \\left(2, 1, -1\\right), \\ L_R^c = \\left(\n\\begin{array}{c} \\nu_R^c\n\\\\ l_R^c \\\\ \\end{array} \\right) \\in \\left(1, 2, 1\\right) \\ ,\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n\\label{super}\nW &=& Y_a ~Q_L^T \\tau_2 \\Phi_a \\tau_2 Q_R^c + Y_a^l~ L_L^T \\tau_2 \\Phi_a\n\\tau_2 L_R^c \\nonumber \\\\\n&+& f L_L^T i \\tau_2 \\Delta_L L_L + f_c L_R^{cT} i \\tau_2 \\Delta_R^c L_R \\nonumber \\\\\n&+& \\frac{1}{2} \\mu_{ab}{~\\rm Tr}\\left( \\tau_2 \\Phi_a^T \\tau_2 \\Phi_b \\right)\n+\\mu_L{~\\rm Tr}\\left( \\Delta_L \\delta_L \\right) \\nonumber \\\\\n&+& \\mu_R{~\\rm Tr}\\left( \\Delta_R^c \\delta_R^c \\right)\\ ,\n \n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n\\Phi_{a} &=& \\left( \\begin{array}{cc} \\Phi_{a1}^0 & \\Phi_{a2}^+ \\ ,  \\\\\n\\Phi_{a1}^- & \\Phi_{a2}^0 \\end{array} \\right) \\in \\left(2, 2, 0\\right)\n\\ , \\nonumber\\\\\n\\Delta_L &=& \\left( \\begin{array}{cc} \\Delta_{L}^+ / \\sqrt{2} & \\Delta_{L}^{++} \\\\ \\Delta_{L}^{0} & - \\Delta_{L}^+ / \\sqrt{2}\\\\\n\\end{array} \\right) \\in \\left(3, 1, 2\\right) \\ , \\nonumber \\\\\n\\delta_L &=& \\left( \\begin{array}{cc} \\delta_{L}^- / \\sqrt{2} & \\delta_{L}^{0} \\\\ \\delta_{L}^{--} & - \\delta_{L}^- / \\sqrt{2}\\\\\n\\end{array} \\right) \\in \\left(3, 1, -2\\right) \\ , \\nonumber \\\\\n\\Delta_R^c &=& \\left( \\begin{array}{cc} \\Delta_{R}^- / \\sqrt{2} & \\Delta_{R}^{--} \\\\ \\Delta_{R}^{0} & -\\Delta_{R}^- / \\sqrt{2} \\\\\n\\end{array} \\right) \\in \\left(1, 3, -2\\right) \\ , \\nonumber\\\\\n\\delta_R^c &=& \\left( \\begin{array}{cc} \\delta_{R}^+ / \\sqrt{2} & \\delta_{R}^{0} \\\\ \\delta_{R}^{++} & - \\delta_{R}^+ / \\sqrt{2}\\\\\n\\end{array} \\right) \\in \\left(1, 3, 2\\right) \\ .\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n\\mathscr{V}_{\\rm soft} &=& \\widetilde q_L^\\dag m_{\\widetilde Q_L}^2 \\widetilde q_L +\n\\widetilde q_R^{c\\dag} m_{\\widetilde Q_R}^2\n\\widetilde q_R^c \\nonumber \\\\\n& + & \\widetilde l_L^\\dag m_{\\widetilde l_L}^2 \\widetilde\nl_L + \\widetilde{l_R}^{c \\dag} m_{\\widetilde l_L}^2 \\widetilde{l_R}^c + m^2_{\\phi_{ab}}{~\\rm Tr}(\\phi_a^\\dag \\phi_b) \\nonumber \\\\\n& + & m_{\\Delta_L}^2 {~\\rm Tr}(\\Delta_L^\\dag \\Delta_L) +\nm_{\\delta_L}^2{~\\rm Tr}(\\delta_L^\\dag \\delta_L) \\nonumber \\\\\n& + & m_{\\Delta_R}^2{~\\rm Tr}(\\Delta_R^{c\\dag} \\Delta_R^c) +\nm_{\\delta_R}^2{~\\rm Tr}(\\delta_R^{c\\dag} \\delta_R^c) \\nonumber \\\\\n& + & \\left[ \\frac{1}{2} \\left(  M_L \\lambda_L^a \\lambda^a_L + M_R\n\\lambda_R^a \\lambda^a_R + M_V \\lambda_V \\lambda_V + M_3 \\lambda_g\n\\lambda_g \\right) \\right.  \\nonumber\\\\\n& + & \\left. \\widetilde q_L^T \\tau_2 A_u \\phi_u \\tau_2 \\widetilde\nq_R^c + \\widetilde q_L^T \\tau_2 A_d \\phi_d \\tau_2 \\widetilde q_R^c +\n\\widetilde l_L^T \\tau_2 A_l \\phi \\tau_2 \\widetilde l_R^c \\right. \\nonumber \\\\\n& + & \\left. i v \\left( \\widetilde l_L^T \\tau_2 \\Delta_L \\widetilde l_L + \\widetilde\nl_R^{cT} \\tau_2 \\Delta_R^c \\widetilde l_R^c \\right) + h.c. \\right] \\nonumber \\\\\n& + & \\left[  B \\mu_{ab} {\\rm Tr}\\left( \\tau_2 \\phi_a^T \\tau_2 \\phi_b\n\\right) + B_L \\mu_L {\\rm Tr}\\left( \\Delta_L \\delta_L \\right) \\right. \\nonumber \\\\\n& + & \\left.  B_R \\mu_R {\\rm Tr}\\left( \\Delta_R^c \\delta_R^c \\right)  + {\\rm h.c.}\n\\right]\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n&&Q_L \\leftrightarrow Q_R^{c*}, \\ \\Phi_{u,d} \\leftrightarrow\n\\Phi_{u,d}^{\\dag},\\ \\Delta_L \\leftrightarrow \\Delta_R^{c*} \\nonumber \\\\\n&& W_L \\leftrightarrow W_R^{*}, \\ \\theta \\rightarrow \\overline\n\\theta\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "V^R_{\\rm CKM}=V^L_{\\rm CKM}",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "M_{W_R} > 4.0",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "M_{W_R}>15",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "a,b=u,d",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "v_R \\approx \\bar v_R",
+        "is_display": false,
+        "is_equation": true
+      }
+    ],
+    "tables": [],
+    "extraction_method": {
+      "title": "ast",
+      "abstract": null,
+      "year": "ast",
+      "main_text": "ast",
+      "citations": null,
+      "display_equations": "ast",
+      "inline_equations": "ast",
+      "tables": null
+    }
+  }
+}

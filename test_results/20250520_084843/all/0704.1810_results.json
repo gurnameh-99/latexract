@@ -1,0 +1,354 @@
+{
+  "metadata": {
+    "original_file": "0704.1810.tex",
+    "extraction_method": "all",
+    "timestamp": "20250520_084843"
+  },
+  "results": {
+    "title": "A Cascade Model for Particle Concentration and Enstrophy in Fully Developed Turbulence with Mass Loading Feedback",
+    "abstract": "A cascade model is described based on multiplier distributions determined from\n3D direct numerical simulations (DNS) of turbulent particle laden flows, which\ninclude two-way coupling between the phases at global mass loadings equal to\nunity. The governing Eulerian equations are solved using psuedo-spectral\nmethods on up to $512^3$ computional grid points. DNS results for particle\nconcentration and enstrophy at Taylor microscale Reynolds numbers in the range\n34 - 170 were used to directly determine multiplier distributions on spatial\nscales 3 times the Kolmogorov length scale. The multiplier probability\ndistribution functions (PDFs) are well characterized by the $\\beta$\ndistribution function. The width of the PDFs, which is a measure of\nintermittency, decreases with increasing mass loading within the local region\nwhere the multipliers are measured. The functional form of this dependence is\nnot sensitive to Reynolds numbers in the range considered. A partition correlation\nprobability is included in the cascade model to account for the observed\nspatial anticorrelation between particle concentration and enstrophy. Joint\nprobability distribution functions of concentration and enstrophy generated\nusing the cascade model are shown to be in excellent agreement with those\nderived directly from our 3D simulations. Probabilities predicted by the\ncascade model are presented at Reynolds numbers well beyond what is achievable by direct\nsimulation. These results clearly indicate that particle mass\nloading significantly reduces the probabilities of high particle concentration\nand enstrophy relative to those resulting from unloaded runs. Particle mass\ndensity appears to reach a limit at around 100 times the gas density.\nThis approach has promise for significant computational savings in certain applications.",
+    "year": "2007",
+    "main_text_sample": {
+      "first_500": "The study of turbulent flows incorporating heavy particles in suspension (particles with finite stopping times) is an important endeavor that has both fundamental and practical relevance to many scientific and engineering problems. Such flows have been investigated mainly in numerical simulations where detailed statistical analysis of the flow fields is possible  These simulations, limited to relatively low Taylor microscale Reynolds numbers [MATH: Re_\\lambda] ([MATH: \\sim 40]), demonstrated tha",
+      "last_500": "m_{i}^{n} F_i dv \\label{a6}] where [MATH: F_i] is the scalar’s value on computational node [MATH: i] centered within a cube of volume [MATH: dv] and the sum is over all [MATH: n] nodes covering the sample volume. We normalized this average by the global average value to get a quantity that measures the scalar’s local value relative to its mean. In this paper [MATH: C] and [MATH: S] will denote normalized spatial averages of particle concentration and enstrophy over cubes [MATH: 3\\eta] on a side."
+    },
+    "citations": [
+      {
+        "key": "Squires:4",
+        "label": "{\\citenamefont{Squires and Eaton}(1990{\\natexlab{a}})}",
+        "text": "K. D. Squires and J. K. Eaton, Phys. Fluids A 2, 1191 (1990{})."
+      },
+      {
+        "key": "Squires:1",
+        "label": "{\\citenamefont{Squires and Eaton}(1990{\\natexlab{b}})}",
+        "text": "K. D. Squires and J. K. Eaton, Tech. Rep. MD-55, Stanford University (1990{})."
+      },
+      {
+        "key": "Squires:2",
+        "label": "{\\citenamefont{Squires and Eaton}(1990{\\natexlab{c}})}",
+        "text": "K. D. Squires and J. K. Eaton, Phys. Fluids. A 3, 1159 (1990{})."
+      },
+      {
+        "key": "Kulick:1",
+        "label": "{\\citenamefont{Kulick et~al.}(1994)\\citenamefont{Kulick, Fessler, and\n  Eaton}}",
+        "text": "J. D. Kulick, J. R. Fessler, and J. K. Eaton, J. Fluid Mech. 227, 109 (1994)."
+      },
+      {
+        "key": "Castaing:1",
+        "label": "{\\citenamefont{Castaing et~al.}(1990)\\citenamefont{Castaing, Gagne,\n  and Hopfinger}}",
+        "text": "B. Castaing, Y. Gagne, and E. J. Hopfinger, Physica D 46, 177 (1990)."
+      },
+      {
+        "key": "Dinavahi:1",
+        "label": "{\\citenamefont{Dinavahi et~al.}(1995)\\citenamefont{Dinavahi, Breuer,\n  and Sirovich}}",
+        "text": "S. P. G. Dinavahi, K. S. Breuer, and L. Sirovich, Phys. Fluids 7, 1122 (1995)."
+      },
+      {
+        "key": "Kailasnath:1",
+        "label": "{\\citenamefont{Kailasnath et~al.}(1992)\\citenamefont{Kailasnath,\n  Sreenivasan, and Stolovitzky}}",
+        "text": "P. Kailasnath, K. R. Sreenivasan, and G. Stolovitzky, Phys. Rev. Lett. 68, 2766 (1992)."
+      },
+      {
+        "key": "Vincent:1",
+        "label": "{\\citenamefont{Vincent and Meneguzzi}(1991)}",
+        "text": "A. Vincent and M. Meneguzzi, J. Fluid Mech. 225, 1 (1991)."
+      },
+      {
+        "key": "Pumir:1",
+        "label": "{\\citenamefont{Pumir}(1994)}",
+        "text": "A. Pumir, Phys. Fluids 6, 2071 (1994)."
+      },
+      {
+        "key": "Lamballais:1",
+        "label": "{\\citenamefont{Lamballais et~al.}(1997)\\citenamefont{Lamballais,\n  Lesieur, and M\\'{e}tais}}",
+        "text": "E. Lamballais, M. Lesieur, and O. M\\'etais, Phys. Rev. E 56, 6761 (1997)."
+      },
+      {
+        "key": "Jimenez:2",
+        "label": "{\\citenamefont{Jim\\'{e}nez et~al.}(1993)\\citenamefont{Jim\\'{e}nez,\n  Wray, Saffman, and Rogallo}}",
+        "text": "J. Jim\\'enez, A. A. Wray, P. G. Saffman, and R. S. Rogallo, J. Fluid Mech. 255, 65 (1993)."
+      },
+      {
+        "key": "He:1",
+        "label": "{\\citenamefont{He et~al.}(1998)\\citenamefont{He, Chen, Kraichnan,\n  Zhang, and Zhou}}",
+        "text": "G. He, S. Chen, R. H. Kraichnan, R. Zhang, and Y. Zhou, Phys. Rev. Lett. 81, 4636 (1998)."
+      },
+      {
+        "key": "Cao:1",
+        "label": "{\\citenamefont{Cao et~al.}(1996)\\citenamefont{Cao, Chen, and\n  Sreenivasan}}",
+        "text": "N. Cao, S. Chen, and K. R. Sreenivasan, Phys. Rev. Lett. 76, 616 (1996)."
+      },
+      {
+        "key": "Hogan:1",
+        "label": "{\\citenamefont{Hogan et~al.}(1999)\\citenamefont{Hogan, Cuzzi, and\n  Dobrovolskis}}",
+        "text": "R. C. Hogan, J. N. Cuzzi, and A. R. Dobrovolskis, Phys. Rev. E 60, 1674 (1999)."
+      },
+      {
+        "key": "Balkovsky:1",
+        "label": "{\\citenamefont{Balkovsky et~al.}(2001)\\citenamefont{Balkovsky,\n  Falkovich, and Fouxon}}",
+        "text": "E. Balkovsky, G. Falkovich, and A. Fouxon, Phys. Rev. Lett. 86, 2790 (2001)."
+      },
+      {
+        "key": "Richardson:1",
+        "label": "{\\citenamefont{Richardson}(1922)}",
+        "text": "L. F. Richardson, Weather Prediction by Numerical Process. (Cambridge University Press, Cambridge U.K., 1922)."
+      },
+      {
+        "key": "Komolgorov:1",
+        "label": "{\\citenamefont{Komolgorov}(1962)}",
+        "text": "A. N. Komolgorov, J. Fluid Mech. 13, 82 (1962)."
+      },
+      {
+        "key": "Chiueh:1",
+        "label": "{\\citenamefont{Chiueh}(1994)}",
+        "text": "T. Chiueh, Chin. J. Phys. 32, 319 (1994)."
+      },
+      {
+        "key": "Gorokhovski:1",
+        "label": "{\\citenamefont{Gorokhovski}(2003)}",
+        "text": "M. Gorokhovski, Tech. Rep., Center for Turbulence Research, Annual Research Briefs (2003)."
+      },
+      {
+        "key": "Meneveau:3",
+        "label": "{\\citenamefont{Meneveau and Sreenivasan}(1987)}",
+        "text": "C. Meneveau and K. R. Sreenivasan, Phys. Rev. Lett. 59, 1424 (1987)."
+      },
+      {
+        "key": "Sreenivasan:1",
+        "label": "{\\citenamefont{Sreenivasan and Stolovitzky}(1995)}",
+        "text": "K. R. Sreenivasan and G. Stolovitzky, J. Fluid Mech. 379, 105 (1995)."
+      },
+      {
+        "key": "Novikov:2",
+        "label": "{\\citenamefont{Novikov}(1990)}",
+        "text": "E. A. Novikov, Phys. Fluids A 2, 814 (1990)."
+      },
+      {
+        "key": "Novikov:1",
+        "label": "{\\citenamefont{Novikov}(1994)}",
+        "text": "E. A. Novikov, Phys. Rev. E 50, R3303 (1994)."
+      },
+      {
+        "key": "Jimenez:1",
+        "label": "{\\citenamefont{Jim\\'{e}nez}(2000)}",
+        "text": "J. Jim\\'enez, J. Fluid Mech. 409, 99 (2000)."
+      },
+      {
+        "key": "Maxey:1",
+        "label": "{\\citenamefont{Maxey}(1987)}",
+        "text": "M. R. Maxey, Phys. Fluids 30, 1915 (1987)."
+      },
+      {
+        "key": "Squires:3",
+        "label": "{\\citenamefont{Squires and Eaton}(1991)}",
+        "text": "K. D. Squires and J. K. Eaton, J. Fluid Mech. 226, 1 (1991)."
+      },
+      {
+        "key": "Ahmed:2",
+        "label": "{\\citenamefont{Ahmed and Elghobashi}(2001)}",
+        "text": "A. M. Ahmed and S. Elghobashi, Phys. Fluids 13, 3346 (2001)."
+      },
+      {
+        "key": "Eaton:1",
+        "label": "{\\citenamefont{Eaton and Fessler}(1994)}",
+        "text": "J. K. Eaton and J. R. Fessler, Int. J. Multiphase Flow 20, Suppl., 169 (1994)."
+      },
+      {
+        "key": "Elghobashi:2",
+        "label": "{\\citenamefont{Elghobashi and Truesdell}(1993)}",
+        "text": "S. Elghobashi and G. C. Truesdell, Phys. Fluids A 5, 1790 (1993)."
+      },
+      {
+        "key": "Frisch:1",
+        "label": "{\\citenamefont{Frisch}(1995)}",
+        "text": "U. Frisch, Turbulence (Cambridge University Press, Cambridge, U.K., 1995), chap. 8."
+      },
+      {
+        "key": "Johansen:1",
+        "label": "{\\citenamefont{Johansen et~al.}(2004)\\citenamefont{Johansen, Anderson,\n  and Brandenburg}}",
+        "text": "A. Johansen, A. C. Anderson, and A. Brandenburg, Astron. Astrophys. (2004)."
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "\\label{beta} p(m) = \\frac{\\Gamma(2\\beta)}{\\Gamma(\\beta)^2} m^{\\beta-1}(1-m)^{\\beta-1}",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>p</mi><mo stretchy=\"false\">&#x00028;</mo><mi>m</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mfrac><mrow><mi>&#x00393;</mi><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mi>&#x003B2;</mi><mo stretchy=\"false\">&#x00029;</mo></mrow><mrow><mi>&#x00393;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>&#x003B2;</mi><msup><mo stretchy=\"false\">&#x00029;</mo><mn>2</mn></msup></mrow></mfrac><msup><mi>m</mi><mrow><mi>&#x003B2;</mi><mo>&#x02212;</mo><mn>1</mn></mrow></msup><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mo>&#x02212;</mo><mi>m</mi><msup><mo stretchy=\"false\">&#x00029;</mo><mrow><mi>&#x003B2;</mi><mo>&#x02212;</mo><mn>1</mn></mrow></msup></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "q = \\int_{0}^{\\infty}E(k)dk",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>q</mi><mo>&#x0003D;</mo><msubsup><mo>&#x0222B;</mo><mrow><mn>0</mn></mrow><mrow><mo>&#x0221E;</mo></mrow></msubsup><mi>E</mi><mo stretchy=\"false\">&#x00028;</mo><mi>k</mi><mo stretchy=\"false\">&#x00029;</mo><mi>d</mi><mi>k</mi></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "\\epsilon = 2\\nu\\int_{0}^{\\infty}E(k)k^2dk",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003F5;</mi><mo>&#x0003D;</mo><mn>2</mn><mi>&#x003BD;</mi><msubsup><mo>&#x0222B;</mo><mrow><mn>0</mn></mrow><mrow><mo>&#x0221E;</mo></mrow></msubsup><mi>E</mi><mo stretchy=\"false\">&#x00028;</mo><mi>k</mi><mo stretchy=\"false\">&#x00029;</mo><msup><mi>k</mi><mn>2</mn></msup><mi>d</mi><mi>k</mi></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "\\Lambda = \\frac{3\\pi}{4q}\\int_{0}^{\\infty}\\frac{E(k)}{k}dk",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x0039B;</mi><mo>&#x0003D;</mo><mfrac><mrow><mn>3</mn><mi>&#x003C0;</mi></mrow><mrow><mn>4</mn><mi>q</mi></mrow></mfrac><msubsup><mo>&#x0222B;</mo><mrow><mn>0</mn></mrow><mrow><mo>&#x0221E;</mo></mrow></msubsup><mfrac><mrow><mi>E</mi><mo stretchy=\"false\">&#x00028;</mo><mi>k</mi><mo stretchy=\"false\">&#x00029;</mo></mrow><mrow><mi>k</mi></mrow></mfrac><mi>d</mi><mi>k</mi></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "\\frac{\\Delta V(S,C)}{\\delta^2} =\n\\frac{ P(S,C)\\Delta S \\Delta C}{\\Delta (logS) \\Delta (logC)}\n\\rightarrow P(S,C)SC \\hspace{0.1 in} {\\rm as} \\hspace{0.1 in} \\delta \\rightarrow 0.",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mfrac><mrow><mi>&#x00394;</mi><mi>V</mi><mo stretchy=\"false\">&#x00028;</mo><mi>S</mi><mo>&#x0002C;</mo><mi>C</mi><mo stretchy=\"false\">&#x00029;</mo></mrow><mrow><msup><mi>&#x003B4;</mi><mn>2</mn></msup></mrow></mfrac><mo>&#x0003D;</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mi>S</mi><mo>&#x0002C;</mo><mi>C</mi><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00394;</mi><mi>S</mi><mi>&#x00394;</mi><mi>C</mi></mrow><mrow><mi>&#x00394;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>S</mi><mo stretchy=\"false\">&#x00029;</mo><mi>&#x00394;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>C</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></mfrac><mo>&#x02192;</mo><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mi>S</mi><mo>&#x0002C;</mo><mi>C</mi><mo stretchy=\"false\">&#x00029;</mo><mi>S</mi><mi>C</mi><mspace width=\"0.1in\" /><mrow><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">s</mi></mrow><mspace width=\"0.1in\" /><mi>&#x003B4;</mi><mo>&#x02192;</mo><mn>0</mn><mo>&#x0002E;</mo></mrow></math>",
+        "verified": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "\\sim 40",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x0007E;</mi><mn>40</mn></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "Re_{\\lambda} \\sim (\\Lambda / \\eta)^{2/3}",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>R</mi><msub><mi>e</mi><mrow><mi>&#x003BB;</mi></mrow></msub><mi>&#x0007E;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>&#x0039B;</mi><mo>&#x0002F;</mo><mi>&#x003B7;</mi><msup><mo stretchy=\"false\">&#x00029;</mo><mrow><mn>2</mn><mo>&#x0002F;</mo><mn>3</mn></mrow></msup></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "k_{max} = \\frac{\\sqrt{2}}{3}",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>k</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>&#x0003D;</mo><mfrac><mrow><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow><mrow><mn>3</mn></mrow></mfrac></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "k_{max}\\eta > 1",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>k</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mi>&#x003B7;</mi><mo>&#x0003E;</mo><mn>1</mn></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "Re_\\lambda = 170",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>R</mi><msub><mi>e</mi><mi>&#x003BB;</mi></msub><mo>&#x0003D;</mo><mn>170</mn></mrow></math>",
+        "verified": true
+      }
+    ],
+    "tables": [
+      {
+        "caption": "\\label{tab1",
+        "content": "\\begin{table}[h]\n\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\nParameter & Case I & Case II & Case III & Case IV \\\\\n\\hline\nNodes/side            & 64       & 128      & 256       &   512  \\\\\n$\\nu$                 & .01      & .003     & .0007     &  .0002 \\\\\n$Re_{\\lambda}$        & 34       & 60.      & 104       &   170  \\\\\n$q$                   & 1.5      & .65      & .28       &   .14  \\\\\n$\\frac{\\epsilon}{\\nu}$ & 23.      & 22.8  & 22.4   &   23   \\\\\n$ k_{max}\\eta$         & 1.4      & 1.5      & 1.45      &   1.56  \\\\\n$\\frac{\\Lambda}{\\eta}$ & 14.1 & 23.3 & 45.8 & 86.2 \\\\\n$\\Gamma$                & .31      & .29      & .27       &  .32   \\\\ \n$D$                   &  .0001   & .00003   & .000007   &  .000002 \\\\ \n$\\nu_{p}$             &  .001    & .0003.   & .00007    &  .00002  \\\\\n\\hline\n\\end{tabular}\n\\caption{\\label{tab1}Case Parameters for DNS runs. The quantities $D$ and $\\nu_p$\nare defined in the Appendix. Other quantities above are defined in Section II.}\n\n\n\n\\end{center}\n\\end{table}",
+        "structured_format": {
+          "column_spec": "{|c|c|c|c|c|}",
+          "column_count": 5,
+          "rows": [
+            [
+              "Parameter",
+              "Case I",
+              "Case II",
+              "Case III",
+              "Case IV"
+            ],
+            [
+              "Nodes/side",
+              "64",
+              "128",
+              "256",
+              "512"
+            ],
+            [
+              "",
+              ".01",
+              ".003",
+              ".0007",
+              ".0002"
+            ],
+            [
+              "Re_{}",
+              "34",
+              "60.",
+              "104",
+              "170"
+            ],
+            [
+              "q",
+              "1.5",
+              ".65",
+              ".28",
+              ".14"
+            ],
+            [
+              "{}",
+              "23.",
+              "22.8",
+              "22.4",
+              "23"
+            ],
+            [
+              "k_{max}",
+              "1.4",
+              "1.5",
+              "1.45",
+              "1.56"
+            ],
+            [
+              "{}",
+              "14.1",
+              "23.3",
+              "45.8",
+              "86.2"
+            ],
+            [
+              "",
+              ".31",
+              ".29",
+              ".27",
+              ".32"
+            ],
+            [
+              "D",
+              ".0001",
+              ".00003",
+              ".000007",
+              ".000002"
+            ],
+            [
+              "_{p}",
+              ".001",
+              ".0003.",
+              ".00007",
+              ".00002"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "verified": true
+        }
+      }
+    ],
+    "extraction_method": {
+      "title": "ast",
+      "abstract": "pattern",
+      "year": "arxiv_id",
+      "main_text": "ast",
+      "citations": "pattern",
+      "display_equations": "ast",
+      "inline_equations": "ast",
+      "tables": "pattern"
+    }
+  }
+}

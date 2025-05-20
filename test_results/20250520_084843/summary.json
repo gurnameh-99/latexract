@@ -1,0 +1,319 @@
+{
+  "metadata": {
+    "timestamp": "20250520_084843",
+    "total_files": 5,
+    "methods": [
+      "ast",
+      "pattern",
+      "llm",
+      "all"
+    ]
+  },
+  "results": {
+    "/Users/27gur/dev/latex_extract/data/0710.1454.tex": {
+      "file": "/Users/27gur/dev/latex_extract/data/0710.1454.tex",
+      "methods": {
+        "ast": {
+          "success": true,
+          "extraction_rate": "4/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": null,
+            "year": "ast",
+            "main_text": "ast",
+            "citations": null,
+            "display_equations": "ast",
+            "inline_equations": "ast",
+            "tables": null
+          }
+        },
+        "pattern": {
+          "success": true,
+          "extraction_rate": "4/8",
+          "extraction_methods": {
+            "title": "pattern",
+            "abstract": "pattern",
+            "year": null,
+            "main_text": "pattern",
+            "citations": "pattern",
+            "display_equations": "pattern",
+            "inline_equations": null,
+            "tables": null
+          }
+        },
+        "llm": {
+          "success": true,
+          "extraction_rate": "7/8",
+          "extraction_methods": {
+            "title": "llm",
+            "abstract": "llm",
+            "year": "llm",
+            "main_text": null,
+            "citations": "llm",
+            "display_equations": "llm",
+            "inline_equations": "llm",
+            "tables": "llm"
+          }
+        },
+        "all": {
+          "success": true,
+          "extraction_rate": "7/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": "pattern",
+            "year": "arxiv_id",
+            "main_text": "ast",
+            "citations": "pattern",
+            "display_equations": "ast",
+            "inline_equations": "ast",
+            "tables": "llm"
+          }
+        }
+      }
+    },
+    "/Users/27gur/dev/latex_extract/data/0704.0138.tex": {
+      "file": "/Users/27gur/dev/latex_extract/data/0704.0138.tex",
+      "methods": {
+        "ast": {
+          "success": true,
+          "extraction_rate": "4/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": null,
+            "year": "ast",
+            "main_text": "ast",
+            "citations": null,
+            "display_equations": "ast",
+            "inline_equations": "ast",
+            "tables": null
+          }
+        },
+        "pattern": {
+          "success": true,
+          "extraction_rate": "5/8",
+          "extraction_methods": {
+            "title": "pattern",
+            "abstract": "pattern",
+            "year": null,
+            "main_text": "pattern",
+            "citations": "pattern",
+            "display_equations": "pattern",
+            "inline_equations": null,
+            "tables": "pattern"
+          }
+        },
+        "llm": {
+          "success": true,
+          "extraction_rate": "7/8",
+          "extraction_methods": {
+            "title": "llm",
+            "abstract": "llm",
+            "year": "llm",
+            "main_text": null,
+            "citations": "llm",
+            "display_equations": "llm",
+            "inline_equations": "llm",
+            "tables": "llm"
+          }
+        },
+        "all": {
+          "success": true,
+          "extraction_rate": "7/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": "pattern",
+            "year": "arxiv_id",
+            "main_text": "ast",
+            "citations": "pattern",
+            "display_equations": "ast",
+            "inline_equations": "ast",
+            "tables": "pattern"
+          }
+        }
+      }
+    },
+    "/Users/27gur/dev/latex_extract/data/0704.1810.tex": {
+      "file": "/Users/27gur/dev/latex_extract/data/0704.1810.tex",
+      "methods": {
+        "ast": {
+          "success": true,
+          "extraction_rate": "4/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": null,
+            "year": "ast",
+            "main_text": "ast",
+            "citations": null,
+            "display_equations": "ast",
+            "inline_equations": "ast",
+            "tables": null
+          }
+        },
+        "pattern": {
+          "success": true,
+          "extraction_rate": "5/8",
+          "extraction_methods": {
+            "title": "pattern",
+            "abstract": "pattern",
+            "year": null,
+            "main_text": "pattern",
+            "citations": "pattern",
+            "display_equations": "pattern",
+            "inline_equations": null,
+            "tables": "pattern"
+          }
+        },
+        "llm": {
+          "success": true,
+          "extraction_rate": "7/8",
+          "extraction_methods": {
+            "title": "llm",
+            "abstract": "llm",
+            "year": "llm",
+            "main_text": null,
+            "citations": "llm",
+            "display_equations": "llm",
+            "inline_equations": "llm",
+            "tables": "llm"
+          }
+        },
+        "all": {
+          "success": true,
+          "extraction_rate": "7/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": "pattern",
+            "year": "arxiv_id",
+            "main_text": "ast",
+            "citations": "pattern",
+            "display_equations": "ast",
+            "inline_equations": "ast",
+            "tables": "pattern"
+          }
+        }
+      }
+    },
+    "/Users/27gur/dev/latex_extract/data/0704.1233.tex": {
+      "file": "/Users/27gur/dev/latex_extract/data/0704.1233.tex",
+      "methods": {
+        "ast": {
+          "success": true,
+          "extraction_rate": "3/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": null,
+            "year": null,
+            "main_text": "ast",
+            "citations": null,
+            "display_equations": "ast",
+            "inline_equations": "ast",
+            "tables": null
+          }
+        },
+        "pattern": {
+          "success": true,
+          "extraction_rate": "4/8",
+          "extraction_methods": {
+            "title": "pattern",
+            "abstract": "pattern",
+            "year": null,
+            "main_text": "pattern",
+            "citations": "pattern",
+            "display_equations": "pattern",
+            "inline_equations": null,
+            "tables": null
+          }
+        },
+        "llm": {
+          "success": true,
+          "extraction_rate": "6/8",
+          "extraction_methods": {
+            "title": "llm",
+            "abstract": "llm",
+            "year": "llm",
+            "main_text": null,
+            "citations": "llm",
+            "display_equations": "llm",
+            "inline_equations": "llm",
+            "tables": null
+          }
+        },
+        "all": {
+          "success": true,
+          "extraction_rate": "6/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": "pattern",
+            "year": "arxiv_id",
+            "main_text": "ast",
+            "citations": "pattern",
+            "display_equations": "ast",
+            "inline_equations": "ast",
+            "tables": null
+          }
+        }
+      }
+    },
+    "/Users/27gur/dev/latex_extract/data/0704.0978.tex": {
+      "file": "/Users/27gur/dev/latex_extract/data/0704.0978.tex",
+      "methods": {
+        "ast": {
+          "success": true,
+          "extraction_rate": "3/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": null,
+            "year": "ast",
+            "main_text": "ast",
+            "citations": null,
+            "display_equations": null,
+            "inline_equations": "ast",
+            "tables": null
+          }
+        },
+        "pattern": {
+          "success": true,
+          "extraction_rate": "7/8",
+          "extraction_methods": {
+            "title": "pattern",
+            "abstract": "pattern",
+            "year": "pattern",
+            "main_text": "pattern",
+            "citations": "pattern",
+            "display_equations": "pattern",
+            "inline_equations": "pattern",
+            "tables": "pattern"
+          }
+        },
+        "llm": {
+          "success": true,
+          "extraction_rate": "7/8",
+          "extraction_methods": {
+            "title": "llm",
+            "abstract": "llm",
+            "year": "llm",
+            "main_text": null,
+            "citations": "llm",
+            "display_equations": "llm",
+            "inline_equations": "llm",
+            "tables": "llm"
+          }
+        },
+        "all": {
+          "success": true,
+          "extraction_rate": "7/8",
+          "extraction_methods": {
+            "title": "ast",
+            "abstract": "pattern",
+            "year": "arxiv_id",
+            "main_text": "ast",
+            "citations": "pattern",
+            "display_equations": "pattern",
+            "inline_equations": "ast",
+            "tables": "pattern"
+          }
+        }
+      }
+    }
+  }
+}

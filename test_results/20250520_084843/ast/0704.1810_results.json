@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "original_file": "0704.1810.tex",
+    "extraction_method": "ast",
+    "timestamp": "20250520_084843"
+  },
+  "results": {
+    "title": "A Cascade Model for Particle Concentration and Enstrophy in Fully Developed Turbulence with Mass Loading Feedback",
+    "abstract": null,
+    "year": "2025",
+    "main_text_sample": {
+      "first_500": "The study of turbulent flows incorporating heavy particles in suspension (particles with finite stopping times) is an important endeavor that has both fundamental and practical relevance to many scientific and engineering problems. Such flows have been investigated mainly in numerical simulations where detailed statistical analysis of the flow fields is possible  These simulations, limited to relatively low Taylor microscale Reynolds numbers [MATH: Re_\\lambda] ([MATH: \\sim 40]), demonstrated tha",
+      "last_500": "m_{i}^{n} F_i dv \\label{a6}] where [MATH: F_i] is the scalar’s value on computational node [MATH: i] centered within a cube of volume [MATH: dv] and the sum is over all [MATH: n] nodes covering the sample volume. We normalized this average by the global average value to get a quantity that measures the scalar’s local value relative to its mean. In this paper [MATH: C] and [MATH: S] will denote normalized spatial averages of particle concentration and enstrophy over cubes [MATH: 3\\eta] on a side."
+    },
+    "citations": [],
+    "display_equations": [
+      {
+        "latex": "\\label{beta} p(m) = \\frac{\\Gamma(2\\beta)}{\\Gamma(\\beta)^2} m^{\\beta-1}(1-m)^{\\beta-1}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "q = \\int_{0}^{\\infty}E(k)dk",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\epsilon = 2\\nu\\int_{0}^{\\infty}E(k)k^2dk",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\Lambda = \\frac{3\\pi}{4q}\\int_{0}^{\\infty}\\frac{E(k)}{k}dk",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\frac{\\Delta V(S,C)}{\\delta^2} =\n\\frac{ P(S,C)\\Delta S \\Delta C}{\\Delta (logS) \\Delta (logC)}\n\\rightarrow P(S,C)SC \\hspace{0.1 in} {\\rm as} \\hspace{0.1 in} \\delta \\rightarrow 0.",
+        "is_display": true,
+        "is_equation": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "\\sim 40",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "Re_{\\lambda} \\sim (\\Lambda / \\eta)^{2/3}",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "k_{max} = \\frac{\\sqrt{2}}{3}",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "k_{max}\\eta > 1",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "Re_\\lambda = 170",
+        "is_display": false,
+        "is_equation": true
+      }
+    ],
+    "tables": [],
+    "extraction_method": {
+      "title": "ast",
+      "abstract": null,
+      "year": "ast",
+      "main_text": "ast",
+      "citations": null,
+      "display_equations": "ast",
+      "inline_equations": "ast",
+      "tables": null
+    }
+  }
+}

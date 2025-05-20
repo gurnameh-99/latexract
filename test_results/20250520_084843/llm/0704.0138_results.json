@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "original_file": "0704.0138.tex",
+    "extraction_method": "llm",
+    "timestamp": "20250520_084843"
+  },
+  "results": {
+    "title": "Circular and non-circular nearly horizon-skimming orbits in Kerr spacetimes",
+    "abstract": "We have performed a detailed analysis of orbital motion in the vicinity of a nearly extremal Kerr black hole. For very rapidly rotating black holes –- spin parameter $a J/M > 0.9524M$ –- we have found a class of very strong field eccentric orbits whose orbital angular momentum $L_z$ increases with the orbit's inclination with respect to the equatorial plane, while keeping latus rectum and eccentricity fixed. This behavior is in contrast with Newtonian intuition, and is in fact opposite to the \"normal\" behavior of black hole orbits. Such behavior was noted previously for circular orbits; since it only applies to orbits very close to the black hole, they were named \"nearly horizon-skimming orbits\". Our current analysis generalizes this result, mapping out the full generic (inclined and eccentric) family of nearly horizon-skimming orbits. The earlier work on circular orbits reported that, under gravitational radiation emission, nearly horizon-skimming orbits exhibit unusual inspiral, tending to evolve to smaller orbit inclination, toward prograde equatorial configuration. Normal orbits, by contrast, always demonstrate slowly { growing} orbit inclination –- orbits evolve toward the retrograde equatorial configuration. Using up-to-date Teukolsky-based fluxes, we have concluded that the earlier result was incorrect –- all circular orbits, { including nearly horizon-skimming ones}, exhibit growing orbit inclination under radiative backreaction. Using kludge fluxes based on a Post-Newtonian expansion corrected with fits to circular and to equatorial Teukolsky-based fluxes, we argue that the inclination grows also for eccentric nearly horizon-skimming orbits. We also find that the inclination change is, in any case, very small. As such, we conclude that these orbits are { not} likely to have a clear and peculiar imprint on the gravitational waveforms expected to be measured by the space-based detector LISA.",
+    "year": "2023",
+    "main_text_sample": {
+      "first_500": null,
+      "last_500": null
+    },
+    "citations": [
+      {
+        "key": "LISA",
+        "text": "url{http://lisa.nasa.gov/}; url{http://sci.esa.int/home/lisa/}"
+      },
+      {
+        "key": "SMBH",
+        "text": "J. Kormendy and D. Richstone, {bf 33}, 581 (1995)."
+      },
+      {
+        "key": "gair_event_rates",
+        "text": "J. R. Gair, L. Barack, T. Creighton, C. Cutler, S. L. Larson, E. S. Phinney, and M. Vallisneri, cqg{bf 21}, S1595 (2004)."
+      },
+      {
+        "key": "shapiro",
+        "text": "S. L. Shapiro, {bf 620}, 59 (2005)."
+      },
+      {
+        "key": "rezzolla03",
+        "text": "L. Rezzolla, T. W. Maccarone, S. Yoshida, and O. Zanotti, {bf 344}, L37 (2003)."
+      },
+      {
+        "key": "shafee_etal",
+        "text": "R. Shafee, J. E. McClintock, R. Narayan, S. W. Davis, L.-X. Li, and R. A. Remilland, Astrophys. J. {bf 636}, L113 (2006)."
+      },
+      {
+        "key": "mcclintock_etal",
+        "text": "J. E. McClintock, R. Shafee, R. Narayan, R. A. Remilland, S. W. Davis, and L.-X. Li, Astrophys. J. {bf 652}, 518 (2006)."
+      },
+      {
+        "key": "iron_line_rev",
+        "text": "A. C. Fabian and G. Miniutti, G. 2005, to appear in { Kerr Spacetime: Rotating Black Holes in General Relativity}, edited by D. L. Wiltshire, M. Visser, and S. M. Scott; astro-ph/0507409."
+      },
+      {
+        "key": "iron_line_res",
+        "text": "L. W. Brenneman and C. S. Reynolds, Astrophys. J. {bf 652}, 1028 (2006)."
+      },
+      {
+        "key": "spin_measurements",
+        "text": "L. Barack and C. Cutler, {bf 69}, 082005 (2004)."
+      },
+      {
+        "key": "volonteri",
+        "text": "M. Volonteri, P. Madau, E. Quataert, and M. J. Rees, {bf 620}, 69 (2005)."
+      },
+      {
+        "key": "wilkins",
+        "text": "D. C. Wilkins, {bf 5}, 814 (1972)."
+      },
+      {
+        "key": "bpt",
+        "text": "J. M. Bardeen, W. H. Press, and S. A. Teukolsky, {bf 178}, 347 (1972)."
+      },
+      {
+        "key": "skimming",
+        "text": "S. A. Hughes, {bf 63}, 064016 (2001)."
+      },
+      {
+        "key": "membrane",
+        "text": "K. S. Thorne, R. H. Price, and D. A. MacDonald, { Black Holes: The Membrane Paradigm} (Yale University Press, New Haven, CT, 1986)."
+      },
+      {
+        "key": "fintan_circ",
+        "text": "F. D. Ryan, {bf 52}, R3159 (1995)."
+      },
+      {
+        "key": "first_code",
+        "text": "S. A. Hughes, {bf 61}, 084004 (2000)."
+      },
+      {
+        "key": "Carter",
+        "text": "B. Carter, Phys. Rev. {bf 174}, 1559 (1968)."
+      },
+      {
+        "key": "thorne_spin",
+        "text": "K. S. Thorne, {bf 191}, 507 (1974)."
+      },
+      {
+        "key": "Mino_adiabatic",
+        "text": "Y. Mino, Phys. Rev. D {bf 67}, 084027 (2003)."
+      },
+      {
+        "key": "hughes_drasco",
+        "text": "S. Drasco and S. A. Hughes, {bf 73}, 024027 (2006)."
+      },
+      {
+        "key": "sago",
+        "text": "N. Sago, T. Tanaka, W. Hikida, and H. Nakano, Prog. Theor. Phys. {bf 114}, 509 (2005); N. Sago, T. Tanaka, W. Hikida, K. Ganz, and H. Nakano, Prog. Theor. Phys. {bf 115}, 873 (2006)."
+      },
+      {
+        "key": "kludge_hughes",
+        "text": "K. Glampedakis, S. A. Hughes, and D. Kennefick, {bf 66}, 064005 (2002)."
+      },
+      {
+        "key": "GG_kludge_fluxes",
+        "text": "J. R. Gair and K. Glampedakis, {bf 73}, 064037 (2006)."
+      },
+      {
+        "key": "MTW",
+        "text": "C. W. Misner, K. S. Thorne, and J. A. Wheeler, { Gravitation} (Freeman, San Francisco, 1973)."
+      },
+      {
+        "key": "schmidt",
+        "text": "W. Schmidt, cqg {bf 19}, 2743 (2002)."
+      },
+      {
+        "key": "Thorne_Ori",
+        "text": "A. Ori and K. S. Thorne, Phys. Rev. D {bf 62}, 124022 (2000)."
+      },
+      {
+        "key": "teukolsky",
+        "text": "S. A. Teukolsky, {bf 185}, 635 (1973)."
+      },
+      {
+        "key": "sasaknak",
+        "text": "M. Sasaki and T. Nakamura, Prog. Theor. Phys. {bf 67}, 1788 (1982)."
+      },
+      {
+        "key": "ryan_circ",
+        "text": "F. D. Ryan, Phys. Ref. D {bf 53}, 3064 (1996)."
+      },
+      {
+        "key": "kennefick_ori",
+        "text": "D. Kennefick and A. Ori, Phys. Rev. D {bf 53}, 4319 (1996)."
+      },
+      {
+        "key": "mino_circ",
+        "text": "Y. Mino, unpublished Ph. D. thesis, Kyoto University, 1996."
+      },
+      {
+        "key": "data",
+        "text": "Data available at url{http://gmunu.mit.edu/sdrasco/snapshots/}"
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "^2 r^2 + a^2",
+        "is_display": true
+      },
+      {
+        "latex": "r_{ ap}{1-e} r_{ peri}{1+e}",
+        "is_display": true
+      },
+      {
+        "latex": "= +-^{2})}}{^{2}+4}}",
+        "is_display": true
+      },
+      {
+        "latex": "= z_{-}",
+        "is_display": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "a J/M > 0.9524M",
+        "is_display": false
+      },
+      {
+        "latex": "L_z",
+        "is_display": false
+      },
+      {
+        "latex": "M 10^5 - 10^7M_",
+        "is_display": false
+      },
+      {
+        "latex": "a/M J/M^2 0.6 - 0.8",
+        "is_display": false
+      },
+      {
+        "latex": "a/M 0.98",
+        "is_display": false
+      }
+    ],
+    "tables": [
+      {
+        "caption": "Unknown caption",
+        "content": "[h] {|c|c|c|c|c|c|c|c|c|} $i$ & 1 &2 &3 &4 &5 &6 &7 &8 $a_d^i$ & 15.8363 & 445.4418 & $-$2027.7797 & 3089.1709 & $-$2045.2248 & 498.6411 & $-$8.7220 & 50.8345 $b_d^i$ & $-$55.6777 & $-$1333.2461 & 5940.4831 & $-$9103.4472 & 6113.1165 & $-$1515.8506 & $-$50.8950 & $-$131.6422 $c_d^i$ & 38.6405 & 1049.5637 & $-$4513.0879 & 6926.3191 &-4714.9633 & 1183.5875 & 251.4025& 83.0834"
+      }
+    ],
+    "extraction_method": {
+      "title": "llm",
+      "abstract": "llm",
+      "year": "llm",
+      "main_text": null,
+      "citations": "llm",
+      "display_equations": "llm",
+      "inline_equations": "llm",
+      "tables": "llm"
+    }
+  }
+}

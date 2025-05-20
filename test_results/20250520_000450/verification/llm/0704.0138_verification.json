@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "original_file": "0704.0138.tex",
+    "extraction_method": "llm",
+    "verification_timestamp": "20250520_090735"
+  },
+  "verifications": {
+    "title": {
+      "is_valid": false,
+      "reason": "Title too short (1 chars)",
+      "extracted_value": {
+        "title": "Circular and non-circular nearly horizon-skimming orbits in Kerr spacetimes"
+      }
+    },
+    "abstract": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "We have performed a detailed analysis of orbital motion in the vicinity of a nearly extremal Kerr bl..."
+    },
+    "year": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "2023"
+    },
+    "main_text": {
+      "is_valid": false,
+      "reason": "First text sample too short (0 chars)",
+      "extracted_value": "Invalid text sample"
+    },
+    "display_equations": {
+      "is_valid": false,
+      "reason": "Equation 2 has unbalanced delimiters: = +-^{2})}}{^{2}+4}}",
+      "count": 4
+    },
+    "inline_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "citations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 33
+    },
+    "tables": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 1
+    }
+  },
+  "overall_score": 62.5
+}

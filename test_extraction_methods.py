@@ -112,10 +112,14 @@ class ExtractionTester:
                         "extraction_methods": result.get("extraction_method", {})
                     }
                 else:
-                    # Count extracted elements
-                    extracted_count = sum(1 for v in result.values() 
-                                       if v is not None and v != [] and v != {})
-                    total_elements = len(result) - 1  # Exclude extraction_method
+                    # Count extracted elements - EXPLICITLY exclude extraction_method
+                    expected_fields = ["title", "abstract", "year", "main_text", 
+                                     "citations", "display_equations", "inline_equations", "tables"]
+                    extracted_count = sum(1 for field in expected_fields 
+                                      if field in result and result[field] is not None 
+                                      and result[field] != [] and result[field] != {})
+                    total_elements = len(expected_fields)
+                    
                     file_summary["methods"][method] = {
                         "success": True,
                         "extraction_rate": f"{extracted_count}/{total_elements}",

@@ -1,0 +1,774 @@
+{
+  "metadata": {
+    "extraction_timestamp": "20250520_084843",
+    "verification_timestamp": "20250520_090138",
+    "total_files": 5
+  },
+  "results": {
+    "0704.1810": {
+      "file": "0704.1810",
+      "methods": {
+        "ast": {
+          "overall_score": 87.5,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "No citations to validate"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "No tables to validate"
+            }
+          }
+        },
+        "pattern": {
+          "overall_score": 75.0,
+          "verifications": {
+            "title": {
+              "is_valid": false,
+              "reason": "Title contains newlines"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "No equations to validate"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        },
+        "llm": {
+          "overall_score": 75.0,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": false,
+              "reason": "First text sample too short (0 chars)"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": false,
+              "reason": "Equation 1 has empty LaTeX content"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        },
+        "all": {
+          "overall_score": 100.0,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        }
+      }
+    },
+    "0704.0978": {
+      "file": "0704.0978",
+      "methods": {
+        "ast": {
+          "overall_score": 87.5,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "No equations to validate"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "No citations to validate"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "No tables to validate"
+            }
+          }
+        },
+        "pattern": {
+          "overall_score": 100.0,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        },
+        "llm": {
+          "overall_score": 62.5,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": false,
+              "reason": "First text sample too short (0 chars)"
+            },
+            "display_equations": {
+              "is_valid": false,
+              "reason": "Equation 0 has unbalanced delimiters: ^$ & Absorption & $$V_{1/2"
+            },
+            "inline_equations": {
+              "is_valid": false,
+              "reason": "Equation 1 has empty LaTeX content"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        },
+        "all": {
+          "overall_score": 100.0,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        }
+      }
+    },
+    "0704.0138": {
+      "file": "0704.0138",
+      "methods": {
+        "ast": {
+          "overall_score": 87.5,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "No citations to validate"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "No tables to validate"
+            }
+          }
+        },
+        "pattern": {
+          "overall_score": 75.0,
+          "verifications": {
+            "title": {
+              "is_valid": false,
+              "reason": "Title contains newlines"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "No equations to validate"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        },
+        "llm": {
+          "overall_score": 75.0,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": false,
+              "reason": "First text sample too short (0 chars)"
+            },
+            "display_equations": {
+              "is_valid": false,
+              "reason": "Equation 2 has unbalanced delimiters: = +-^{2})}}{^{2}+4}}"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        },
+        "all": {
+          "overall_score": 100.0,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        }
+      }
+    },
+    "0710.1454": {
+      "file": "0710.1454",
+      "methods": {
+        "ast": {
+          "overall_score": 75.0,
+          "verifications": {
+            "title": {
+              "is_valid": false,
+              "reason": "Title contains newlines"
+            },
+            "abstract": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "No citations to validate"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "No tables to validate"
+            }
+          }
+        },
+        "pattern": {
+          "overall_score": 87.5,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "No equations to validate"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "No tables to validate"
+            }
+          }
+        },
+        "llm": {
+          "overall_score": 75.0,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": false,
+              "reason": "First text sample too short (0 chars)"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": false,
+              "reason": "Equation 1 has empty LaTeX content"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        },
+        "all": {
+          "overall_score": 87.5,
+          "verifications": {
+            "title": {
+              "is_valid": false,
+              "reason": "Title contains newlines"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "Valid"
+            }
+          }
+        }
+      }
+    },
+    "0704.1233": {
+      "file": "0704.1233",
+      "methods": {
+        "ast": {
+          "overall_score": 75.0,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "year": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "No citations to validate"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "No tables to validate"
+            }
+          }
+        },
+        "pattern": {
+          "overall_score": 75.0,
+          "verifications": {
+            "title": {
+              "is_valid": false,
+              "reason": "Title contains newlines"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": false,
+              "reason": "Not extracted"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "No equations to validate"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "No tables to validate"
+            }
+          }
+        },
+        "llm": {
+          "overall_score": 87.5,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": false,
+              "reason": "First text sample too short (0 chars)"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "No tables to validate"
+            }
+          }
+        },
+        "all": {
+          "overall_score": 100.0,
+          "verifications": {
+            "title": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "abstract": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "year": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "main_text": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "display_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "inline_equations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "citations": {
+              "is_valid": true,
+              "reason": "Valid"
+            },
+            "tables": {
+              "is_valid": true,
+              "reason": "No tables to validate"
+            }
+          }
+        }
+      }
+    }
+  }
+}

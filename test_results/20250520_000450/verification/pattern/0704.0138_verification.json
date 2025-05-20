@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "original_file": "0704.0138.tex",
+    "extraction_method": "pattern",
+    "verification_timestamp": "20250520_090735"
+  },
+  "verifications": {
+    "title": {
+      "is_valid": false,
+      "reason": "Title contains newlines",
+      "extracted_value": "Circular and non-circular nearly horizon-skimming orbits in\n  Kerr spacetimes"
+    },
+    "abstract": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "We have performed a detailed analysis of orbital motion in the\n  vicinity of a nearly extremal Kerr ..."
+    },
+    "year": {
+      "is_valid": false,
+      "reason": "Not extracted",
+      "extracted_value": null
+    },
+    "main_text": {
+      "is_valid": true,
+      "reason": "Valid",
+      "extracted_value": "Text sample available"
+    },
+    "display_equations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 5
+    },
+    "inline_equations": {
+      "is_valid": true,
+      "reason": "No equations to validate",
+      "count": 0
+    },
+    "citations": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 33
+    },
+    "tables": {
+      "is_valid": true,
+      "reason": "Valid",
+      "count": 1
+    }
+  },
+  "overall_score": 75.0
+}
