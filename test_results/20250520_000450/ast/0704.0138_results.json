@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "original_file": "0704.0138.tex",
+    "extraction_method": "ast",
+    "timestamp": "20250520_000450"
+  },
+  "results": {
+    "title": "Circular and non-circular nearly horizon-skimming orbits in Kerr spacetimes",
+    "abstract": null,
+    "year": "2025",
+    "main_text_sample": {
+      "first_500": "The space-based gravitational-wave detector LISA  will be a unique tool to probe the nature of supermassive black holes (SMBHs), making it possible to map in detail their spacetimes. This goal is expected to be achieved by observing gravitational waves emitted by compact stars or black holes with masses [MATH: \\mu \\approx 1 -\n100\\,M_\\odot] spiraling into the SMBHs which reside in the center of galaxies  (particularly the low end of the galactic center black hole mass function, [MATH: M \\approx 1",
+      "last_500": "clination angle of both circular and eccentric nearly horizon-skimming orbits never decreases during the inspiral. Revising the results obtained in Ref. , we thus conclude that such orbits are not likely to yield a peculiar, unique imprint on the EMRI-waveforms detectable by LISA. In this Appendix we report the expressions for the post-Newtonian fluxes and the fits to the Teukolsky data necessary to compute the kludge fluxes introduced in Sec. . In particular the [MATH: 2]PN fluxes are given by "
+    },
+    "citations": [],
+    "display_equations": [
+      {
+        "latex": "\\begin{aligned}\n\\label{Kerr}\nds^2 &=& \n- \\left( 1-\\frac{2Mr}{\\Sigma} \\right) ~dt^2\n+ \\frac{\\Sigma}{\\Delta}~dr^2\n+ \\Sigma~d\\theta^2 \\nonumber \\\\\n&&+ \\left( r^2+a^2 + \\frac{2Ma^2r}{\\Sigma}\\sin^2\\theta \\right)\\sin^2\\theta~d\\phi^2 \\nonumber \\\\\n&&- \\frac{4Mar}{\\Sigma}\\sin^2\\theta~dt~d\\phi,\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n& \\Sigma \\equiv r^2 + a^2\\cos^2\\theta, & \\Delta \\equiv r^2 - 2Mr + a^2. &\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\frac{d\\tau}{d\\lambda}\\equiv\\Sigma\\;,",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n&\\left(\\mu\\frac{dr}{d\\lambda}\\right)^2 = V_r(r), &\n&\\mu\\frac{dt}{d\\lambda} = V_t(r,\\theta),&\n\\nonumber \\\\\n&\\left(\\mu\\frac{d\\theta}{d\\lambda}\\right)^2 = V_\\theta(\\theta), &\n&\\mu\\frac{d\\phi}{d\\lambda} = V_\\phi(r,\\theta)\\;,&\n \\label{geodesics}\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\label{detailed geodesics}\n\\begin{align}\n&V_t(r,\\theta)\n  \\equiv E \\left( \\frac{\\varpi^4}{\\Delta} - a^2\\sin^2\\theta \\right)\n     + aL_z \\left( 1 - \\frac{\\varpi^2}{\\Delta} \\right),&\n\\label{tdot} \\\\\n&V_r(r)\n  \\equiv \\left( E\\varpi^2 - a L_z \\right)^2\n  - \\Delta\\left[\\mu^2 r^2 + (L_z - a E)^2 + Q\\right],&\n\\label{rdot}\\\\\n&V_\\theta(\\theta) \\equiv Q - L_z^2 \\cot^2\\theta - a^2(\\mu^2 - E^2)\\cos^2\\theta,&\n\\label{thetadot}\\\\\n&V_\\phi(r,\\theta)\n  \\equiv L_z \\csc^2\\theta + aE\\left(\\frac{\\varpi^2}{\\Delta} - 1\\right) - \\frac{a^2L_z}{\\Delta},&\n\\label{phidot}\n\\end{align}",
+        "is_display": true,
+        "is_equation": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "\\mu \\approx 1 -\n100\\,M_\\odot",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "M \\approx 10^5 - 10^7\\,M_\\odot",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "a/M \\equiv J/M^2 \\sim 0.6 - 0.8",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "a = M",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "r = M",
+        "is_display": false,
+        "is_equation": true
+      }
+    ],
+    "tables": [],
+    "extraction_method": {
+      "title": "ast",
+      "abstract": null,
+      "year": "ast",
+      "main_text": "ast",
+      "citations": null,
+      "display_equations": "ast",
+      "inline_equations": "ast",
+      "tables": null
+    }
+  }
+}

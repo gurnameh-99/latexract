@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "original_file": "0704.0138.tex",
+    "extraction_method": "all",
+    "timestamp": "20250520_000450"
+  },
+  "results": {
+    "title": "Circular and non-circular nearly horizon-skimming orbits in Kerr spacetimes",
+    "abstract": "We have performed a detailed analysis of orbital motion in the\n  vicinity of a nearly extremal Kerr black hole.  For very rapidly\n  rotating black holes --- spin parameter $a \\equiv J/M > 0.9524M$ ---\n  we have found a class of very strong field eccentric orbits whose\n  orbital angular momentum $L_z$ increases with the orbit's\n  inclination with respect to the equatorial plane, while keeping\n  latus rectum and eccentricity fixed.  This behavior is in contrast\n  with Newtonian intuition, and is in fact opposite to the ``normal''\n  behavior of black hole orbits.  Such behavior was noted previously\n  for circular orbits; since it only applies to orbits very close to\n  the black hole, they were named ``nearly horizon-skimming orbits''.\n  Our current analysis generalizes this result, mapping out the full\n  generic (inclined and eccentric) family of nearly horizon-skimming\n  orbits.  The earlier work on circular orbits reported that, under\n  gravitational radiation emission, nearly horizon-skimming orbits\n  exhibit unusual inspiral, tending to evolve to smaller orbit\n  inclination, toward prograde equatorial configuration.  Normal\n  orbits, by contrast, always demonstrate slowly {\\it growing} orbit\n  inclination --- orbits evolve toward the retrograde equatorial\n  configuration.  Using up-to-date Teukolsky-based fluxes, we have\n  concluded that the earlier result was incorrect --- all circular orbits, {\\it\n  including nearly horizon-skimming ones}, exhibit growing orbit\n  inclination under radiative backreaction. Using kludge fluxes based on\n  a Post-Newtonian expansion corrected with fits to circular and to equatorial Teukolsky-based fluxes,\n  we argue that the inclination grows also for eccentric nearly horizon-skimming orbits.\n  We also find that the inclination change is, in any case, very small.  As such, we\n  conclude that these orbits are {\\it not} likely to have a clear\n  and peculiar imprint on the gravitational waveforms expected to be\n  measured by the space-based detector LISA.",
+    "year": "2007",
+    "main_text_sample": {
+      "first_500": "The space-based gravitational-wave detector LISA  will be a unique tool to probe the nature of supermassive black holes (SMBHs), making it possible to map in detail their spacetimes. This goal is expected to be achieved by observing gravitational waves emitted by compact stars or black holes with masses [MATH: \\mu \\approx 1 -\n100\\,M_\\odot] spiraling into the SMBHs which reside in the center of galaxies  (particularly the low end of the galactic center black hole mass function, [MATH: M \\approx 1",
+      "last_500": "clination angle of both circular and eccentric nearly horizon-skimming orbits never decreases during the inspiral. Revising the results obtained in Ref. , we thus conclude that such orbits are not likely to yield a peculiar, unique imprint on the EMRI-waveforms detectable by LISA. In this Appendix we report the expressions for the post-Newtonian fluxes and the fits to the Teukolsky data necessary to compute the kludge fluxes introduced in Sec. . In particular the [MATH: 2]PN fluxes are given by "
+    },
+    "citations": [
+      {
+        "key": "LISA",
+        "label": null,
+        "text": "http://lisa.nasa.gov/; http://sci.esa.int/home/lisa/"
+      },
+      {
+        "key": "SMBH",
+        "label": null,
+        "text": "J.\\ Kormendy and D.\\ Richstone, \\ 33, 581 (1995)."
+      },
+      {
+        "key": "gair_event_rates",
+        "label": null,
+        "text": "J.\\ R.\\ Gair, L.\\ Barack, T.\\ Creighton, C.\\ Cutler, S.\\ L.\\ Larson, E.\\ S.\\ Phinney, and M.\\ Vallisneri, \\ 21, S1595 (2004)."
+      },
+      {
+        "key": "shapiro",
+        "label": null,
+        "text": "S.\\ L.\\ Shapiro, \\ 620, 59 (2005)."
+      },
+      {
+        "key": "rezzolla03",
+        "label": null,
+        "text": "L.\\ Rezzolla, T.\\ W.\\ Maccarone, S.\\ Yoshida, and O.\\ Zanotti, \\ 344, L37 (2003)."
+      },
+      {
+        "key": "shafee_etal",
+        "label": null,
+        "text": "R.\\ Shafee, J.\\ E.\\ McClintock, R.\\ Narayan, S.\\ W.\\ Davis, L.-X.\\ Li, and R.\\ A.\\ Remilland, Astrophys.\\ J.\\ 636, L113 (2006)."
+      },
+      {
+        "key": "mcclintock_etal",
+        "label": null,
+        "text": "J.\\ E.\\ McClintock, R.\\ Shafee, R.\\ Narayan, R.\\ A.\\ Remilland, S.\\ W.\\ Davis, and L.-X.\\ Li, Astrophys.\\ J.\\ 652, 518 (2006)."
+      },
+      {
+        "key": "iron_line_rev",
+        "label": null,
+        "text": "A.\\ C.\\ Fabian and G.\\ Miniutti, G.\\ 2005, to appear in Kerr Spacetime: Rotating Black Holes in General Relativity, edited by D.\\ L.\\ Wiltshire, M.\\ Visser, and S.\\ M.\\ Scott; astro-ph/0507409."
+      },
+      {
+        "key": "iron_line_res",
+        "label": null,
+        "text": "L.\\ W.\\ Brenneman and C.\\ S.\\ Reynolds, Astrophys.\\ J.\\ 652, 1028 (2006)."
+      },
+      {
+        "key": "spin_measurements",
+        "label": null,
+        "text": "L.\\ Barack and C.\\ Cutler, \\ 69, 082005 (2004)."
+      },
+      {
+        "key": "volonteri",
+        "label": null,
+        "text": "M.\\ Volonteri, P.\\ Madau, E.\\ Quataert, and M.\\ J.\\ Rees, \\ 620, 69 (2005)."
+      },
+      {
+        "key": "wilkins",
+        "label": null,
+        "text": "D.\\ C.\\ Wilkins, \\ 5, 814 (1972)."
+      },
+      {
+        "key": "bpt",
+        "label": null,
+        "text": "J.\\ M.\\ Bardeen, W.\\ H.\\ Press, and S.\\ A.\\ Teukolsky, \\ 178, 347 (1972)."
+      },
+      {
+        "key": "skimming",
+        "label": null,
+        "text": "S.\\ A.\\ Hughes, \\ 63, 064016 (2001)."
+      },
+      {
+        "key": "membrane",
+        "label": null,
+        "text": "K.\\ S.\\ Thorne, R.\\ H.\\ Price, and D.\\ A.\\ MacDonald, Black Holes: The Membrane Paradigm (Yale University Press, New Haven, CT, 1986)."
+      },
+      {
+        "key": "fintan_circ",
+        "label": null,
+        "text": "F.\\ D.\\ Ryan, \\ 52, R3159 (1995)."
+      },
+      {
+        "key": "first_code",
+        "label": null,
+        "text": "S.\\ A.\\ Hughes, \\ 61, 084004 (2000)."
+      },
+      {
+        "key": "Carter",
+        "label": null,
+        "text": "B.\\ Carter, Phys.\\ Rev.\\ 174, 1559 (1968)."
+      },
+      {
+        "key": "thorne_spin",
+        "label": null,
+        "text": "K.\\ S.\\ Thorne, \\ 191, 507 (1974)."
+      },
+      {
+        "key": "Mino_adiabatic",
+        "label": null,
+        "text": "Y. Mino, Phys.\\ Rev.\\ D 67, 084027 (2003)"
+      },
+      {
+        "key": "hughes_drasco",
+        "label": null,
+        "text": "S.\\ Drasco and S.\\ A.\\ Hughes, \\ 73, 024027 (2006)."
+      },
+      {
+        "key": "sago",
+        "label": null,
+        "text": "N.\\ Sago, T.\\ Tanaka, W.\\ Hikida, and H.\\ Nakano, Prog.\\ Theor.\\ Phys.\\ 114, 509 (2005); N.\\ Sago, T.\\ Tanaka, W.\\ Hikida, K.\\ Ganz, and H.\\ Nakano, Prog.\\ Theor.\\ Phys.\\ 115, 873 (2006)."
+      },
+      {
+        "key": "kludge_hughes",
+        "label": null,
+        "text": "K.\\ Glampedakis, S.\\ A.\\ Hughes, and D.\\ Kennefick, \\ 66, 064005 (2002)."
+      },
+      {
+        "key": "GG_kludge_fluxes",
+        "label": null,
+        "text": "J.\\ R.\\ Gair and K.\\ Glampedakis, \\ 73, 064037 (2006)."
+      },
+      {
+        "key": "MTW",
+        "label": null,
+        "text": "C.\\ W.\\ Misner, K.\\ S.\\ Thorne, and J.\\ A.\\ Wheeler, Gravitation (Freeman, San Francisco, 1973)."
+      },
+      {
+        "key": "schmidt",
+        "label": null,
+        "text": "W.\\ Schmidt, \\ 19, 2743 (2002)."
+      },
+      {
+        "key": "Thorne_Ori",
+        "label": null,
+        "text": "A. Ori and K. S. Thorne, Phys.\\ Rev.\\ D 62, 124022 (2000)"
+      },
+      {
+        "key": "teukolsky",
+        "label": null,
+        "text": "S.\\ A.\\ Teukolsky, \\ 185, 635 (1973)."
+      },
+      {
+        "key": "sasaknak",
+        "label": null,
+        "text": "M.\\ Sasaki and T.\\ Nakamura, Prog.\\ Theor.\\ Phys.\\ 67, 1788 (1982)."
+      },
+      {
+        "key": "ryan_circ",
+        "label": null,
+        "text": "F.\\ D.\\ Ryan, Phys.\\ Ref.\\ D 53, 3064 (1996)."
+      },
+      {
+        "key": "kennefick_ori",
+        "label": null,
+        "text": "D.\\ Kennefick and A.\\ Ori, Phys.\\ Rev.\\ D 53, 4319 (1996)."
+      },
+      {
+        "key": "mino_circ",
+        "label": null,
+        "text": "Y.\\ Mino, unpublished Ph.\\ D.\\ thesis, Kyoto University, 1996."
+      },
+      {
+        "key": "data",
+        "label": null,
+        "text": "Data available at http://gmunu.mit.edu/sdrasco/snapshots/"
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "\\begin{aligned}\n\\label{Kerr}\nds^2 &=& \n- \\left( 1-\\frac{2Mr}{\\Sigma} \\right) ~dt^2\n+ \\frac{\\Sigma}{\\Delta}~dr^2\n+ \\Sigma~d\\theta^2 \\nonumber \\\\\n&&+ \\left( r^2+a^2 + \\frac{2Ma^2r}{\\Sigma}\\sin^2\\theta \\right)\\sin^2\\theta~d\\phi^2 \\nonumber \\\\\n&&- \\frac{4Mar}{\\Sigma}\\sin^2\\theta~dt~d\\phi,\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>d</mi><msup><mi>s</mi><mn>2</mn></msup><mo>&#x0003D;</mo><mo>&#x02212;</mo><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">&#x00028;</mo><mn>1</mn><mo>&#x02212;</mo><mfrac><mrow><mn>2</mn><mi>M</mi><mi>r</mi></mrow><mrow><mi>&#x003A3;</mi></mrow></mfrac><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">&#x00029;</mo></mrow><mi>d</mi><msup><mi>t</mi><mn>2</mn></msup><mo>&#x0002B;</mo><mfrac><mrow><mi>&#x003A3;</mi></mrow><mrow><mi>&#x00394;</mi></mrow></mfrac><mi>d</mi><msup><mi>r</mi><mn>2</mn></msup><mo>&#x0002B;</mo><mi>&#x003A3;</mi><mi>d</mi><msup><mi>&#x003B8;</mi><mn>2</mn></msup><mi>\\nonumber</mi><mo>&#x0002B;</mo><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">&#x00028;</mo><msup><mi>r</mi><mn>2</mn></msup><mo>&#x0002B;</mo><msup><mi>a</mi><mn>2</mn></msup><mo>&#x0002B;</mo><mfrac><mrow><mn>2</mn><mi>M</mi><msup><mi>a</mi><mn>2</mn></msup><mi>r</mi></mrow><mrow><mi>&#x003A3;</mi></mrow></mfrac><msup><mi>sin</mi><mn>2</mn></msup><mi>&#x003B8;</mi><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">&#x00029;</mo></mrow><msup><mi>sin</mi><mn>2</mn></msup><mi>&#x003B8;</mi><mi>d</mi><msup><mi>&#x003D5;</mi><mn>2</mn></msup><mi>\\nonumber</mi><mo>&#x02212;</mo><mfrac><mrow><mn>4</mn><mi>M</mi><mi>a</mi><mi>r</mi></mrow><mrow><mi>&#x003A3;</mi></mrow></mfrac><msup><mi>sin</mi><mn>2</mn></msup><mi>&#x003B8;</mi><mi>d</mi><mi>t</mi><mi>d</mi><mi>&#x003D5;</mi><mo>&#x0002C;</mo></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "\\begin{aligned}\n& \\Sigma \\equiv r^2 + a^2\\cos^2\\theta, & \\Delta \\equiv r^2 - 2Mr + a^2. &\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003A3;</mi><mo>&#x02261;</mo><msup><mi>r</mi><mn>2</mn></msup><mo>&#x0002B;</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>cos</mi><mn>2</mn></msup><mi>&#x003B8;</mi><mo>&#x0002C;</mo><mi>&#x00394;</mi><mo>&#x02261;</mo><msup><mi>r</mi><mn>2</mn></msup><mo>&#x02212;</mo><mn>2</mn><mi>M</mi><mi>r</mi><mo>&#x0002B;</mo><msup><mi>a</mi><mn>2</mn></msup><mo>&#x0002E;</mo></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "\\frac{d\\tau}{d\\lambda}\\equiv\\Sigma\\;,",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mfrac><mrow><mi>d</mi><mi>&#x003C4;</mi></mrow><mrow><mi>d</mi><mi>&#x003BB;</mi></mrow></mfrac><mo>&#x02261;</mo><mi>&#x003A3;</mi><mspace width=\"0.278em\" /><mo>&#x0002C;</mo></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "\\begin{aligned}\n&\\left(\\mu\\frac{dr}{d\\lambda}\\right)^2 = V_r(r), &\n&\\mu\\frac{dt}{d\\lambda} = V_t(r,\\theta),&\n\\nonumber \\\\\n&\\left(\\mu\\frac{d\\theta}{d\\lambda}\\right)^2 = V_\\theta(\\theta), &\n&\\mu\\frac{d\\phi}{d\\lambda} = V_\\phi(r,\\theta)\\;,&\n \\label{geodesics}\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">&#x00028;</mo><mi>&#x003BC;</mi><mfrac><mrow><mi>d</mi><mi>r</mi></mrow><mrow><mi>d</mi><mi>&#x003BB;</mi></mrow></mfrac><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">&#x00029;</mo></mrow><mn>2</mn></msup><mo>&#x0003D;</mo><msub><mi>V</mi><mi>r</mi></msub><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002C;</mo><mi>&#x003BC;</mi><mfrac><mrow><mi>d</mi><mi>t</mi></mrow><mrow><mi>d</mi><mi>&#x003BB;</mi></mrow></mfrac><mo>&#x0003D;</mo><msub><mi>V</mi><mi>t</mi></msub><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002C;</mo><mi>&#x003B8;</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002C;</mo><mi>\\nonumber</mi><msup><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">&#x00028;</mo><mi>&#x003BC;</mi><mfrac><mrow><mi>d</mi><mi>&#x003B8;</mi></mrow><mrow><mi>d</mi><mi>&#x003BB;</mi></mrow></mfrac><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">&#x00029;</mo></mrow><mn>2</mn></msup><mo>&#x0003D;</mo><msub><mi>V</mi><mi>&#x003B8;</mi></msub><mo stretchy=\"false\">&#x00028;</mo><mi>&#x003B8;</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002C;</mo><mi>&#x003BC;</mi><mfrac><mrow><mi>d</mi><mi>&#x003D5;</mi></mrow><mrow><mi>d</mi><mi>&#x003BB;</mi></mrow></mfrac><mo>&#x0003D;</mo><msub><mi>V</mi><mi>&#x003D5;</mi></msub><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002C;</mo><mi>&#x003B8;</mi><mo stretchy=\"false\">&#x00029;</mo><mspace width=\"0.278em\" /><mo>&#x0002C;</mo></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "\\label{detailed geodesics}\n\\begin{align}\n&V_t(r,\\theta)\n  \\equiv E \\left( \\frac{\\varpi^4}{\\Delta} - a^2\\sin^2\\theta \\right)\n     + aL_z \\left( 1 - \\frac{\\varpi^2}{\\Delta} \\right),&\n\\label{tdot} \\\\\n&V_r(r)\n  \\equiv \\left( E\\varpi^2 - a L_z \\right)^2\n  - \\Delta\\left[\\mu^2 r^2 + (L_z - a E)^2 + Q\\right],&\n\\label{rdot}\\\\\n&V_\\theta(\\theta) \\equiv Q - L_z^2 \\cot^2\\theta - a^2(\\mu^2 - E^2)\\cos^2\\theta,&\n\\label{thetadot}\\\\\n&V_\\phi(r,\\theta)\n  \\equiv L_z \\csc^2\\theta + aE\\left(\\frac{\\varpi^2}{\\Delta} - 1\\right) - \\frac{a^2L_z}{\\Delta},&\n\\label{phidot}\n\\end{align}",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>V</mi><mi>t</mi></msub><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002C;</mo><mi>&#x003B8;</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x02261;</mo><mi>E</mi><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">&#x00028;</mo><mfrac><mrow><msup><mi>&#x003D6;</mi><mn>4</mn></msup></mrow><mrow><mi>&#x00394;</mi></mrow></mfrac><mo>&#x02212;</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>sin</mi><mn>2</mn></msup><mi>&#x003B8;</mi><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">&#x00029;</mo></mrow><mo>&#x0002B;</mo><mi>a</mi><msub><mi>L</mi><mi>z</mi></msub><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">&#x00028;</mo><mn>1</mn><mo>&#x02212;</mo><mfrac><mrow><msup><mi>&#x003D6;</mi><mn>2</mn></msup></mrow><mrow><mi>&#x00394;</mi></mrow></mfrac><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">&#x00029;</mo></mrow><mo>&#x0002C;</mo><msub><mi>V</mi><mi>r</mi></msub><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x02261;</mo><msup><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">&#x00028;</mo><mi>E</mi><msup><mi>&#x003D6;</mi><mn>2</mn></msup><mo>&#x02212;</mo><mi>a</mi><msub><mi>L</mi><mi>z</mi></msub><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">&#x00029;</mo></mrow><mn>2</mn></msup><mo>&#x02212;</mo><mi>&#x00394;</mi><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">[</mo><msup><mi>&#x003BC;</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x00028;</mo><msub><mi>L</mi><mi>z</mi></msub><mo>&#x02212;</mo><mi>a</mi><mi>E</mi><msup><mo stretchy=\"false\">&#x00029;</mo><mn>2</mn></msup><mo>&#x0002B;</mo><mi>Q</mi><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">]</mo></mrow><mo>&#x0002C;</mo><msub><mi>V</mi><mi>&#x003B8;</mi></msub><mo stretchy=\"false\">&#x00028;</mo><mi>&#x003B8;</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x02261;</mo><mi>Q</mi><mo>&#x02212;</mo><msubsup><mi>L</mi><mi>z</mi><mn>2</mn></msubsup><msup><mi>cot</mi><mn>2</mn></msup><mi>&#x003B8;</mi><mo>&#x02212;</mo><msup><mi>a</mi><mn>2</mn></msup><mo stretchy=\"false\">&#x00028;</mo><msup><mi>&#x003BC;</mi><mn>2</mn></msup><mo>&#x02212;</mo><msup><mi>E</mi><mn>2</mn></msup><mo stretchy=\"false\">&#x00029;</mo><msup><mi>cos</mi><mn>2</mn></msup><mi>&#x003B8;</mi><mo>&#x0002C;</mo><msub><mi>V</mi><mi>&#x003D5;</mi></msub><mo stretchy=\"false\">&#x00028;</mo><mi>r</mi><mo>&#x0002C;</mo><mi>&#x003B8;</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x02261;</mo><msub><mi>L</mi><mi>z</mi></msub><msup><mi>csc</mi><mn>2</mn></msup><mi>&#x003B8;</mi><mo>&#x0002B;</mo><mi>a</mi><mi>E</mi><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">&#x00028;</mo><mfrac><mrow><msup><mi>&#x003D6;</mi><mn>2</mn></msup></mrow><mrow><mi>&#x00394;</mi></mrow></mfrac><mo>&#x02212;</mo><mn>1</mn><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">&#x00029;</mo></mrow><mo>&#x02212;</mo><mfrac><mrow><msup><mi>a</mi><mn>2</mn></msup><msub><mi>L</mi><mi>z</mi></msub></mrow><mrow><mi>&#x00394;</mi></mrow></mfrac><mo>&#x0002C;</mo></mrow></math>",
+        "verified": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "\\mu \\approx 1 -\n100\\,M_\\odot",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003BC;</mi><mo>&#x02248;</mo><mn>1</mn><mo>&#x02212;</mo><mn>100</mn><mspace width=\"0.167em\" /><msub><mi>M</mi><mo>&#x02299;</mo></msub></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "M \\approx 10^5 - 10^7\\,M_\\odot",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>M</mi><mo>&#x02248;</mo><msup><mn>10</mn><mn>5</mn></msup><mo>&#x02212;</mo><msup><mn>10</mn><mn>7</mn></msup><mspace width=\"0.167em\" /><msub><mi>M</mi><mo>&#x02299;</mo></msub></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "a/M \\equiv J/M^2 \\sim 0.6 - 0.8",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>a</mi><mo>&#x0002F;</mo><mi>M</mi><mo>&#x02261;</mo><mi>J</mi><mo>&#x0002F;</mo><msup><mi>M</mi><mn>2</mn></msup><mi>&#x0007E;</mi><mn>0.6</mn><mo>&#x02212;</mo><mn>0.8</mn></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "a = M",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>a</mi><mo>&#x0003D;</mo><mi>M</mi></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "r = M",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi><mo>&#x0003D;</mo><mi>M</mi></mrow></math>",
+        "verified": true
+      }
+    ],
+    "tables": [
+      {
+        "caption": "Unknown caption",
+        "content": "\\begin{table}[h]\n\\begin{tabular}{|c|c|c|c|c|c|c|c|c|}\n\\hline\n\\T \\B$i$ & \\B1 &\\B2 &\\B3 &\\B4 &\\B5 &\\B6 &\\B7 &\\B8\\\\\n\\hline\n\\T \\B$a_d^i$ & 15.8363 & 445.4418 & $-$2027.7797 & 3089.1709 & $-$2045.2248 & 498.6411 & $-$8.7220 & 50.8345 \\\\\n\\T \\B$b_d^i$ & $-$55.6777 & $-$1333.2461 & 5940.4831 & $-$9103.4472 & 6113.1165 & $-$1515.8506 & $-$50.8950 & $-$131.6422 \\\\\n\\T \\B$c_d^i$ & 38.6405  & 1049.5637 & $-$4513.0879 & 6926.3191 &-4714.9633 & 1183.5875 & 251.4025& 83.0834\\\\\n\\hline\n\\end{tabular}\n\\label{table:a_d_i_coefficients}\n\\end{table}",
+        "structured_format": {
+          "column_spec": "{|c|c|c|c|c|c|c|c|c|}",
+          "column_count": 9,
+          "rows": [
+            [
+              "",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            [
+              "_d^i",
+              "15.8363",
+              "445.4418",
+              "-2027.7797",
+              "3089.1709",
+              "-2045.2248",
+              "498.6411",
+              "-8.7220",
+              "50.8345"
+            ],
+            [
+              "_d^i",
+              "-55.6777",
+              "-1333.2461",
+              "5940.4831",
+              "-9103.4472",
+              "6113.1165",
+              "-1515.8506",
+              "-50.8950",
+              "-131.6422"
+            ],
+            [
+              "_d^i",
+              "38.6405",
+              "1049.5637",
+              "-4513.0879",
+              "6926.3191",
+              "-4714.9633",
+              "1183.5875",
+              "251.4025",
+              "83.0834"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "verified": true
+        }
+      }
+    ],
+    "extraction_method": {
+      "title": "ast",
+      "abstract": "pattern",
+      "year": "arxiv_id",
+      "main_text": "ast",
+      "citations": "pattern",
+      "display_equations": "ast",
+      "inline_equations": "ast",
+      "tables": "pattern"
+    }
+  }
+}

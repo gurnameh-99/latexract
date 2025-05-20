@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "original_file": "0704.0978.tex",
+    "extraction_method": "all",
+    "timestamp": "20250520_000450"
+  },
+  "results": {
+    "title": "Distribution of the molecular absorption in front of the quasar B0218+357",
+    "abstract": "The line of sight to the quasar B0218+357, one of the most studied lensed systems,\nintercepts a $z = 0.68$ spiral galaxy, which splits its image into two main components A and B,\nseparated by ca. 0.3$\\arcsec$, and gives rise to molecular absorption. Although the main absorption\ncomponent has been shown to arise in front of image A, it is not established whether some\nabsorption from other velocity components is also occuring in front of image B.\nTo tackle this question, we have observed the\nHCO$^+$(2-1) absorption line during the commissioning phase of the new very extended configuration\nof the Plateau de Bure Interferometer, in order to trace the position of the absorption as a function\nof frequency. Visibility fitting of the self-calibrated data allowed us to achieve position\naccuracy between $\\sim$ 12 and 80 mas per velocity component. Our results clearly demonstrate that\nall the different velocity components of the HCO$^+$(2-1) absorption arise in front of the south-west\nimage A of the quasar. We estimate a flux ratio $f_A/f_B = 4.2 _{-1.0",
+    "year": "2007",
+    "main_text_sample": {
+      "first_500": "Molecular absorption at intermediate redshifts has been detected only in a few objects ( ). Among these, three absorption systems are caused by a galaxy lying on the line-of-sight of a quasar and acting as a gravitational lens. Two systems, one in front of PKS1830[MATH: -]211 (at [MATH: z=0.89]), the other in front of B0218+357 (at [MATH: z=0.68]) are detected at millimeter wavelengths in the lines of several molecules, including HCO[MATH: ^+], HCN and H[MATH: _2]CO. The light rays associated wi",
+      "last_500": "in front of B and, presumably, a low average molecular hydrogen column density, or a low filling factor ([MATH: f_c] [MATH: <] 0.2). We derive a flux ratio [MATH: f_A/f_B = 4.2 _{-1.0} ^{+1.8}] for the two main components, A and B, at 106 GHz, which is slightly higher than those derived between 15 and 22 GHz and almost twice larger than observed at frequencies around 2 GHz. This measurement, strictly speaking, applies only to Nov 8 & 9, 2005, the dates of our extended configuration observations."
+    },
+    "citations": [
+      {
+        "key": "big99",
+        "label": "Biggs et al.(1999)",
+        "text": "Biggs, A. D., et al., 1999, , 304, 349"
+      },
+      {
+        "key": "big03",
+        "label": "Biggs et al.(2003)",
+        "text": "Biggs, A. D., et al., 2003, , 338, 599"
+      },
+      {
+        "key": "bro93",
+        "label": "Browne et al.(1993)",
+        "text": "Browne, I. W. A., et al., 1993, , 263, L32"
+      },
+      {
+        "key": "car93",
+        "label": "Carilli et al.(1993)",
+        "text": "Carilli, C. L., Rupen, M. P. \\& Yanny, B., 1993, , 412, L59"
+      },
+      {
+        "key": "car00",
+        "label": "Carilli et al.(2000)",
+        "text": "Carilli, C. L., et al., 2000, , 85, 5511"
+      },
+      {
+        "key": "com97",
+        "label": "Combes \\& Wiklind(1997)",
+        "text": "Combes, F. \\& Wiklind, T., 1997, , 486 L79"
+      },
+      {
+        "key": "gru95",
+        "label": "Grundahl \\& Hjorth(1995)",
+        "text": "Grundahl, F. \\& Hjorth, J., 1995, , 275, 67"
+      },
+      {
+        "key": "hen05",
+        "label": "Henkel et al.(2005)",
+        "text": "Henkel, C., et al., 2005, , 440, 893"
+      },
+      {
+        "key": "kan03",
+        "label": "Kanekar et al.(2003)",
+        "text": "Kanekar, N., et al., 2003, , 345, L7"
+      },
+      {
+        "key": "kan05",
+        "label": "Kanekar et al.(2005)",
+        "text": "Kanekar, N., et al., 2005, PhRv, 95, L1301"
+      },
+      {
+        "key": "luc96",
+        "label": "Lucas \\& Liszt(1996)",
+        "text": "Lucas, R. \\& Liszt, H., 1996, , 307, 237"
+      },
+      {
+        "key": "men96",
+        "label": "Menten \\& Reid(1996)",
+        "text": "Menten, K. M. \\& Reid, M. J., 1996, , 465, L99"
+      },
+      {
+        "key": "mit06a",
+        "label": "Mittal et al.(2006a)",
+        "text": "Mittal, R., et al., 2006a, , 447, 515"
+      },
+      {
+        "key": "mit06b",
+        "label": "Mittal et al.(2006b)",
+        "text": "Mittal, R., Porcas, R. \\& Wucknitz, O., 2006b, , 465, 405"
+      },
+      {
+        "key": "mul06",
+        "label": "Muller et al.(2006)",
+        "text": "Muller, S., et al., 2006, , 458, 417"
+      },
+      {
+        "key": "ode92",
+        "label": "O'Dea et al.(1992)",
+        "text": "O'Dea, C. P., et al., 1992, , 104, 1320"
+      },
+      {
+        "key": "pat93",
+        "label": "Patnaik et al.(1993)",
+        "text": "Patnaik, A. R., et al., 1993, , 261, 435"
+      },
+      {
+        "key": "pat95",
+        "label": "Patnaik et al.(1995)",
+        "text": "Patnaik, A. R., et al., 1995, , 274, L5"
+      },
+      {
+        "key": "wik95",
+        "label": "Wiklind \\& Combes(1995)",
+        "text": "Wiklind, T. \\& Combes F., 1995, , 299, 382"
+      },
+      {
+        "key": "wik96",
+        "label": "Wiklind \\& Combes(1996)",
+        "text": "Wiklind, T. \\& Combes, F., 1996, , 315, 86"
+      },
+      {
+        "key": "wik97",
+        "label": "Wiklind \\& Combes(1997)",
+        "text": "Wiklind, T. \\& Combes, F., 1997, , 328, 48"
+      },
+      {
+        "key": "wik98",
+        "label": "Wiklind \\& Combes(1998)",
+        "text": "Wiklind T. \\& Combes F., 1998, , 500, 129"
+      },
+      {
+        "key": "wuc04",
+        "label": "Wucknitz et al.(2004)",
+        "text": "Wucknitz, O., et al., 2004, , 349, 14"
+      },
+      {
+        "key": "yor05",
+        "label": "York et al.(2005)",
+        "text": "York, T., et al., 2005, , 357, 124"
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "^\\dagger$ & Absorption & $\\Delta$V$_{1/2}",
+        "is_display": true,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi /><mi>&#x02020;</mi></msup><mi>$</mi><mi>A</mi><mi>b</mi><mi>s</mi><mi>o</mi><mi>r</mi><mi>p</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>$</mi><mi>&#x00394;</mi><mi>$</mi><mi>V</mi><msub><mi>$</mi><mrow><mn>1</mn><mo>&#x0002F;</mo><mn>2</mn></mrow></msub></mrow></math>",
+        "verified": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "z=0.89",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>z</mi><mo>&#x0003D;</mo><mn>0.89</mn></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "z=0.68",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>z</mi><mo>&#x0003D;</mo><mn>0.68</mn></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "z \\sim 0.89",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>z</mi><mi>&#x0007E;</mi><mn>0.89</mn></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "z = 0.68466",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>z</mi><mo>&#x0003D;</mo><mn>0.68466</mn></mrow></math>",
+        "verified": true
+      },
+      {
+        "latex": "\\sim",
+        "is_display": false,
+        "is_equation": true,
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x0007E;</mi></mrow></math>",
+        "verified": true
+      }
+    ],
+    "tables": [
+      {
+        "caption": "Average positions of the different absorption components. For comparison, the positions\nof images A and B, as fixed in our continuum source model, are indicated.\nOffsets are given relatively to the barycenter of the continuum emission.",
+        "content": "\\begin{table*}[ht]\n\\caption{Average positions of the different absorption components. For comparison, the positions\nof images A and B, as fixed in our continuum source model, are indicated.\nOffsets are given relatively to the barycenter of the continuum emission.}\n\\label{posfit}\n\\begin{center} \\begin{tabular}{cccccc}\n\\hline\nVelocity  & V$_{\\rm HEL}$$^\\dagger$ & Absorption & $\\Delta$V$_{1/2}$$^\\dagger$ & R.A. offset & Dec. offset \\\\\ncomponent & (km~s$^{-1}$) & depth$^\\dagger$ $^\\ddagger$     & (km~s$^{-1}$) & (mas) & (mas) \\\\\n\\hline\na       & $-$6.3    & 0.31 & 4.7   & $-$84 $\\pm$ 36 & +28 $\\pm$ 75 \\\\\nb       & $-$0.3    & 0.32 & 4.5   & $-$73 $\\pm$ 24 & $-$28 $\\pm$ 51 \\\\\nc       & +5.9      & 0.63 & 4.5   & $-$60 $\\pm$ 12 & $-$11 $\\pm$ 26 \\\\\nd       & +10.3     & 0.30 & 4.4   & $-$57 $\\pm$ 38 & $-$27 $\\pm$ 79 \\\\\na+b+c+d & $-10$ to +12 & & & $-$61 $\\pm$ 15 & $-$15 $\\pm$ 32 \\\\\n\\hline\nImage A  &      & & & $-$59        & $-$25 \\\\\nImage B  &      & & & +250          & +103 \\\\\n\\hline\n\\end{tabular} \\end{center}\n\\mbox{\\,} \\vskip -.3cm\n$^\\dagger$ from the fit of the spectrum obtained in the compact configuration (cf. Fig.\\ref{spec}).\\\\\n$^\\ddagger$ with respect to the total continuum intensity.\n\\end{table*}",
+        "structured_format": {
+          "column_spec": "{cccccc}",
+          "column_count": 6,
+          "rows": [
+            [
+              "Velocity",
+              "V_{ HEL}^",
+              "Absorption",
+              "_{1/2}^",
+              "R.A. offset",
+              "Dec. offset"
+            ],
+            [
+              "component",
+              "(km~s^{-1})",
+              "depth^ ^",
+              "(km~s^{-1})",
+              "(mas)",
+              "(mas)"
+            ],
+            [
+              "a",
+              "-6.3",
+              "0.31",
+              "4.7",
+              "-84  36",
+              "+28  75"
+            ],
+            [
+              "b",
+              "-0.3",
+              "0.32",
+              "4.5",
+              "-73  24",
+              "-28  51"
+            ],
+            [
+              "c",
+              "+5.9",
+              "0.63",
+              "4.5",
+              "-60  12",
+              "-11  26"
+            ],
+            [
+              "d",
+              "+10.3",
+              "0.30",
+              "4.4",
+              "-57  38",
+              "-27  79"
+            ],
+            [
+              "a+b+c+d",
+              "-10 to +12",
+              "",
+              "",
+              "-61  15",
+              "-15  32"
+            ],
+            [
+              "Image A",
+              "",
+              "",
+              "",
+              "-59",
+              "-25"
+            ],
+            [
+              "Image B",
+              "",
+              "",
+              "",
+              "+250",
+              "+103"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "verified": true
+        }
+      }
+    ],
+    "extraction_method": {
+      "title": "ast",
+      "abstract": "pattern",
+      "year": "arxiv_id",
+      "main_text": "ast",
+      "citations": "pattern",
+      "display_equations": "pattern",
+      "inline_equations": "ast",
+      "tables": "pattern"
+    }
+  }
+}

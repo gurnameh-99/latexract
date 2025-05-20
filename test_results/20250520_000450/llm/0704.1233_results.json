@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "original_file": "0704.1233.tex",
+    "extraction_method": "llm",
+    "timestamp": "20250520_000450"
+  },
+  "results": {
+    "title": "Residual entropy in a model for the unfolding of single polymer chains",
+    "abstract": "We study the unfolding of a single polymer chain due to an external force. We use a simplified model which allows to perform all calculations in closed form without assuming a Boltzmann-Gibbs form for the equilibrium distribution. Temperature is then defined by calculating the Legendre transform of the entropy under certain constraints. The application of the model is limited to flexible polymers. It exhibits a gradual transition from compact globule to rod. The boundary line between these two phases shows reentrant behavior. This behavior is explained by the presence of residual entropy.",
+    "year": "2024",
+    "main_text_sample": {
+      "first_500": null,
+      "last_500": null
+    },
+    "citations": [
+      {
+        "key": "referee1",
+        "text": "P. Szymczak, M. Cieplak, { Stretching of proteins in a force-clamp,} J. Phys.:Condens. Matter {bf 18}, L21 (2006)"
+      },
+      {
+        "key": "referee2",
+        "text": "M. Schlierf, H. Li, J. M. Fernandez, { The unfolding kinetics of ubiquitin captured with single-molecule force-clamp techniques,} PNAS {bf 101}, 7299 (2004)"
+      },
+      {
+        "key": "referee3",
+        "text": "C. G. Baumann, V. A. Bloomfield, S. B. Smith, C. Bustamante, M. D. Wang, S. M. Block, { Stretching of Single Collapsed DNA Molecules,} Biophys. J. {bf 78}, 1965 (2000)"
+      },
+      {
+        "key": "referee4",
+        "text": "Y. Murayama, Y. Sakamaki, M. Sano, { Elastic Response of Single DNA Molecules Exhibits a Reentrant Collapsing Transition,} Phys. Rev. Lett. {bf 90}, 018102 (2003)"
+      },
+      {
+        "key": "referee5",
+        "text": "A. Halperin, E. B. Zhulina, { On the Deformation Behaviour of Collapsed Polymers,} Europhys. Lett. {bf 15}, 417 (1991)."
+      },
+      {
+        "key": "referee6",
+        "text": "S. Kumar, D. Giri, { Force-induced conformational transition in a system of interacting stiff polymers: Application to unfolding,} Phys. Rev. E. {bf 72}, 052901 (2005)."
+      },
+      {
+        "key": "referee7",
+        "text": "S. Kumar, I. Jensen, J. L. Jacobsen, A. J. Guttmann, { Role of conformational entropy in force-induced biopolymer unfolding,} Phys. Rev. Lett. {bf 98}, 128101 (2007)"
+      },
+      {
+        "key": "referee8",
+        "text": "D. Marenduzzo, A. Maritan, A. Rosa, F. Seno, { Stretching of a Polymer below the $theta$ Point,} Phys. Rev. Lett. {bf 90}, 088301 (2003)"
+      },
+      {
+        "key": "referee8b",
+        "text": "A. Imparato, A. Pelizzola, M. Zamparo, { Protein mechanical unfolding A model with binary variables,} J. Chem. Phys. {bf 127}, 145105 (2007)"
+      },
+      {
+        "key": "referee8bis",
+        "text": "D. Marenduzzo, A. Trovato, A. Maritan, { Phase diagram of force-induced DNA unzipping in exactly solvable models,} Phys. Rev. E {bf 64}, 031901 (2001)"
+      },
+      {
+        "key": "referee9",
+        "text": "E. Van der Straeten, J. Naudts, { A two-parameter random walk with approximate exponential probability distribution,} J. Phys. A: Math. Gen. {bf 39}, 7245 (2006)."
+      },
+      {
+        "key": "referee10",
+        "text": "E. Van der Straeten, J. Naudts, { A one-dimensional model for theoretical analysis of single molecule experiments,} J. Phys. A: Math. Gen. {bf 39}, 5715 (2006)."
+      },
+      {
+        "key": "referee10bis",
+        "text": "I. Claes, C. Van den Broeck, { Random walk with persistence,} J. Stat. Phys. {bf 49}, 383 (1987)"
+      },
+      {
+        "key": "referee11",
+        "text": "J. Naudts, E. Van der Straeten, { Transition records of stationary Markov chains,} Phys. Rev. E. {bf 74}, 040103 (2006)."
+      },
+      {
+        "key": "referee12",
+        "text": "S. Kumar, D. Giri, { Does changing the pulling direction give better insight into biomolecules?,} Phys. Rev. Lett. {bf 98}, 048101 (2007)"
+      },
+      {
+        "key": "referee13",
+        "text": "A. Rosa, D. Marenduzzo, A. Maritan, F. Seno, { Mechanical unfolding of directed polymers in a poor solvent: Critical exponents,} Phys. Rev. E {bf 67}, 041802 (2003)"
+      },
+      {
+        "key": "referee14",
+        "text": "A. Ahsan, J. Rudnick, R. Bruinsma, { Elasticity theory of the B-DNA to S-DNA transition,} Biophys. J. {bf 74}, 132 (1998)"
+      },
+      {
+        "key": "referee15",
+        "text": "P. Cluzel, A. Lebrun, C. Heller, R. Lavery, J.-L. Viovy, D. Chatenay, F. Caron { DNA: An extensible molecule,} Science {bf 271}, 792 (1996)"
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "p()={2–}p()={2–}",
+        "is_display": true
+      },
+      {
+        "latex": "{n}=a, {n}=2(1-)p()=2(1-)p()",
+        "is_display": true
+      },
+      {
+        "latex": "Sn=p()",
+        "is_display": true
+      },
+      {
+        "latex": "G=_{,}{E-F x-{}S}",
+        "is_display": true
+      },
+      {
+        "latex": "aF={2}&&={2h}{(1-)(1-)}",
+        "is_display": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "95%",
+        "is_display": false
+      },
+      {
+        "latex": "55",
+        "is_display": false
+      },
+      {
+        "latex": "4",
+        "is_display": false
+      },
+      {
+        "latex": "T=0.1",
+        "is_display": false
+      },
+      {
+        "latex": "h",
+        "is_display": false
+      }
+    ],
+    "tables": [],
+    "extraction_method": {
+      "title": "llm",
+      "abstract": "llm",
+      "year": "llm",
+      "main_text": null,
+      "citations": "llm",
+      "display_equations": "llm",
+      "inline_equations": "llm",
+      "tables": null
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "original_file": "0704.1233.tex",
+    "extraction_method": "ast",
+    "timestamp": "20250520_000450"
+  },
+  "results": {
+    "title": "Residual entropy in a model for the unfolding of single polymer chains",
+    "abstract": null,
+    "year": null,
+    "main_text_sample": {
+      "first_500": "The unfolding of polymers has been studied for many years. Recently, it became possible to investigate the stability of a single polymer against unfolding by applying a mechanical force to the end-point of the molecule. Tools like optical tweezers, atomic force microscopes and soft microneedles are used in this kind of experiments. The unfolding transition of polymers is a single- or a multi-step process, depending on the experimental conditions. For example, with a force-clamp apparatus one is ",
+      "last_500": "nd{aligned}] After inverting this relation, one can calculate the second derivative of the average end-to-end distance with respect to the force at constant temperature. This second derivative equals zero if the following equation holds [MATH: \\begin{aligned}\n\\label{appr_Fb}\nF&=&-\\frac ha+\\frac{\\ln2}{2a}T.\n\\end{aligned}] This is a low temperature approximation for the boundary line between the globular and stretched phases. The factor [MATH: \\ln2/2a] is clearly a contribution due to the entropy."
+    },
+    "citations": [],
+    "display_equations": [
+      {
+        "latex": "\\begin{aligned}\np(\\rightarrow)=\\frac{1-\\mu}{2-\\epsilon-\\mu}\\ \\ \\textrm{and}\\ \\ p(\\leftarrow)=\\frac{1-\\epsilon}{2-\\epsilon-\\mu}.\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n\\label{gem}\n\\frac{\\langle\nx\\rangle}{n}&=&a\\left[p(\\rightarrow)-p(\\leftarrow)\\right],\n\\cr\n\\frac{\\langle K\\rangle}{n}&=&2(1-\\epsilon)p(\\rightarrow)=2(1-\\mu)p(\\leftarrow),\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n\\frac Sn&=&p(\\rightarrow)\\left[-\\epsilon\\ln\\epsilon-(1-\\epsilon)\\ln(1-\\epsilon)\\right\n]\n\\cr\n&&+p(\\leftarrow)\\left[-\\mu\\ln\\mu-(1-\\mu)\\ln(1-\\mu)\\right].\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n\\label{Legen}\nG&=&\\inf_{\\epsilon,\\mu}\\left\\{E-F\\langle\nx\\rangle-\\frac{1}{\\beta}S\\right\\}.\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      },
+      {
+        "latex": "\\begin{aligned}\n\\label{connection_model_therm}\naF=\\frac{1}{2\\beta}\\ln\\frac\\epsilon\\mu&\\textrm{and}&\\beta=\\frac{1}{2h}\\ln\\frac{\n\\epsilon\\mu}{(1-\\epsilon)(1-\\mu)}.\n\\end{aligned}",
+        "is_display": true,
+        "is_equation": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "k_\\textrm B=1",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "H=hK",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "\\partial G/\\partial\\epsilon=0",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "\\partial G/\\partial\\mu=0",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "\\epsilon\\neq\\mu",
+        "is_display": false,
+        "is_equation": true
+      }
+    ],
+    "tables": [],
+    "extraction_method": {
+      "title": "ast",
+      "abstract": null,
+      "year": null,
+      "main_text": "ast",
+      "citations": null,
+      "display_equations": "ast",
+      "inline_equations": "ast",
+      "tables": null
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "original_file": "0704.0978.tex",
+    "extraction_method": "ast",
+    "timestamp": "20250520_000450"
+  },
+  "results": {
+    "title": "Distribution of the molecular absorption in front of the quasar B0218+357",
+    "abstract": null,
+    "year": "2007",
+    "main_text_sample": {
+      "first_500": "Molecular absorption at intermediate redshifts has been detected only in a few objects ( ). Among these, three absorption systems are caused by a galaxy lying on the line-of-sight of a quasar and acting as a gravitational lens. Two systems, one in front of PKS1830[MATH: -]211 (at [MATH: z=0.89]), the other in front of B0218+357 (at [MATH: z=0.68]) are detected at millimeter wavelengths in the lines of several molecules, including HCO[MATH: ^+], HCN and H[MATH: _2]CO. The light rays associated wi",
+      "last_500": "in front of B and, presumably, a low average molecular hydrogen column density, or a low filling factor ([MATH: f_c] [MATH: <] 0.2). We derive a flux ratio [MATH: f_A/f_B = 4.2 _{-1.0} ^{+1.8}] for the two main components, A and B, at 106 GHz, which is slightly higher than those derived between 15 and 22 GHz and almost twice larger than observed at frequencies around 2 GHz. This measurement, strictly speaking, applies only to Nov 8 & 9, 2005, the dates of our extended configuration observations."
+    },
+    "citations": [],
+    "display_equations": [],
+    "inline_equations": [
+      {
+        "latex": "z=0.89",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "z=0.68",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "z \\sim 0.89",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "z = 0.68466",
+        "is_display": false,
+        "is_equation": true
+      },
+      {
+        "latex": "\\sim",
+        "is_display": false,
+        "is_equation": true
+      }
+    ],
+    "tables": [],
+    "extraction_method": {
+      "title": "ast",
+      "abstract": null,
+      "year": "ast",
+      "main_text": "ast",
+      "citations": null,
+      "display_equations": null,
+      "inline_equations": "ast",
+      "tables": null
+    }
+  }
+}

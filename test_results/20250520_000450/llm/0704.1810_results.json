@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "original_file": "0704.1810.tex",
+    "extraction_method": "llm",
+    "timestamp": "20250520_000450"
+  },
+  "results": {
+    "title": "A Cascade Model for Particle Concentration and Enstrophy in Fully Developed Turbulence with Mass Loading Feedback",
+    "abstract": "A cascade model is described based on multiplier distributions determined from 3D direct numerical simulations (DNS) of turbulent particle laden flows, which include two-way coupling between the phases at global mass loadings equal to unity. The governing Eulerian equations are solved using psuedo-spectral methods on up to $512^3$ computional grid points. DNS results for particle concentration and enstrophy at Taylor microscale Reynolds numbers in the range 34 - 170 were used to directly determine multiplier distributions on spatial scales 3 times the Kolmogorov length scale. The multiplier probability distribution functions (PDFs) are well characterized by the $\beta$ distribution function. The width of the PDFs, which is a measure of intermittency, decreases with increasing mass loading within the local region where the multipliers are measured. The functional form of this dependence is not sensitive to Reynolds numbers in the range considered. A partition correlation probability is included in the cascade model to account for the observed spatial anticorrelation between particle concentration and enstrophy. Joint probability distribution functions of concentration and enstrophy generated using the cascade model are shown to be in excellent agreement with those derived directly from our 3D simulations. Probabilities predicted by the cascade model are presented at Reynolds numbers well beyond what is achievable by direct simulation. These results clearly indicate that particle mass loading significantly reduces the probabilities of high particle concentration and enstrophy relative to those resulting from unloaded runs. Particle mass density appears to reach a limit at around 100 times the gas density. This approach has promise for significant computational savings in certain applications.",
+    "year": "2023",
+    "main_text_sample": {
+      "first_500": null,
+      "last_500": null
+    },
+    "citations": [
+      {
+        "key": "Squires:4",
+        "text": "K.~D. Squires and J.~K. Eaton, Phys. Fluids A 2, 1191 (1990)"
+      },
+      {
+        "key": "Squires:1",
+        "text": "K.~D. Squires and J.~K. Eaton, Tech. Rep. MD-55, Stanford University (1990)"
+      },
+      {
+        "key": "Squires:2",
+        "text": "K.~D. Squires and J.~K. Eaton, Phys. Fluids. A 3, 1159 (1990)"
+      },
+      {
+        "key": "Kulick:1",
+        "text": "J.~D. Kulick, J.~R. Fessler, and J.~K. Eaton, J. Fluid Mech. 227, 109 (1994)"
+      },
+      {
+        "key": "Castaing:1",
+        "text": "B. Castaing, Y. Gagne, and E.~J. Hopfinger, Physica D 46, 177 (1990)"
+      },
+      {
+        "key": "Dinavahi:1",
+        "text": "S.~P.~G. Dinavahi, K.~S. Breuer, and L. Sirovich, Phys. Fluids 7, 1122 (1995)"
+      },
+      {
+        "key": "Kailasnath:1",
+        "text": "P. Kailasnath, K.~R. Sreenivasan, and G. Stolovitzky, Phys. Rev. Lett. 68, 2766 (1992)"
+      },
+      {
+        "key": "Vincent:1",
+        "text": "A. Vincent and M. Meneguzzi, J. Fluid Mech. 225, 1 (1991)"
+      },
+      {
+        "key": "Pumir:1",
+        "text": "A. Pumir, Phys. Fluids 6, 2071 (1994)"
+      },
+      {
+        "key": "Lamballais:1",
+        "text": "E. Lamballais, M. Lesieur, and O. M'{e}tais, Phys. Rev. E 56, 6761 (1997)"
+      },
+      {
+        "key": "Jimenez:2",
+        "text": "J. Jim'{e}nez, A.~A. Wray, P.~G. Saffman, and R.~S. Rogallo, J. Fluid Mech. 255, 65 (1993)"
+      },
+      {
+        "key": "He:1",
+        "text": "G. He, S. Chen, R.~H. Kraichnan, R. Zhang, and Y. Zhou, Phys. Rev. Lett. 81, 4636 (1998)"
+      },
+      {
+        "key": "Cao:1",
+        "text": "N. Cao, S. Chen, and K.~R. Sreenivasan, Phys. Rev. Lett. 76, 616 (1996)"
+      },
+      {
+        "key": "Hogan:1",
+        "text": "R.~C. Hogan, J.~N. Cuzzi, and A.~R. Dobrovolskis, Phys. Rev. E 60, 1674 (1999)"
+      },
+      {
+        "key": "Balkovsky:1",
+        "text": "E. Balkovsky, G. Falkovich, and A. Fouxon, Phys. Rev. Lett. 86, 2790 (2001)"
+      },
+      {
+        "key": "Richardson:1",
+        "text": "L.~F. Richardson, Weather Prediction by Numerical Process. (Cambridge University Press, Cambridge U.K., 1922)"
+      },
+      {
+        "key": "Komolgorov:1",
+        "text": "A.~N. Komolgorov, J. Fluid Mech. 13, 82 (1962)"
+      },
+      {
+        "key": "Chiueh:1",
+        "text": "T. Chiueh, Chin. J. Phys. 32, 319 (1994)"
+      },
+      {
+        "key": "Gorokhovski:1",
+        "text": "M. Gorokhovski, Tech. Rep., Center for Turbulence Research, Annual Research Briefs (2003)"
+      },
+      {
+        "key": "Meneveau:3",
+        "text": "C. Meneveau and K.~R. Sreenivasan, Phys. Rev. Lett. 59, 1424 (1987)"
+      },
+      {
+        "key": "Sreenivasan:1",
+        "text": "K.~R. Sreenivasan and G. Stolovitzky, J. Fluid Mech. 379, 105 (1995)"
+      },
+      {
+        "key": "Novikov:2",
+        "text": "E.~A. Novikov, Phys. Fluids A 2, 814 (1990)"
+      },
+      {
+        "key": "Novikov:1",
+        "text": "E.~A. Novikov, Phys. Rev. E 50, R3303 (1994)"
+      },
+      {
+        "key": "Jimenez:1",
+        "text": "J. Jim'{e}nez, J. Fluid Mech. 409, 99 (2000)"
+      },
+      {
+        "key": "Maxey:1",
+        "text": "M.~R. Maxey, Phys. Fluids 30, 1915 (1987)"
+      },
+      {
+        "key": "Squires:3",
+        "text": "K.~D. Squires and J.~K. Eaton, J. Fluid Mech. 226, 1 (1991)"
+      },
+      {
+        "key": "Ahmed:2",
+        "text": "A.~M. Ahmed and S. Elghobashi, Phys. Fluids 13, 3346 (2001)"
+      },
+      {
+        "key": "Eaton:1",
+        "text": "J.~K. Eaton and J.~R. Fessler, Int. J. Multiphase Flow 20, Suppl., 169 (1994)"
+      },
+      {
+        "key": "Elghobashi:2",
+        "text": "S. Elghobashi and G.~C. Truesdell, Phys. Fluids A 5, 1790 (1993)"
+      },
+      {
+        "key": "Frisch:1",
+        "text": "U. Frisch, Turbulence (Cambridge University Press, Cambridge, U.K., 1995), chap. 8."
+      },
+      {
+        "key": "Johansen:1",
+        "text": "A. Johansen, A.~C. Anderson, and A. Brandenburg, Astron. Astrophys. (2004)"
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "p(m) = {()^2} m^{-1}(1-m)^{-1}",
+        "is_display": true
+      },
+      {
+        "latex": "q = _{0}^{}E(k)dk",
+        "is_display": true
+      },
+      {
+        "latex": "= 2_{0}^{}E(k)k^2dk",
+        "is_display": true
+      },
+      {
+        "latex": "= {4q}_{0}^{}{k}dk",
+        "is_display": true
+      },
+      {
+        "latex": "{^2} = { (logS) (logC)} P(S,C)SC { as} 0.",
+        "is_display": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "512^3",
+        "is_display": false
+      },
+      {
+        "latex": "",
+        "is_display": false
+      },
+      {
+        "latex": "Re_",
+        "is_display": false
+      },
+      {
+        "latex": "40",
+        "is_display": false
+      },
+      {
+        "latex": "",
+        "is_display": false
+      }
+    ],
+    "tables": [
+      {
+        "caption": "Case Parameters for DNS runs. The quantities $D$ and $ u_p$ are defined in the Appendix. Other quantities above are defined in Section II.",
+        "content": "{|c|c|c|c|c|} Parameter & Case I & Case II & Case III & Case IV \u0000 Nodes/side & 64 & 128 & 256 & 512 \u0000 $$ & .01 & .003 & .0007 & .0002 \u0000 $Re_{}$ & 34 & 60. & 104 & 170 \u0000 $q$ & 1.5 & .65 & .28 & .14 \u0000 ${}$ & 23. & 22.8 & 22.4 & 23 \u0000 $ k_{max}$ & 1.4 & 1.5 & 1.45 & 1.56 \u0000 ${}$ & 14.1 & 23.3 & 45.8 & 86.2 \u0000 $$ & .31 & .29 & .27 & .32 \u0000 $D$ & .0001 & .00003 & .000007 & .000002 \u0000 $_{p}$ & .001 & .0003. & .00007 & .00002 \u0000"
+      }
+    ],
+    "extraction_method": {
+      "title": "llm",
+      "abstract": "llm",
+      "year": "llm",
+      "main_text": null,
+      "citations": "llm",
+      "display_equations": "llm",
+      "inline_equations": "llm",
+      "tables": "llm"
+    }
+  }
+}

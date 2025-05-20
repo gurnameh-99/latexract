@@ -1,0 +1,158 @@
+{
+  "metadata": {
+    "original_file": "0704.0978.tex",
+    "extraction_method": "llm",
+    "timestamp": "20250520_000450"
+  },
+  "results": {
+    "title": "Distribution of the molecular absorption in front of the quasar B0218+357",
+    "abstract": "{'abstract': 'The line of sight to the quasar B0218+357, one of the most studied lensed systems, intercepts a $z = 0.68$ spiral galaxy, which splits its image into two main components A and B, separated by ca. 0.3$$, and gives rise to molecular absorption. Although the main absorption component has been shown to arise in front of image A, it is not established whether some absorption from other velocity components is also occuring in front of image B. To tackle this question, we have observed the HCO$^+$(2-1) absorption line during the commissioning phase of the new very extended configuration of the Plateau de Bure Interferometer, in order to trace the position of the absorption as a function of frequency. Visibility fitting of the self-calibrated data allowed us to achieve position accuracy between $$ 12 and 80 mas per velocity component. Our results clearly demonstrate that all the different velocity components of the HCO$^+$(2-1) absorption arise in front of the south-west image A of the quasar. We estimate a flux ratio $f_A/f_B = 4.2 _{-1.0'}",
+    "year": "2007",
+    "main_text_sample": {
+      "first_500": null,
+      "last_500": null
+    },
+    "citations": [
+      {
+        "key": "big99",
+        "text": "Biggs, A. D., et al., 1999, , 304, 349"
+      },
+      {
+        "key": "big03",
+        "text": "Biggs, A. D., et al., 2003, , 338, 599"
+      },
+      {
+        "key": "bro93",
+        "text": "Browne, I. W. A., et al., 1993, , 263, L32"
+      },
+      {
+        "key": "car93",
+        "text": "Carilli, C. L., Rupen, M. P. & Yanny, B., 1993, , 412, L59"
+      },
+      {
+        "key": "car00",
+        "text": "Carilli, C. L., et al., 2000, , 85, 5511"
+      },
+      {
+        "key": "com97",
+        "text": "Combes, F. & Wiklind, T., 1997, , 486 L79"
+      },
+      {
+        "key": "gru95",
+        "text": "Grundahl, F. & Hjorth, J., 1995, , 275, 67"
+      },
+      {
+        "key": "hen05",
+        "text": "Henkel, C., et al., 2005, , 440, 893"
+      },
+      {
+        "key": "kan03",
+        "text": "Kanekar, N., et al., 2003, , 345, L7"
+      },
+      {
+        "key": "kan05",
+        "text": "Kanekar, N., et al., 2005, PhRv, 95, L1301"
+      },
+      {
+        "key": "luc96",
+        "text": "Lucas, R. & Liszt, H., 1996, , 307, 237"
+      },
+      {
+        "key": "men96",
+        "text": "Menten, K. M. & Reid, M. J., 1996, , 465, L99"
+      },
+      {
+        "key": "mit06a",
+        "text": "Mittal, R., et al., 2006a, , 447, 515"
+      },
+      {
+        "key": "mit06b",
+        "text": "Mittal, R., Porcas, R. & Wucknitz, O., 2006b, , 465, 405"
+      },
+      {
+        "key": "mul06",
+        "text": "Muller, S., et al., 2006, , 458, 417"
+      },
+      {
+        "key": "ode92",
+        "text": "O'Dea, C. P., et al., 1992, , 104, 1320"
+      },
+      {
+        "key": "pat93",
+        "text": "Patnaik, A. R., et al., 1993, , 261, 435"
+      },
+      {
+        "key": "pat95",
+        "text": "Patnaik, A. R., et al., 1995, , 274, L5"
+      },
+      {
+        "key": "wik95",
+        "text": "Wiklind, T. & Combes F., 1995, , 299, 382"
+      },
+      {
+        "key": "wik96",
+        "text": "Wiklind, T. & Combes, F., 1996, , 315, 86"
+      },
+      {
+        "key": "wik97",
+        "text": "Wiklind, T. & Combes, F., 1997, , 328, 48"
+      },
+      {
+        "key": "wik98",
+        "text": "Wiklind T. & Combes F., 1998, , 500, 129"
+      },
+      {
+        "key": "wuc04",
+        "text": "Wucknitz, O., et al., 2004, , 349, 14"
+      },
+      {
+        "key": "yor05",
+        "text": "York, T., et al., 2005, , 357, 124"
+      }
+    ],
+    "display_equations": [
+      {
+        "latex": "^$ & Absorption & $$V_{1/2}",
+        "is_display": true
+      }
+    ],
+    "inline_equations": [
+      {
+        "latex": "z = 0.68",
+        "is_display": false
+      },
+      {
+        "latex": "",
+        "is_display": false
+      },
+      {
+        "latex": "^+",
+        "is_display": false
+      },
+      {
+        "latex": "",
+        "is_display": false
+      },
+      {
+        "latex": "^+",
+        "is_display": false
+      }
+    ],
+    "tables": [
+      {
+        "caption": "Average positions of the different absorption components. For comparison, the positions of images A and B, as fixed in our continuum source model, are indicated. Offsets are given relatively to the barycenter of the continuum emission.",
+        "content": "{cccccc} Velocity & V$_{ HEL}$$^$ & Absorption & $$V$_{1/2}$$^$ & R.A. offset & Dec. offset component & (km~s$^{-1}$) & depth$^$ $^$ & (km~s$^{-1}$) & (mas) & (mas) a & $-$6.3 & 0.31 & 4.7 & $-$84 $$ 36 & +28 $$ 75 b & $-$0.3 & 0.32 & 4.5 & $-$73 $$ 24 & $-$28 $$ 51 c & +5.9 & 0.63 & 4.5 & $-$60 $$ 12 & $-$11 $$ 26 d & +10.3 & 0.30 & 4.4 & $-$57 $$ 38 & $-$27 $$ 79 a+b+c+d & $-10$ to +12 & & & $-$61 $$ 15 & $-$15 $$ 32 Image A & & & & $-$59 & $-$25 Image B & & & & +250 & +103 -.3cm $^$ from the fit of the spectrum obtained in the compact configuration (cf. Fig.). $^$ with respect to the total continuum intensity."
+      }
+    ],
+    "extraction_method": {
+      "title": "llm",
+      "abstract": "llm",
+      "year": "llm",
+      "main_text": null,
+      "citations": "llm",
+      "display_equations": "llm",
+      "inline_equations": "llm",
+      "tables": "llm"
+    }
+  }
+}

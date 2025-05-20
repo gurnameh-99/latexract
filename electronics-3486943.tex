@@ -1,0 +1,1978 @@
+%  LaTeX support: latex@mdpi.com 
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
+%=================================================================
+\documentclass[electronics,article,accept,pdftex,moreauthors,electronics]{Definitions/mdpi} 
+
+%=================================================================
+% MDPI internal commands - do not modify
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2025}
+\copyrightyear{2025}
+\externaleditor{Stefano Ferilli} % More than 1 editor, please add `` and '' before the last editor name
+\datereceived{4 February 2025} 
+\daterevised{2 March 2025} % Comment out if no revised date
+\dateaccepted{10 March 2025} 
+\datepublished{ } 
+%\datecorrected{} % For corrected papers: "Corrected: XXX" date in the original paper.
+%\dateretracted{} % For retracted papers: "Retracted: XXX" date in the original paper.
+\hreflink{https://doi.org/} % If needed use \linebreak
+%\doinum{}
+%\pdfoutput=1 % Uncommented for upload to arXiv.org
+%\CorrStatement{yes}  % For updates
+%\longauthorlist{yes} % For many authors that exceed the left citation part
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, float, amsmath, amssymb, lineno, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, colortbl, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, array, tabularx, pbox, ragged2e, tocloft, marginnote, marginfix, enotez, amsthm, natbib, hyperref, cleveref, scrextend, url, geometry, newfloat, caption, draftwatermark, seqsplit
+% cleveref: load \crefname definitions after \begin{document}
+
+%=================================================================
+% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{Multitask Learning for Authenticity and Authorship Detection}
+
+% MDPI internal command: Title for citation in the left column
+\TitleCitation{Multitask Learning for Authenticity and Authorship Detection}
+
+% Author Orchid ID: enter ID or remove command
+%\newcommand{\orcidauthorA}{0000-0000-0000-000X} % Add \orcidA{} behind the author's name
+%\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+
+% Authors, for the paper (add full first names)
+\Author{\hl{Gurunameh} Singh Chhatwal and Jiashu Zhao \hl{*}}
+%MDPI: Please carefully check the accuracy of names and affiliations.
+%MDPI: We added * after author Jiashu Zhao to indicate the corresponding author. Please confirm.
+%Gurunameh: Yes this is confirmed.
+
+
+% MDPI internal command: Authors, for metadata in PDF
+\AuthorNames{Gurunameh Singh Chhatwal and Jiashu Zhao}
+
+% MDPI internal command: Authors, for citation in the left column
+\AuthorCitation{\hl{Chhatwal}, G.S.; Zhao, J.}
+%MDPI: Please confirm the correction of the surname.
+%Gurunameh: Yes this is correct.
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+\address [1]{Physics and Computer Science, Wilfrid Laurier University, \hl{Waterloo, ON N2L 3C5, Canada}; \hl{chha8740@mylaurier.ca}}
+%MDPI: We added the city, country and postcode. Please confirm if it is correct.
+%MDPI: We added the email addresses here according to those submitted online at susy.mdpi.com. Please confirm.
+%Gurunameh: Yes this is correct.
+
+% Contact information of the corresponding author
+\corres{\hangafter=1 \hangindent=1.05em \hspace{-0.82em} Correspondence: jzhao@wlu.ca}
+
+
+%%%If there is only one affiliation
+%\address [1]{Affiliation; e-mail@e-mail.com}
+%\corres{\hangafter=1 \hangindent=1.05em \hspace{-0.82em} Correspondence: e-mail@e-mail.com; Tel.: +x-xxx-xxx-xxxx}
+%\firstnote{\hangafter=1 \hangindent=1.05em \hspace{-0.82em} xxxxxxxxxxx.} 
+%\secondnote{\hangafter=1 \hangindent=1.05em \hspace{-0.82em} xxxxxxxxxxx.}
+
+
+
+% Abstract (Do not insert blank lines, i.e.,~\\) 
+\abstract{Traditionally, detecting misinformation (real~vs.~fake) and authorship (human~vs.~AI) have been addressed as separate classification tasks, leaving a critical gap in real-world scenarios where these challenges increasingly overlap. Motivated by this need, we introduce a unified framework---\highlighting{the Shared--Private Synergy Model (SPSM)}%MDPI: We removed the bold. Please confirm this revision. same below. %EE: Please check that intended meaning has been retained.
+%Gurunameh: Yes the meaning has been retained.
+---that tackles both authenticity and authorship classification under one umbrella. Our approach is tested on a novel multi-label dataset and evaluated through an exhaustive suite of methods, including traditional machine learning, stylometric feature analysis, and pretrained large language model-based classifiers. Notably, the proposed SPSM architecture incorporates multitask learning, shared--private layers, and hierarchical dependencies, achieving state-of-the-art results with over 96\% accuracy for authenticity (real~vs.~fake) and 98\% for authorship (human~vs.~AI). Beyond its superior performance, our approach is interpretable: stylometric analyses reveal how factors like sentence complexity and entity usage can differentiate between \highlighting{fake news} and AI-generated text. Meanwhile, LLM-based classifiers show moderate success. Comprehensive ablation studies further highlight the impact of task-specific architectural enhancements such as shared layers and balanced task losses on boosting classification performance. Our findings underscore the effectiveness of synergistic PLM architectures for tackling complex classification tasks while offering insights into linguistic and structural markers of authenticity and attribution. This study provides a strong foundation for future research, including multimodal detection, cross-lingual expansion, and the development of lightweight, deployable models to combat misinformation in the evolving digital landscape and smart society.}
+
+
+% Keywords
+\keyword{multitask learning; shared--private synergy model; hierarchical PLM; fake news detection; AI authorship attribution; stylometric analysis; prompt-based classification; large language models; ablation studies} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\section{Introduction}\label{S1}
+
+Since the emergence of information distribution channels, the~propagation of fake news has posed a persistent challenge to society. In~the early days, responsible institutions and broadcasting agencies avoided such issues through editorial checks and mutual trust. However, with~the introduction of the Internet came an information explosion that made it difficult to isolate genuine content from malicious content. The~abundance of information empowers users with a wealth of knowledge, but~it has also led to the dissemination of false or misleading stories, commonly referred to as \hl{fake news}%MDPI: We removed the italics. Please confirm this revision.
+%Gurunameh: Yes this is confirmed.
+. The~impact of such fake news can be severe, affecting domains such as public health, politics, and~social harmony. Meanwhile, in~recent times, the~capabilities of generative artificial intelligence models such as large language models (LLMs) have improved to generate coherent human-like text. This supercharges the ability to produce large volumes of content but~also makes its origin and veracity more~ambiguous. 
+
+Although these models can be exploited by malicious actors to create deceptive narratives on a scale, it is equally important to recognize that not all AI-generated material is necessarily fake or harmful. The~availability of tools like chatGPT, ClaudeAI, Gemini, and~their open-source counterparts such as llama, Mistral, Bloom, etc., have provided bad actors in society with the ability to produce fake news at scale, amplifying the reach and speed of disinformation campaigns. Authorship, in~particular, has significant weight in our society because it confers responsibility. When a specific individual or organization claims authorship, they accept liability for the claims and perspectives they present. In~a world where AI can rapidly generate large volumes of text, it becomes imperative to distinguish who (or what) authored a piece of content. Failing to do so could erode accountability, making it easier for malicious actors to publish fabricated stories without fear of~repercussion.
+
+This dynamic poses intensified concerns for a secure and intelligent civilization: we must ensure the authenticity of our information and hold its creators accountable. Such measures become especially crucial in contexts like smart cities, where digital infrastructure underpins public services, governance, and~everyday citizen interactions. Fake or misleading information, whether produced by humans or AI, can disrupt civic processes, spread disinformation about local events, and~undermine trust in essential urban systems. Thus, it is vital to develop advanced detection frameworks that simultaneously assess the authenticity of a text (fake~vs.~real) and its authorship (human~vs.~AI). To~contend with these intertwined problems, namely, authenticity (fake~vs.~real) and authorship (human~vs.~AI), this study explores a unified strategy. We propose a single, integrated framework, called the Shared--Private Synergy Model (SPSM), which leverages advanced transformer-based architectures to analyze text from both perspectives simultaneously. In~essence, the~SPSM architecture shares certain layers that capture general linguistic cues while dedicating private layers to each classification objective, maximizing synergy across tasks without sacrificing task-specific specialization. In~doing so, it addresses the pressing need for a holistic system that can efficiently detect fake news and clarify whether content is produced by humans or AI. By~unifying these tasks within a single architectural framework, one that learns shared linguistic cues but specializes in each classification goal, practitioners can address both the factual reliability of content and its source. This dual approach has the potential to protect the integrity of the information that circulates in a smart city environment, enhancing public confidence and~ensuring that accountability remains intact even as AI continues to~evolve.
+
+\subsection{Interdependent~Challenges}
+
+With the rise of AI-generated fake news, broadly, two main classification tasks arise within the domain of AI-aided content~generation:
+\begin{itemize}
+    \item {\hl{Authenticity}}: distinguishing {\hl{fake}} news from {\hl{real}} or verified news.
+%MDPI: Please confirm if the bold is unnecessary and can be removed. The following highlights are the same.
+%MDPI: Please confirm if the italics is unnecessary and can be removed. The following highlights are the same.
+%Gurunameh: Yes the bold and italics are not necessarry and I have removed it.
+    \item {\hl{Authorship}}: distinguishing {\hl{machine-generated}} text from {\hl{human}}-written content.
+\end{itemize}
+
+\hl{Although} %MDPI: We added indention for this paragraph. Please confirm.
+%Gurunameh: Yes this is confirmed.
+ these two tasks may appear unrelated in previous eras, in~current scenarios, they are correlated due to the increasing use of AI in online content generation. For~instance, fake news is increasingly generated, or~at least aided, by~AI systems that can produce deceptive content at scale. In~contrast, AI-generated content that is benign or journalistic in nature might still be ``authored by AI'' but not necessarily fake. Hence, there is a likelihood that knowledge of authorship could reveal insights into the reality of content. In~real-world scenarios, platforms or fact checkers may first discover that a large volume of suspicious text shares an AI fingerprint. This finding can then guide more in-depth authenticity checks. Moreover, if~an established news source is known to produce mostly genuine (real) articles, discovering that certain content strays from the typical writing style of that source might indicate both potential AI involvement and deceptive~intentions.
+
+Beyond textual plausibility, generative models allow adversaries to tailor messages to specific audiences, weaving false narratives with alarming efficiency. Recognizing that text is AI-written raises the prior probability that it may be an attempt at mass-produced disinformation. Of~course, legitimate AI usage (e.g.,~automated journalism for sports or financial updates) complicates the matter; therefore, we do not equate ``AI-generated'' with ``fake''. Still, statistically, false or misleading content is more likely to exploit the scale and speed of AI~generation.
+
+\subsection{Motivations}
+
+\begin{itemize}
+    \item {\hl{Escalation of Fake News}}: The global spread of misleading information has real-world consequences, ranging from undermining public health campaigns to fueling polarized politics. Accurate fake vs. real classification systems remain an open challenge as adversaries adapt new methods of content creation.
+    \item {\hl{Rise of AI-Generated Text}}: Large language models are now capable of drafting entire articles that are difficult to distinguish from those authored by humans. Distinguishing between human and AI authorship has become essential to ensuring accountability.
+    \item {\hl{Potential Synergy}}: If authorship classification can improve the accuracy of identifying misinformation (and vice~versa), a~hierarchical or multitask approach may outperform traditional single-task systems. Consequently, it is valuable to investigate whether incorporating both tasks, authenticity and authorship, within~a unified or cascaded pipeline increases overall classification performance.
+\end{itemize}
+
+\subsection{Research~Objectives}
+
+In light of the challenges outlined above both in detecting misinformation (fake~vs.~real) and attributing authorship (human~vs.~AI), this work pursues the following primary \mbox{objectives}:
+\begin{enumerate}
+    \item {\hl{Dataset Creation and Curation}}: We assembled and refined a novel dataset that explicitly labels each article for both authenticity (fake~vs.~real) and authorship (human~vs.~AI). This dataset is drawn from multiple sources, ensuring a diversity of topics, writing styles, and~content generation methods. By~incorporating comprehensive synthetic data generation for both tasks, our dataset aims to facilitate richer experimentation and cross-task insights.
+    \item {\hl{PLM-Based Investigations}}: We implement and compare single-task and novel multitask fine-tuning of pretrained language encoder models (e.g.,~BERT, DistilBERT, Electra), examining how they perform on authenticity and authorship classification. Moreover, we aim to innovate on synergetic models capable of completing both tasks.
+    \item {\hl{Ablation Studies}}: To identify the most critical model components, we conduct systematic ablations, removing or altering features (e.g.,~loss weighting, shared layers, specific stylometric inputs) and evaluating the resulting performance impact.
+    \item {\hl{Hierarchal Modeling}}: We introduce and evaluate hierarchical pipelines in which the authorship task (human~vs.~AI) informs authenticity classification (fake~vs.~real). Our goal is to empirically validate the hypothesis that knowledge of authorship significantly aids the detection of fake~vs.~real content.
+    \item {\hl{Stylometric Feature Analysis}}: We incorporate stylistic and linguistic features, such as reading ease, lexical diversity, and~syntactic complexity, to~probe whether certain characteristics are especially indicative of AI-generated text or fake news content.
+    \item {\hl{LLM-Based Approaches}}: Finally, we assess zero-shot or few-shot prompt engineering with state-of-the-art LLMs, contrasting their classification capabilities (for both tasks) against fully fine-tuned models.
+\end{enumerate}
+
+\subsection{Contributions}
+
+\begin{itemize}
+    \item {\hl{Novel Dual-Labeled Dataset}}: We present a newly curated dataset that explicitly labels each article for both authenticity (fake~vs.~real) and authorship (human~vs.~AI), capturing diverse writing styles and domains.
+    \item {\hl{Unified Dual-Task Framework}}: We introduce a method that simultaneously classifies text authenticity (fake~vs.~real) and authorship (AI~vs.~human), addressing overlapping challenges in today’s AI-driven information landscape.
+    \item {\hl{SPSM}}: We propose a shared--private multitask framework design, in~which common layers capture universal text patterns while specialized layers focus on each classification task. This structure demonstrates superior performance and interpretability.
+    \item {\hl{Comprehensive Experimental Analysis}}: We offer exhaustive comparisons, including classical ML baselines, stylometric methods, PLM-based ablations, hierarchical setups, and~prompt-based evaluations, culminating in a deeper understanding of the strengths and limitations of each approach.
+\end{itemize}
+
+The remainder of this paper is structured as follows. Section~\ref{S2} discusses the relevant literature on fake news detection, authorship attribution, and~hierarchical/multitasking strategies. Section~\ref{S3} describes our dataset and preprocessing steps. Section~\ref{S4} outlines the novel methods we propose, PLM-based approaches, hierarchical setups, stylometric approaches, and~LLM-based classification. Section~\ref{S5} further details the experiments including setup, baselines, and~ablation studies. Section~\ref{S6} presents comprehensive results for each method, including performance tables, ablation findings, stylometry interpretations, and~prompt-based outcomes. Section~\ref{S7} offers further analysis on experimental results that tie together the quantitative results with practical insights into intertask synergy and model efficacy. Finally, Section~\ref{S8} concludes this paper by summarizing the major findings and suggesting directions for future research.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Related~Work}\label{S2}
+
+Research on misinformation detection has rapidly evolved alongside the growing availability of advanced natural language processing tools, introducing a wide spectrum of methods ranging from classical feature-based approaches to PLM-based neural models. At~the same time, the~authorship attribution domain, once focused on human stylometry, has pivoted toward recognizing machine-generated text, fueled by large language models capable of producing near-human writing. This section reviews key developments in fake news detection, AI authorship classification, popular architectures for interconnected NLP tasks, and~zero-shot classifiers, including LLM-based prompt classifiers, providing context for our integrated approach to authenticity and authorship~classification.
+
+\subsection{Fake News~Detection}
+
+The detection of fake news has been extensively studied, with~various machine learning (ML) and deep learning (DL) approaches proposed. Saleh~et~al. introduced OPCNN-FAKE, an~optimized Convolutional Neural Network (CNN) that demonstrated superior performance over RNN, LSTM, and~traditional ML methods in benchmark datasets, using TF-IDF and GloVe embeddings~\cite{saleh_opcnn-fake_2021}. Dou~et~al. proposed the User Preference-Aware Fake News Detection (UPFD) framework, which integrates user preferences and social context using graph neural networks (GNNs) to enhance detection accuracy~\cite{dou_user_2021}. Another approach emphasized linguistic feature-based learning models, extracting textual and syntactic attributes to effectively classify fake news~\cite{choudhary_linguistic_2021}. Furthermore, a~lightweight DL-based model was developed for the detection of fast fake news in cyber-physical social services, optimizing speed and accuracy for real-time applications~\cite{zhang_deep_2023}.
+
+Alonso~et~al. (2021) \cite{alonso_sentiment_2021} highlight sentiment analysis as a key tool in identifying emotional manipulation, advocating for multilingual and multimedia capabilities in detection systems. Addressing domain-specific challenges, Nan~et~al. (2021) propose MDFEND~\cite{nan_mdfend_2021}, a~model that leverages domain-specific features to improve accuracy across multiple domains. Khanam~et~al. (2021) focus on supervised learning, emphasizing feature extraction and vectorization using tools like Python’s scikit-learn for precise classification~\cite{khanam_fake_2021}. This extends detection capabilities by integrating multimodal features such as text, metadata, and~images through deep learning~\cite{sahoo_multiple_2021}.
+
+A hybrid CNN-BiLSTM-AM model was proposed to detect fake news related to COVID-19, integrating convolutional and recurrent networks with attention mechanisms for feature extraction and classification~\cite{xia_covid-19_2023}. Another innovative model, QMFND, employed quantum-inspired multimodal fusion techniques, combining text, images, and~metadata to enhance detection accuracy on social media platforms~\cite{qu_qmfnd_2024}. A~dual-emotion-based fake news detection framework utilized deep attention weight updates to capture emotional patterns from text, highlighting the role of sentiment in assessing news credibility~\cite{luvembe_dual_2023}. Lastly, a~multimodal approach using data augmentation-based contrastive learning improved feature representation, leveraging complementary modalities to enhance detection robustness~\cite{hua_multimodal_2023}. These studies collectively underscore the evolution of fake news detection, moving toward sophisticated, domain-aware, and~multimodal~approaches.
+
+\subsection{Machine-Generated Content~Attribution}
+
+Recent studies have explored challenges in distinguishing human-authored texts from machine-generated ones. Uchendu~et~al. investigated authorship attribution across tasks like identifying the generation model or distinguishing human from machine texts, highlighting the superior quality of GPT-2 and GROVER in evading detection~\cite{uchendu_authorship_2020}. Clark~et~al. examined the human evaluation of generated texts, finding non-experts performed poorly in distinguishing GPT-3 outputs and achieved only marginal improvements with training, raising concerns about the reliability of human assessments~\cite{clark_all_2021}. Guo~et~al. analyzed ChatGPT's responses across domains, noting its gaps in contextual understanding compared to human experts, and~proposed effective detection systems to address potential misuse~\cite{guo_how_2023}.
+
+DetectGPT, introduced by Mitchell~et~al., leverages the curvature of a model’s probability function for zero-shot detection, improving accuracy without requiring additional training data or fine-tuning, and~performs notably better in detecting LLM-generated fake news~\cite{mitchell_detectgpt_2023}. Sadasivan~et~al. demonstrated vulnerabilities in current detectors, including watermarking techniques, by~developing a paraphrasing attack that significantly reduces detection accuracy, raising concerns about detector reliability in practical scenarios~\cite{sadasivan_can_2024}. Schuster~et~al. explored stylometry’s limitations in distinguishing malicious from legitimate uses of LLMs, noting that language models maintain stylistic consistency, complicating the detection of machine-generated misinformation~\cite{schuster_limitations_2020}.
+
+Studies emphasize the growing complexity of detecting AI-generated texts due to advancements in paraphrasing and sophisticated language models. Krishna~et~al. demonstrated that paraphrasing can evade state-of-the-art detection methods like GPTZero and DetectGPT but proposed retrieval-based defenses as a potential solution~\cite{krishna_paraphrasing_nodate}. Orenstrakh~et~al. evaluated eight detection tools in educational contexts, highlighting limitations in accuracy and resilience, particularly when handling paraphrased or non-English content, and~called for enhancements to better preserve academic integrity~\cite{orenstrakh_detecting_2024}. Dergaa~et~al. explored ChatGPT’s role in academic writing, discussing its potential to enhance efficiency but also warning about risks to authenticity and credibility, stressing ethical guidelines and transparency~\cite{dergaa_human_2023}.
+
+\subsection{AI-Generated Misinformation and Multitask~Approaches}
+
+Recent research underscores the escalating complexity of detecting and mitigating AI-generated misinformation. Zhou~et~al. analyzed AI-generated misinformation's linguistic distinctiveness, finding it to be more detailed and emotionally engaging than human-crafted content, which often misleads existing detection systems~\cite{zhou_synthetic_2023}. Shoaib~et~al. explored the implications of generative AI for creating deepfakes and misinformation, advocating for a multimodal defense framework integrating digital watermarking and machine learning~\cite{shoaib_deepfakes_2023}. Kreps~et~al. highlighted AI's capability to produce credible-sounding media at scale, raising concerns about its potential misuse in misinformation campaigns targeting public opinion~\cite{kreps_all_2022}. Demartini~et~al. proposed a hybrid human-in-the-loop approach to misinformation detection, combining AI scalability with human expertise to enhance reliability and fairness~\cite{demartini_human---loop_nodate}.
+
+Chen and Shu investigated the challenges posed by large language models (LLMs) such as ChatGPT, finding that misinformation generated by LLMs is harder to detect than human-written misinformation due to its deceptive styles and semantic preservation. Their taxonomy categorizes LLM misinformation based on types, sources, and~intents, highlighting the need for robust detection mechanisms~\cite{chen_can_2024}. Blauth~et~al. reviewed the malicious uses and abuses of AI, including misinformation, social engineering, and~hacking, emphasizing the importance of global collaboration to develop effective mitigation strategies~\cite{blauth_artificial_2022}. Kumari~et~al. introduced a multitask learning framework that integrates novelty detection and emotion recognition to improve misinformation detection accuracy across multiple datasets~\cite{kumari_multitask_2021}. Choudhry~et~al. introduced an emotion-aware multitask approach using transfer learning to detect fake news and rumors, demonstrating that emotions serve as domain-independent features that enhance performance in cross-domain settings~\cite{choudhry_emotion-aware_2024}. Jing~et~al. proposed TRANSFAKE, a~multimodal transformer-based model that integrates text, images, and~user comments, leveraging multimodal interactions and sentiment variances to improve detection accuracy~\cite{jing_transfake_2021}. Wu~et~al. highlighted the vulnerability of existing detectors to style-based attacks facilitated by large language models (LLMs). They proposed SheepDog, a~robust, style-agnostic detector that prioritizes content over style, achieving resilience against LLM-empowered adversarial attacks~\cite{wu_fake_2024}.
+
+\subsection{LLM-Based and Zero-Shot~Detectors}
+
+Advancements in misinformation detection emphasize novel frameworks leveraging LLMs. Satapara~et~al. proposed an adversarial prompting approach to generate misinformation datasets with controlled factual inaccuracies, enabling improved training for detection models~\cite{satapara_fighting_2024}. Hu~et~al. introduced knowledgeable prompt tuning (KPT), incorporating external knowledge into prompt verbalizers to enhance zero-shot and few-shot text classification performance, a~potential asset for misinformation detection~\cite{hu_knowledgeable_2022}. Thaminkaew~et~al. presented a prompt-based label-aware framework (PLAML) for multi-label text classification, integrating token weighting, label-aware templates, and~dynamic thresholds to boost accuracy in few-shot settings~\cite{thaminkaew_prompt-based_2024}.
+
+On the other hand, Hou~et~al. proposed PROMPTBOOSTING, a~black-box approach utilizing Adaboost for ensemble learning, significantly improving computational efficiency and performance in few-shot classification tasks~\cite{hou_promptboosting_2023}. Sun~et~al. introduced CARP, a~reasoning-focused prompting strategy for large language models (LLMs), addressing complex linguistic phenomena in text classification and achieving state-of-the-art results on multiple benchmarks~\cite{sun_text_2023}. Chen~et~al. developed Concept Decomposition (CD), a~framework for interpretable text classification by aligning continuous prompts with human-readable concepts, enhancing both performance and explainability~\cite{chen_concept_2024}. Balkus and Yan explored GPT-3's self-augmentation capabilities, demonstrating improved accuracy in short-text classification by generating high-quality training examples~\cite{balkus_improving_2024}. Xie and Li presented DLM-SCS, leveraging discriminative language models for semantic consistency scoring, outperforming other prompt-based methods in few-shot classification~\cite{xie_discriminative_2022}.
+
+Overall, these studies underscore the increasing sophistication and scale of both fake news and AI-generated content, necessitating ever more capable detection frameworks. As~PLM-based architectures gain prominence, researchers have combined traditional feature engineering (e.g.,~stylometric and sentiment cues) with modern deep learning (e.g.,~multimodal PLMs) to handle diverse sources, from~textual posts to images and metadata. Meanwhile, prompt-based and zero-shot techniques leverage LLMs for flexible, domain-adaptive classification, although~they face challenges such as prompt sensitivity and adversarial paraphrasing. Finally, multitask and hierarchical strategies demonstrate that integrating tasks (e.g.,~authorship and authenticity) or modalities (e.g.,~textual, social, multimodal features) can significantly strengthen misinformation detection. Building on these advancements, our research explores novel dataset construction, shared--private transformer layers, hierarchical pipelines, and~stylometric analysis to further unify---and improve upon---the approaches highlighted in this section.
+
+
+\vspace{-3pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dataset and~Preprocessing}\label{S3}
+
+In real-world environments, datasets are often complex, encompassing diverse content across various domains and mixing multiple challenges such as authenticity and authorship. To~better mimic these real-world conditions, we extend our dataset to include both fake~vs.~real and AI~vs.~human labels, thereby reflecting the multifaceted nature of modern information channels. We designate this extended resource as the Fused Authenticity--Authorship News Resource (FAANR) to underscore its dual focus on both content reliability and text~origin.
+
+The scarcity of comprehensive datasets tailored for detecting AI-generated fake news remains a significant challenge in advancing this field. While datasets such as LIAR~\cite{wang2017liar} and FakeNewsNet~\cite{shu2020leveraging} have been instrumental in detecting human-generated misinformation, they lack instances of AI-generated fake news, which limits the development of robust detection models capable of addressing this growing challenge. The~majority of existing resources either focus on specific domains or omit key linguistic variations that can be exploited by modern LLMs~\cite{luger2020health,de_transformer-based_2022}.
+
+To address these limitations, we developed a novel dataset by combining previously established human-generated news datasets across domains such as politics, health, and~technology with AI-generated fake news. Using both open-source and proprietary LLMs, we designed innovative prompting strategies to create diverse and realistic fake news~instances.
+
+\vspace{-3pt}
+
+\subsection{Data Collection and~Generation}
+
+We aim to build a dataset (FAANR) that explicitly labels each article for both authenticity (fake~vs.~real) and authorship (human~vs.~AI), capturing a broad spectrum of writing styles and textual properties. The~dataset created is an extension of two open-source fake news detection datasets, namely, the ISOT~\cite{ahmed2018detecting,traore2017intelligent} and the news dataset labeled by the news media bias lab (nmbbias) \cite{rahman2023analyzing}. Combining these two sources, we have a diverse database of articles with two labels, fake and real, from various domains ranging from politics to healthcare. %EE: Please check that intended meaning has been retained. 
+The~ISOT and nmbbias datasets have \hl{44,898} %MDPI: We added commas to separate thousands for numbers with five or more digits. Please confirm.
+%Gurunameh: Yes this is confirmed.
+ and 9513 articles, respectively. The former has articles ranging on global and US news from 2016 to \hl{2017}, %MDPI: We changed 17 to 2017. Please confirm this revision.
+ %Gurunameh: Yes this is confirmed.
+ and the latter has the latest election news articles from 2024. Thus, this provides data before and after the emergence of LLMs to provide a balanced generation in the time~domain. %EE: Please check that intended meaning has been retained.
+ %Gurunameh: Yes the meaning has been retained.
+
+However, they do not adequately address the AI-generated aspect of fake news. To~remedy this, we used a subset of 20,000 articles randomly selected from the real set of the FAANR dataset. Next, these articles were fed into four LLMs that include ChatGPT-4o, Llama3.2, gemma, and~mistral, to~produce respective AI-generated articles using carefully designed scientific prompts, as~shown in Table~\ref{tab1}. In~order to ensure carefully controlled prompts, in one subset, the~model was instructed to maintain factual accuracy and coherent style, yielding AI Real; in the other subset, it was guided to create deliberately false or misleading information, forming AI Fake. Each of the LLMs was given 5000 articles to churn out the real-phrased and fake-fabricated versions. Using multiple LLMs ensures diversity in the AI-authored content and prevents the overfitting of models to certain stylistic~attributes.
+
+\begin{table}[H]
+\tablesize{\small}
+\caption{\hl{Example} %MDPI: We removed the vertical lines. Please confirm.
+%Gurunameh: Yes this is confirmed.
+ prompts used for generating fake and real news~articles.}
+\label{tab1}
+%\isPreprints{\centering}{% This command is only used for ``preprints''.
+	\begin{adjustwidth}{-\extralength}{0cm}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+%\isPreprints{\begin{tabularx}{\linewidth}{CCCC}}{% This command is only used for ``preprints''.
+		\begin{tabularx}{\fulllength}{lL}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+			\toprule
+			\textbf{Narrative Type}	& \textbf{Prompt}\\
+			\midrule
+                Real & You are a professional journalist. The~user will provide a text describing an actual event with factual details. 
+    Your task is to rewrite this content into a coherent, well-structured news article in your own words.
+    Ensure all events, details, and~factual information remain accurate, but~do not copy the text verbatim. 
+    Instead, reorganize, paraphrase, and~present the information with a professional, journalistic style.\break
+    Additional Requirements:\break
+    - Do not include a headline; start directly with the article text.\break
+    - Include the main event details, parties involved, date, location, and~other factual elements from the user’s text.\break
+    - Maintain a neutral, objective tone.\break
+    - Do not introduce any new or fabricated details.\break
+    - If the original text includes direct quotes, you may rephrase them as reported speech or quote them accurately.\break
+    - Keep the article concise (about 300--400 words), focusing on clarity and factual~reporting.\\
+    \midrule
+    Fake & You are a journalist tasked with writing a fictional news article for a fictional news outlet. Your article should be entirely fabricated but appear as if it were a legitimate news story.\break
+    Title Narrative: ``{title}''\break
+    Instructions:\break
+        - Write a 300--400 word fictional news article based on the title narrative.\break
+        - Start directly with the article text; do not include a headline or title.\break
+        - \textls[-15]{Include context, background, and~fictional sources (e.g.,~anonymous officials or witnesses) that align with the~title.}\break
+        - Maintain a neutral, journalistic tone consistent with professional news reporting.\break
+        - Do not include any disclaimers or indications or notes that this is fictional; it should appear as a credible article.\break
+        - Just give the article text, no need to include the~title.\\
+			\bottomrule
+		\end{tabularx}
+%		\isPreprints{}{% This command is only used for ``preprints''.
+	\end{adjustwidth}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+	\noindent{\footnotesize{Prompts may be varied to suit each generative model.}}
+\end{table}
+
+
+
+When generating AI content, we cross-checked linguistic and thematic variety, minimizing repetitive patterns that might bias subsequent classification tasks. This process resulted in a total of 83,068 articles, of~which around 58\% is human-generated and the rest is AI-authored. Table~\ref{tab2} depicts the exact authorship source for the articles in the dataset. This approach allowed us to unify both human-origin (already labeled real/fake) and AI-origin (specially created) articles under a single dataset that covered four possible categories of~interest.
+
+\begin{table}[H]
+\tablesize{\small}
+\caption{\hl{The authorship} %MDPI: We removed the vertical lines. Please confirm.
+%Gurunameh: Yes this is confirmed.
+ sources of the texts available in the FAANR~dataset.}
+\label{tab2}
+\begin{tabularx}{\linewidth}{CCCC}
+\toprule
+\textbf{Source}	& \textbf{Fake}	& \textbf{Real} & \textbf{Total}\\
+\midrule
+Human & \hl{20,631} %MDPI: We added commas to separate thousands for numbers with five or more digits. Please confirm.
+%Gurunameh: Yes this is confirmed..
+ & 27,987 & 48,618 \\
+\midrule
+gemma & 4999 & 4981 & 9980 \\
+\midrule
+gpt4o & 5000 & 4955 & 9955 \\
+\midrule
+llama & 2372 & 4999 & 7371 \\
+\midrule
+mistral & 4999 & 2145 & 7144 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+\subsection{Class Distribution and~Preprocessing}
+
+After combining the prelabeled human-authored articles with the newly generated AI content, we shuffled and partitioned the dataset into train, validation, and~test splits. To~maintain balanced class distributions, we employed a stratification strategy, respecting both the real/fake and human/AI labels. As~a result, each split contained a comparable proportion of Human Real, Human Fake, AI Real, and~AI Fake samples. The~final distribution is summarized in Table~\ref{tab3}, which reports the number of articles in each partition, the~average word count per category, and~the general proportions. Furthermore, in~Figure~\ref{fig1}, bar graphs illustrate how the dataset is distributed between fake~vs.~real, AI~vs.~human, and~different text sources. This visualization confirms that we have a substantial number of samples from each class, including those derived from GPT-4, Llama, Mistral, and~a large body of human-written examples. Additionally, Figure~\ref{fig2} displays a correlation heatmap that indicates how basic numeric variables, such as sentiment, text length, and~the two labels (fake, \hl{is AI}%MDPI: We added a space between is and AI. Please confirm.
+) relate to each other. Although~the correlations remain relatively modest, the~map offers hints that text length may differ slightly between AI and human samples, and~sentiment could have a minor relationship with the fake~vs.~real~label.
+
+\begin{table}[H]
+\tablesize{\small}
+\caption{\hl{Label-} %MDPI: We removed the vertical lines. Please confirm.
+wise distribution of the articles in the~dataset.}
+\label{tab3}
+%\isPreprints{\centering}{} % Only used for preprints
+\begin{tabularx}{\linewidth}{CCCC}
+\toprule
+\textbf{Label}	& \textbf{Num Articles}	& \textbf{Avg Text Length} & \textbf{Proportion}\\
+\midrule                                               
+\hl{AI} %MDPI: We changed ai to AI. Please confirm.
+ Fake & \hl{17,370} %MDPI: We added commas to separate thousands for numbers with five or more digits. Please confirm.
+ %Gurunameh: Yes this is confirmed.
+ & 355.140,242 & 0.209106\\
+\hl{AI} Real & 17,080 & 260.978571 & 0.205615\\
+Human Fake & 20,631 & 410.912123 & 0.248363\\
+Human Real & 27,987 & 408.048129 & 0.336917\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\unskip
+
+
+\begin{figure}[H] %Attention AE: Please revise "isAI" to "is AI"
+%Gurunameh: Yes this is confirmed.
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+    \includegraphics[width=\linewidth]{figures/distribution.png}
+\end{adjustwidth}
+    \caption{\hl{Distribution} %MDPI: Please use commas to separate thousands for numbers with five or more digits (not four digits) in the picture, e.g., "10000" should be "10,000".
+    %Gurunameh: Done.
+ of news articles among sources and~labels.}
+    \label{fig1}
+\end{figure}
+\unskip
+
+
+\begin{figure}[H]
+    \includegraphics[width=0.5\linewidth]{figures/correlation.png}
+    \caption{Correlation heatmap between sentiment, text length, and~labels.}
+    \label{fig2}
+\end{figure}
+
+
+Before feeding these articles into our experiments, we applied a uniform preprocessing pipeline. Each article was lowercased and trimmed of extraneous whitespace, removing any non-ASCII artifacts that did not convey useful information. We retained punctuation that was potentially relevant to stylometric or linguistic features. For~feature-based methods (e.g.,~stylometric analysis), a~tokenization step (via Python’s NLTK or a simple whitespace tokenizer) was used to compute attributes such as word counts, sentence lengths, or~readability metrics. In~contrast, PLM-based models employed subword tokenizers (e.g.,~BERTTokenizer) that automatically handled splits and special tokens. Finally, we excluded articles with too few tokens (e.g.,~fewer than 20) or containing repetitive filler text, ensuring that all remaining samples had meaningful linguistic content for downstream~tasks.
+
+
+
+As part of an exploratory study on linguistic differences, we generated WordCloud visualizations (shown in Figure~\ref{fig3}) to compare the most frequent words in fake articles (left) versus real articles (right). Some terms, like “Trump” or “said”, appear prominently across both categories, underscoring ongoing political topics; however, the~emphasis on certain key verbs or repeated names can differ in placement or frequency. Taken together, these observations, supported by the correlation heatmap, the~distribution bar plots, and~the WordClouds, help contextualize how authenticity and authorship may manifest in textual patterns. Our stratified train/validation/test splits in the ratio of 70/10/20, balanced across the four categories, ensure that subsequent experiments, whether using multitask or hierarchical models, can effectively learn from both AI-derived and human-authored~content.
+
+\begin{figure}[H] 
+    \includegraphics[width=\linewidth]{figures/wordcloud.png}
+    \caption{WordClouds of most common words in real and fake~articles.}
+    \label{fig3}
+\end{figure}
+
+
+\section{Proposed~Approaches}\label{S4}
+
+Building on the challenges outlined in the earlier sections, we propose a series of novel solutions aimed at tackling the dual tasks of authenticity and authorship detection in a unified manner. Our goal is to move beyond standard single-task or naive multitask setups by introducing advanced architectures and training strategies that explicitly account for both shared linguistic cues and task-specific nuances. Key contributions include our Shared--Private Synergy Model (SPSM), hierarchical task designs, and~adaptive loss weighting methods. These innovations ensure that each classification task benefits from the other’s insights while maintaining sufficient specialization to address its unique requirements. Below, we present the core components of our proposed approaches, detailing how they collectively enhance fake news and AI authorship~detection.
+
+\subsection{PLM-Based~Approaches}
+
+These approaches are built on modern pretrained encoders such as BERT, ELECTRA, or~DistilBERT. Depending on the task setup, we perform \emph{\hl{single-task fine-tuning}} %MDPI: Please confirm if the italics is unnecessary and can be removed. The following highlights are the same.
+%Gurunameh: Yes the italics can be removed.
+ (for authenticity or authorship alone) or introduce a \emph{\hl{multitask}} framework (jointly learning both tasks). We first describe the single and naive multitask approaches to further introduce the novel SPSM~architecture.
+
+ %MDPI: Please confirm all contents written in this code \paragraph{ }. Is it subsubheading? If yes, please add the section number.
+%Gurunameh: This was a command to state the specific paragraph in the section and has been removed.
+
+
+Regardless of the specific pretrained model (BERT, ELECTRA, DistilBERT), we can conceptualize it as a \hl{function:} %MDPI: Is the bold of the variables necessary? Please check the formulas in the whole manuscript to ensure that the bold and italic formats are correct and consistent.
+%Gurunameh: The bold is not necessary and has been removed.
+\begin{equation}
+\label{eq:transformer_encoder}
+\mathbf{H} \;=\; \mathrm{TransformerEncoder}\bigl(\mathbf{X}\bigr),
+\end{equation}
+where $\mathbf{X} = \{x_1, x_2, \dots, x_n\}$ are the token embeddings for an input sequence and~$\mathbf{H}$ denotes the sequence of hidden states (or a single pooled embedding, depending on the architecture). Each model’s tokenizer transforms raw text into subword IDs, which feed into this~encoder.
+
+\subsubsection{Single-Task~Fine-Tuning}
+
+In the {\hl{single-task}} %MDPI: Please confirm if the bold and italic in the main text are unnecessary and can be removed. We didn’t highlight them in the following paragraphs. Please check for the whole paper and make necessary changes.
+%Gurunameh: Yes the bold and italics in the main text are not necessary and can be removed.
+ approach, we follow a standard end-to-end fine-tuning procedure, targeting either authenticity (fake~vs.~real) or authorship (human~vs.~AI). Let $\mathbf{h}_\text{CLS}$ be the final hidden state corresponding to the \hl{special} %MDPI: Please check \texttt in the whole paper and confirm if the special font is necessary.
+ %Gurunameh: The special font is not necessary and has been removed.
+ \texttt{[CLS]} token:
+\begin{equation}
+\mathbf{h}_\text{CLS} \;=\; \mathrm{BERT}\bigl(\mathbf{X}\bigr)[\text{CLS index}],
+\end{equation}
+where BERT denotes a BERT-based or BERT-large pretrained model. We then apply a single linear classification head:
+\begin{equation}
+\label{eq:single_task_head}
+\hat{y} \;=\; \mathrm{softmax}\bigl(\mathbf{W}\,\mathbf{h}_\text{CLS} + \mathbf{b}\bigr),
+\end{equation}
+where $\mathbf{W}$ and $\mathbf{b}$ are trainable parameters, mapping $\mathbf{h}_\text{CLS}\!\in\!\mathbb{R}^{D}$ to a probability distribution over the two classes, e.g.,~\{fake, real\}. We optimize the negative log-likelihood loss (Cross-Entropy) on the labeled dataset for that specific task. For~instance, if~$\ell(\hat{y}, y)$ is cross-entropy with ground truth $y\in\{0,1\}$, we minimize
+\begin{equation}
+\mathcal{L}_\text{single} \;=\; -\sum_{i}\Bigl[y_i \log \hat{y}_i + (1-y_i)\log(1-\hat{y}_i)\Bigr].
+\end{equation}
+
+Moreover, Figure~\ref{fig5} depicts the separate single-task fine-tuning process: raw text tokenized into subwords, passed into BERT, and~the final [CLS] embedding going through one linear head for classification. The~figure highlights how only one output layer is trained for a single classification~objective.
+\vspace{-4pt}
+\begin{figure}[H] %Attention: Please revise "Authorship / Authenticity" to "Authorship/Authenticity"
+    \includegraphics[width=\linewidth]{figures/seperate_task.png}
+    \caption{Fine-tuning of BERT PLM for separate~tasks.}
+    \label{fig5}
+\end{figure}
+
+
+\subsubsection{BERT Multitask~Learning}
+
+When we wish to classify both authenticity and authorship simultaneously, we can adapt BERT to a multitask setup. Let $\mathbf{h}_\text{CLS}$ still represent the pooled embedding, but~now we have two heads:
+\vspace{6pt}
+\begin{equation}
+\hat{y}_\text{auth} \;=\; \mathrm{softmax}\bigl(\mathbf{W}_\text{A}\,\mathbf{h}_\text{CLS} + \mathbf{b}_\text{A}\bigr),
+\quad
+\hat{y}_\text{fake} \;=\; \mathrm{softmax}\bigl(\mathbf{W}_\text{F}\,\mathbf{h}_\text{CLS} + \mathbf{b}_\text{F}\bigr).
+\end{equation}
+
+\hl{Here,} %MDPI: We added indention for this para, please confirm.
+%Gurunameh: Yes this is confirmed.
+ $\hat{y}_\text{auth}$ is the probability distribution over \{\textit{human}, \textit{AI}\} and $\hat{y}_\text{fake}$ is over \{\textit{real}, \textit{fake}\}. The~training objective combines both cross-entropy losses:
+\begin{equation}
+\label{eq:multitask_loss}
+\mathcal{L}_\text{multi} \;=\; \mathcal{L}_\text{auth} + \mathcal{L}_\text{fake},
+\end{equation}
+where $\mathcal{L}_\text{auth}$ handles authorship classification and~$\mathcal{L}_\text{fake}$ handles authenticity. This single [CLS]-based embedding thus influences two separate classification~heads.
+
+In place of BERT, we can load alternative pretrained encoders, ELECTRA and DistilBERT, while following the same multitask design. The~only major difference lies in the underlying architecture of the encoder. For~example, we have the following: %EE: Please check that intended meaning has been retained.
+%Gurunameh: The meaning has been retained.
+\begin{itemize}
+    \item ELECTRA is pretrained with a “discriminator” objective that distinguishes real tokens from those replaced by a “generator”. At fine-tuning time, it also produces a hidden state for [CLS] that we map to our tasks.
+    \item DistilBERT is a lighter, distilled version of BERT with roughly 40\% fewer parameters, but~retaining enough representational power for many tasks. It omits the [CLS] pooled output layer in the original sense, so we often take the first token embedding or a special vector from the final layer.
+\end{itemize}
+
+
+
+
+Figure~\ref{fig6} illustrates this multitask approach. The~same input tokens pass through the chosen encoder (BERT, ELECTRA, DistilBERT), producing a final hidden state for [CLS]. Two parallel heads transform that embedding into predicted labels: $\hat{y}_\text{auth}$ for authorship and $\hat{y}_\text{fake}$ for authenticity. The~combined loss~(\ref{eq:multitask_loss}) backpropagates through shared parameters, encouraging the model to learn features that benefit both~tasks.
+
+\begin{figure}[H] %Attention: Please revise "Tokenisation" to "Tokenization"; "Transformer layer" to "Transformer Layer"; and "Self Attention" to "Self-Attention"
+%Gurunameh: The figure has been updated.
+    \includegraphics[width=\linewidth]{figures/multitask.png}
+    \caption{Multitask PLM with separate classification heads~architecture.}
+    \label{fig6}
+\end{figure}
+
+
+\subsubsection{Shared--Private Synergy Model (SPSM)}
+\label{sec:shared_private}
+
+While standard multitask learning on a PLM encoder (e.g.,~BERT, ELECTRA, DistilBERT) 
+places multiple classification heads atop the same final hidden representation, we \textit{innovatively} 
+extend this approach by introducing \emph{shared} and \emph{private} layers. In~other words, beyond~the base PLM encoder, we \emph{split} the network into two sets of feed-forward layers:
+
+\begin{enumerate}
+    \item \textbf{Shared Layers} $(\mathrm{SharedFF})$: A stack of $L_\mathrm{shared}$ additional feed-forward blocks (or MLPs) that process pooled embedding $\mathbf{h}_\text{CLS}$ 
+    for \emph{all} tasks, thus capturing common features relevant to both authenticity 
+    (\textit{fake~vs.~real}) and authorship (\textit{human~vs.~AI}).
+    
+    \item \textbf{Private Layers} $(\mathrm{PrivateFF}_{t})$: For each task $t \in \{\text{authorship, authenticity}\}$, 
+    there is a distinct feed-forward network that takes the \emph{output} of the shared layers 
+    as input. Each private sub-network then specializes in distinguishing either \textit{human~vs.~AI} 
+    or \textit{fake~vs.~real}, preserving nuances unique to the respective classification objective.
+\end{enumerate}
+
+Formally, let $\mathbf{h}_\mathrm{CLS}$ be the final hidden state from the PLM. We first compute
+\begin{equation}
+\label{eq:shared_ff}
+\mathbf{z}_\mathrm{shared} \;=\; \mathrm{SharedFF}\bigl(\mathbf{h}_\mathrm{CLS}\bigr),
+\end{equation}
+where $\mathrm{SharedFF}$ denotes $L_\mathrm{shared}$ layers of feed-forward blocks (potentially interleaved 
+with dropout and activation functions). We then \emph{branch} into two private sub-networks:
+\begin{align}
+\mathbf{z}_\mathrm{auth} \;&=\; \mathrm{PrivateFF}_{\mathrm{auth}}\!\bigl(\mathbf{z}_\mathrm{shared}\bigr),\\[6pt]
+\mathbf{z}_\mathrm{fake} \;&=\; \mathrm{PrivateFF}_{\mathrm{fake}}\!\bigl(\mathbf{z}_\mathrm{shared}\bigr),
+\end{align}
+where $\mathbf{z}_\mathrm{auth} \in \mathbb{R}^{d_\mathrm{auth}}$ and $\mathbf{z}_\mathrm{fake} \in \mathbb{R}^{d_\mathrm{fake}}$ 
+are the private representations passed to task-specific classification heads. Finally, each task head 
+predicts a probability distribution over its labels (e.g.,~\textit{human~vs.~AI} or \textit{fake~vs.~real}):
+\begin{equation}
+\hat{y}_\mathrm{auth} \;=\; \mathrm{softmax}\bigl(\mathbf{W}_\mathrm{A}\,\mathbf{z}_\mathrm{auth} 
++ \mathbf{b}_\mathrm{A}\bigr), 
+\quad
+\hat{y}_\mathrm{fake} \;=\; \mathrm{softmax}\bigl(\mathbf{W}_\mathrm{F}\,\mathbf{z}_\mathrm{fake} 
++ \mathbf{b}_\mathrm{F}\bigr).
+\end{equation}
+
+
+Boosting accuracy via shared and private layers, this design capitalizes on two complementary~ideas:
+\begin{enumerate}
+    \item Shared Feature Extraction: By letting both tasks pass through $\mathrm{SharedFF}$, 
+    we encourage the model to learn common linguistic cues that might benefit both authorship and authenticity classification (e.g.,~capturing writing style, sentiment usage, or~certain domain-specific patterns).
+    \item Task-Specific Nuance: The private layers preserve 
+    specialized features that differ between tasks (e.g.,~lexical signals of AI text~vs.~stylistic cues of misinformation). Thus, each private sub-network can focus on the subtleties of its classification goal without being overwhelmed by the competing 
+    task’s objectives.
+\end{enumerate}
+
+
+In practice, we find that introducing shared and private layers significantly enhances performance compared to a simple “two-head” approach that shares all downstream parameters. Empirically, this hierarchy yields an improvement in accuracy/F1 because~the shared block learns robust, general representations, whereas private blocks can refine them for authenticity or authorship independently. The~overall architecture is depicted in Figure~\ref{fig7}. 
+We detail quantitative improvements in the Results Section, showing that this SPSM strategy consistently outperforms both single-task and naive 
+multitask (one [CLS] embedding, two linear heads) baselines.
+
+\begin{figure}[H] %Attention AE: Please revise "Tokenisation" to "Tokenization" and "Bert" to "BERT"
+%Gurunameh: The figure has been updated.
+    \includegraphics[width=\linewidth]{figures/shared_pvt.png}
+    \caption{The SPSM architecture. The~BERT [CLS] embedding is further processed by a shared feed-forward stack before splitting into private layers specialized for each~task.}
+    \label{fig7}
+\end{figure}
+
+
+
+\subsection{Hierarchical~Approaches}
+
+In addition to the shared--private multitask paradigm, we explore hierarchical strategies for learning authorship (human~vs.~AI) and authenticity (fake~vs.~real) in a 
+sequential or cascade manner. Unlike the multitask approach---where both tasks are trained in parallel from a common [CLS] embedding---hierarchical setups explicitly make the output (or an intermediate representation) of the first task feed into the second task. This design can capture the intuitive notion that \hl{AI-generated} %MDPI: Please check if it should be \textit{AI-generated} instead of \texttt{AI-generated}.  Same below.
+%Gurunameh: The special font has been removed
+articles may, statistically, be more likely to be \hl{fake} or vice~versa, thus exploiting potential dependencies between~tasks.
+
+
+\subsubsection{Two-Stage~Pipeline}
+
+In the two-stage pipeline, we first train or compute an \emph{authorship} 
+prediction for each article and then use that authorship signal (predicted logits or probabilities) 
+as an additional input feature to the authenticity classifier. More concretely, we define 
+two passes:
+\begin{enumerate}
+    \item Authorship Pass: Given a PLM encoder %\(\mathrm{Encoder}\) %EE: Please check that intended meaning has been retained.
+    %Gurunameh: The meaning has been retained
+    (e.g.,~BERT)
+    and a classification head for human~vs.~AI, we compute 
+    \(\hat{y}_\text{AI}(\mathbf{x}) = \sigma\!\bigl(\mathrm{Head}_{\text{AI}}(\mathrm{Encoder}(\mathbf{x}))\bigr)\). 
+    If we produce logits \(\mathbf{a}\in\mathbb{R}^2\), we can convert them to probabilities 
+    \(\mathbf{p}_{\text{AI}}\) via~softmax.
+
+    \item Authenticity Pass: We embed the predicted authorship distribution 
+    \(\mathbf{p}_{\text{AI}}\) (or the raw logits, \(\mathbf{a}\)) into the input for the 
+    second classification pass, e.g.,
+\begin{equation}
+    \label{eq:two_stage_pipeline}
+    \mathbf{h}_{\text{cascade}} \;=\; \bigl[\mathrm{Encoder}(\mathbf{x});\, \mathbf{p}_{\text{AI}}\bigr],
+    \end{equation}
+    concatenating or otherwise merging the predicted authorship probabilities with the PLM embedding. 
+    A second head, \(\mathrm{Head}_{\text{Fake}}\), then performs a cross-entropy classification 
+    for fake~vs.~real.
+\end{enumerate}
+
+Thus, the~second stage explicitly conditions on the authorship model’s outcome. In~practice, 
+this approach can be implemented by first training an authorship model, saving predictions, 
+and then injecting them as features (or using a single PLM forward pass that computes 
+both). An outline of the approach is shown in Figure~\ref{fig8}. The advantage is that authorship predictions might highlight subtle cues (e.g.,~certain 
+writing style or repeated tokens) that help the authenticity model, especially if 
+human-~vs.~AI-authored texts differ in the likelihood of containing~misinformation.
+
+\begin{figure}[H] %Attention AE: Please revise "Tokenisation" to "Tokenization"
+%Gurunameh: The figure has been updated.
+    \includegraphics[width=\linewidth]{figures/hierarchalA.png}
+    \caption{In the two-stage approach, authorship predictions from the first model are appended as features for the second model that classifies fake vs.~real.}
+    \label{fig8}
+\end{figure}
+
+
+If we let $A(\mathbf{x})$ be the authorship classifier’s output distribution, the~second classifier’s 
+decision for fake~vs.~real is:
+\begin{equation}
+\label{eq:two_stage_decision}
+\hat{y}_{\text{fake}} \;=\; \mathrm{softmax}\Bigl(\mathrm{Head}_{\mathrm{F}}\bigl(\mathrm{Encoder}(\mathbf{x}),\,A(\mathbf{x})\bigr)\Bigr),
+\end{equation}
+where we might incorporate $A(\mathbf{x})$ either by concatenation or by an auxiliary feed-forward 
+layer that fuses the probabilities/logits into the authenticity~embedding.
+
+
+\subsubsection{Single-Pass~Cascade}
+
+Rather than explicitly saving intermediate outputs and re-feeding them, we can implement a single-pass hierarchical model that internally first computes authorship logits 
+and then conditions authenticity logits on them. Concretely, let $\mathbf{h}_{\mathrm{CLS}}$ be 
+the pooled representation from the PLM, and~define:
+\begin{equation}
+\mathbf{a} \;=\; \mathrm{Head}_{\text{AI}}\!\bigl(\mathbf{h}_{\mathrm{CLS}}\bigr),
+\end{equation}
+which is the authorship logit vector. We then transform $\mathbf{a}$ into a hidden dimension 
+equal to $\mathbf{h}_{\mathrm{CLS}}$ or another suitable size, e.g.,
+\begin{equation}
+\mathbf{m} \;=\; \mathbf{W}_\mathrm{cascade}\,\mathbf{a} + \mathbf{b}_\mathrm{cascade},
+\quad
+\mathbf{z}_\mathrm{combined} \;=\; \mathbf{h}_{\mathrm{CLS}} + \mathrm{ReLU}(\mathbf{m}).
+\end{equation}
+
+\hl{Then}%MDPI: Please confirm if indention should be added for this para.
+%Gurunameh: Indentation is okay.
+, $\mathbf{z}_\mathrm{combined}$ is fed to the authenticity head:
+\begin{equation}
+\hat{y}_{\text{fake}} \;=\; \mathrm{softmax}\Bigl(\mathrm{Head}_{\mathrm{F}}(\mathbf{z}_\mathrm{combined})\Bigr).
+\end{equation}
+
+\hl{Hence}, the~authenticity classification layer sees not only the base embedding but also authorship 
+information encoded in $\mathbf{a}$. The~entire forward pass is differentiable end-to-end, 
+allowing authorship gradients to propagate back into the encoder while also steering the second 
+stage authenticity head. Figure~\ref{fig9} represents the overall flow of the cascade process and highlights the difference between the~approaches.
+
+\begin{figure}[H] %Attention AE: Please revise "Tokenisation" to "Tokenization"
+%Gurunameh: The figure has been updated.
+    \includegraphics[width=\linewidth]{figures/hierarchalB.png}
+    \caption{This single-pass design computes authorship logits a and merges them with the h[cls] embedding, enabling authenticity classification to condition directly on the authorship~output.}
+    \label{fig9}
+\end{figure}
+
+
+If $\ell_\mathrm{auth}$ and $\ell_\mathrm{fake}$ are cross-entropy losses for each subtask 
+(using authorship labels and authenticity labels, respectively), then the single-pass model 
+minimizes
+\begin{equation}
+\label{eq:hier_loss}
+\mathcal{L}_\text{hier} \;=\; \ell_\mathrm{auth} + \ell_\mathrm{fake},
+\end{equation}
+similar to a multitask scenario, but~with an internal cascade from authorship 
+logits into authenticity.
+
+
+By enforcing this stepwise or cascade logic, hierarchical approaches may exploit the 
+prior knowledge that AI-written texts differ in style or distribution and that 
+misleading articles may be more prevalent among certain authorship types. Thus, the~second 
+task (authenticity) can condition on the first, often improving overall performance. 
+Nevertheless, the results in the next section will confirm 
+the extent to which hierarchical constraints outperform simpler multitask~baselines.
+
+
+\subsection{Stylometric Feature~Analysis}
+\label{sec:stylometric_analysis}
+
+We additionally perform stylometric feature extraction to investigate whether certain lexical, syntactic, or~readability attributes are indicative of human~vs.~AI authorship or fake~vs.~real authenticity. These features are inspired by prior studies in the domain of stylometric-based classification networks~\cite{opara2024styloai}, and~each feature contributes to a comprehensive profile of the text, encapsulating various aspects of its structure and composition~\cite{kumarage2023stylometric}. Below, we first provide a concise list of the features and their mathematical definitions in table \ref{tab:stylo_features} and then offer an expanded description of each~feature.
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.3}
+\tablesize{\small}
+\caption{\hl{Stylometric} %MDPI: Table 4 is not mentioned in the main text. Please cite the table in the text and ensure that the first citation of each table appears in numerical order.
+%Gurunameh: Table has been referenced.
+ features and their formulas. $T$ is the set of tokens, $S$ the set of sentences, and~$|\cdot|$ denotes~cardinality.}
+\label{tab:stylo_features}
+\begin{tabularx}{\linewidth}{l l}
+\toprule
+\textbf{Feature} & \textbf{Formula} \\
+\midrule
+\hl{WordCount}%MDPI: 1. Please confirm if the bold in the first column is unnecessary and can be removed. 2. Please check if space is missing between words. Same below.
+%Gurunameh: Bold is not necessary and has been removed. Space between the words have been updated.
+ & $W = |T|$ \\
+Unique Word Count & $U = |\{u \in T\}|$ \\
+Chararcter Count & $C = \sum_{t \in T} |t|$ \\
+Average Word Length & $\mathrm{AWL} = \frac{C}{W}$ \\
+TTR & $\mathrm{TTR} = \frac{U}{W}$ \\
+Hapax Legomenon & $\mathrm{HLR} = \frac{|\{t \in T : \mathrm{freq}(t) = 1\}|}{W}$ \\
+Sentence Count & $\mathrm{S} = |S|$ \\
+Average Sentence Length & $\mathrm{ASL} = \frac{W}{S}$ \\
+Average Sentence Complexity & $\mathrm{ASC} = \frac{S}{W}$ \\
+Punctuation Count & $P = \sum_{t \in T} \mathbf{1}(t \in \mathcal{P})$ \\
+Noun Count & $\displaystyle N = \sum_{t \in T} \mathbf{1}(\mathrm{upos}(t) = \text{NOUN})$ \\
+Verb Count & $\displaystyle V = \sum_{t \in T} \mathbf{1}(\mathrm{upos}(t) = \text{VERB})$ \\
+Adjective Count & $\displaystyle A = \sum_{t \in T} \mathbf{1}(\mathrm{upos}(t) = \text{ADJ})$ \\
+Adverb Count & $\displaystyle D = \sum_{t \in T} \mathbf{1}(\mathrm{upos}(t) = \text{ADV})$ \\
+Stopword Count & $\mathrm{Stop} = \sum_{t \in T} \mathbf{1}(t \in \mathcal{SW})$ \\
+Complex Sentence Count & $X = |\{\text{sent} \in S : \mathrm{clauseCount}(sent)>0\}|$ \\
+Question Mark Count & $Q = \mathrm{count}(\text{'?' etc.})$ \\
+Exclamation Mark Count & $E = \mathrm{count}(\text{'!' etc.})$ \\
+Flesch Reading Ease & $\mathrm{FRE} = 206.835 - (1.015 \times \mathrm{ASL}) \;-\; (84.6 \times \mathrm{AWL})$ \\
+ Gunning Fog Index & $\mathrm{GFI} = 0.4 \times \bigl(\mathrm{ASL} + 100\times \frac{\mathrm{ComplexSents}}{W}\bigr)$ \\
+First Person Pronoun Count & $F = \sum_{t \in T} \mathbf{1}(\mathrm{lower}(t) \in \mathcal{FP})$ \\
+Person Entity Count & $\mathrm{Person} = \sum_{\mathrm{ent}} \mathbf{1}(\mathrm{ent.type}=\text{'PERSON'})$ \\
+Date Entity Count & $\mathrm{Date} = \sum_{\mathrm{ent}} \mathbf{1}(\mathrm{ent.type}=\text{'DATE'})$ \\
+Uniqueness Bigram & $\displaystyle \frac{\text{Unique Bigrams}}{\text{Total Bigrams}}$ \\
+UniquenessTrigram & $\displaystyle \frac{\text{Unique Trigrams}}{\text{Total Trigrams}}$ \\
+Syntax Variety & $\mathrm{SynV} = |\{\mathrm{upos}(t) : t \in T\}|$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+The following are the detailed explanations of the~features:
+\begin{itemize}
+  \item Word Count, Unique Word Count, Character Count:
+  These capture the basic lexical footprint of each text. 
+  Word Count ($W$) is the total token count, Unique Word Count ($U$) measures vocabulary 
+  breadth, and Character Count ($C$) reflects orthographic~length.
+
+  \item TTR and Hapax Legomenon:
+  TTR (Type-Token Ratio) gauges lexical diversity, while Hapax Legomenon checks how many tokens appear exactly once, possibly indicating subject-specific or 
+  AI-like lexical~patterns.
+
+  \item Sentence Count, Average Sentence Length, Average Sentence Complexity:
+  Each measure describes syntactic distribution. 
+  Sentence Count simply counts the total sentences ($S$), while Average Sentence Length and AvgSentenceComplexity parse how dense or frequent these sentences are relative to word~counts.
+
+  \item Punctuation Count:
+  This summarizes how frequently punctuation tokens appear, which can be distinctive 
+  for emotional or AI-generated texts (e.g.,~repetitive exclamation marks).
+
+  \item Noun Count, Verb Count, Adjective Count, Adverb Count:
+  Part-of-speech tallies can reveal shifts in style or usage, 
+  e.g.,~certain content might rely heavily on adjectives for sensational language (common in fake news or AI descriptions).
+
+  \item Stopword Count:
+  This measures how many tokens come from a standard stopword list (the, and, of), which can reflect typical English~usage.
+
+  \item Complex Sentence Count:
+  This tracks how many sentences have additional subordinate or conjunctive clauses, often flagged by relations like advcl or conj in dependency parsing.
+
+  \item Question Mark Count, Exclamation Mark Count:
+  These tally rhetorical or emotional punctuation, potential hints of sensational or interactive text (AI prompts or clickbait).
+
+  \item Flesch Reading Ease, Gunning Fog Index:
+  Classic readability formulas. Flesch Reading Ease uses average sentence length and average word length, whereas Gunning Fog Index leverages sentence~complexity.
+
+  \item First Person Pronoun Count:
+  This identifies I, we, our, etc., which can differ between personal or AI-generated~writing.
+
+  \item Person Entity Count, Date Entity Count:
+  Named Entity Recognition tallies, checking if the mention of people or dates correlates with authenticity or authorship~cues.
+
+  \item Uniqueness Bigram, Uniqueness Trigram:
+  The ratio of distinct bigrams/trigrams to total. High uniqueness might suggest creative or unusual phrasing; low uniqueness could indicate repeated~patterns.
+
+  \item SyntaxVariety:
+  The number of unique POS tags (e.g., NOUN, VERB, ADV), 
+  reflecting diversity in syntactic structures.
+\end{itemize}
+
+After computing these stylometric attributes, we scale the resulting feature vectors (e.g.,~via 
+MinMax scaling) and feed them into classical ML algorithms or shallow neural networks. This approach can shed light on which linguistic cues dominate classification. For~instance, when we use a Random Forest or Logistic Regression model, we can derive feature importance values or coefficient weights, thus explaining whether frequent punctuation, certain entity mentions, or~high sentence complexity correlates strongly \hl{with} %MDPI: Please check if the special font is unnecessary and should be removed.
+%Gurunameh: The special font is not necessary and has been removed.
+ fake vs. real or human vs. AI predictions. Consequently, stylometric analysis offers an explainable contrast to purely deep contextual embeddings, potentially highlighting domain-specific patterns that advanced PLMs might learn in a less interpretable~way.
+
+In the next section, we compare these feature-based classifiers against our multitask 
+PLM approaches. We find that certain stylometric cues (e.g.,~frequent first-person pronouns, low lexical diversity) can partially reveal AI authorship, while strong readability variation or emotional punctuation can hint at manipulative fake news. Ultimately, these stylometric signals can complement or explain model decisions, even if end-to-end PLMs yield higher raw~accuracy.
+
+
+\subsection{Prompt-Based Classifiers}
+\label{sec:prompt_based}
+
+In addition to supervised neural models and stylometric approaches, we employ prompt-based classification with large language models, specifically GPT-4o and Llama3.2. Rather than training a classifier directly, we issue targeted system instructions and user prompts, asking the model to output a single label (AI vs. Human or Real vs. Fake). This leverages the LLM’s internal knowledge from pretraining, enabling classification in a near-zero-shot~setting. Following are the LLMs we selected.
+
+ %MDPI: Is this subsubheading? 
+ %MDPI: We removed the period. Please confirm.
+ %Gurunameh: This is not a subsection and has been updated.
+\begin{itemize}
+    \item GPT-4o: A variant of GPT-4 accessed via a chat-completions API. It offers high-quality outputs at the expense of potential rate or cost limitations.
+    \item Llama3.2: An open-source (or locally hosted) model, also responding to system plus user prompts for classification tasks.
+\end{itemize}
+
+We craft two specialized tasks: AI vs. Human for authorship and Real vs. Fake for authenticity. Each prompt pair consists of a system instruction defining the classification role and~a user prompt providing the article title and text and then requesting a direct label. Table \ref{tab:prompt_templates} summarizes these~templates.
+
+\begin{table}[H]
+\tablesize{\small}
+\caption{Prompt templates for authorship and authenticity classification. The~placeholders \{title\}, \{text\} are replaced with each sample’s content at~runtime.}
+\label{tab:prompt_templates}
+\begin{tabular}{l p{5cm} p{5cm}}
+\toprule
+\textbf{Task} & \textbf{System Instruction} & \textbf{User Prompt Template} \\
+\midrule
+\hl{AI~vs.~Human} %MDPI: Please confirm if the bold is unnecessary and can be removed.
+%Gurunameh: Bold is not necessary and has been removed.
+ & 
+\footnotesize{
+You are a classifier that determines whether a news article is written by a human or by an AI. Respond with either `Human' or `AI' and nothing else.
+} & 
+\footnotesize{
+Title: \{title\}  \break Text: \{text\}  \break Is the above article written by a human or an AI?
+}
+\\[6pt]
+Real~vs.~Fake & 
+\footnotesize{
+You are a classifier that determines whether a news article is factually correct (Real) or deliberately fabricated (Fake). Respond with either `Real' or `Fake' and nothing else.
+} & 
+\footnotesize{
+Title: \{title\} \break Text: \{text\} \break Is the above article Real or Fake?
+}
+\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+At inference, we insert an article’s \{title\} and \{text\} into the relevant user prompt and then send both system instruction and user prompt to GPT-4o or Llama3.2. The~LLM responds with a single token (``AI'' or ``Human'', ``Real'' or ``Fake''). Temperature is set to zero (temperature=0), aiming for deterministic behavior. We record these outputs as predicted labels and evaluate them against ground~truth.
+
+Compared to fine-tuned or feature-based models, LLM prompts require minimal additional data or training steps---each classification query essentially leverages the LLM’s pretraining. However, the~method can be sensitive to prompt phrasing, and~it may produce off-format answers if not carefully constrained. Nonetheless, prompt-based classification can be deployed quickly for new tasks, provided the instructions are unambiguous and the LLM comprehends the textual domain. We later discuss how these responses compare to supervised baselines in the results section, assessing whether LLMs can robustly infer authenticity and authorship from a straightforward question-and-answer prompt.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experiments}\label{S5}
+
+To rigorously evaluate the proposed methods, we conduct a series of controlled experiments that aim to gauge effectiveness in both authenticity (fake~vs.~real) and authorship (human~vs.~AI) classification. In~this section, we describe the experimental design, including data splits, training and validation protocols, hyperparameter configurations, and~the metrics used for evaluation. We also provide details on ablation studies and other relevant implementation aspects. Following this comprehensive overview, we present all quantitative and qualitative findings in the subsequent Results Section, where we compare the performance of our novel approaches against relevant baselines and discuss the implications in~detail.
+
+\subsection{Experimental~Setup}
+
+All experiments were conducted on a system equipped with an NVIDIA A4000 GPU featuring 24 GB of VRAM and 2 virtual CPUs (vCPUs). This setup provided sufficient memory to handle large PLMs (e.g.,~BERT, DistilBERT, GPT-based architectures) and multitask or hierarchical pipelines without frequent out-of-memory errors. We relied on the Hugging Face Transformers library for model definitions, tokenization, and~training routines, and~we leveraged the built-in Trainer class to streamline fine-tuning, evaluation, and~checkpoint~management.
+
+For single-task experiments, we typically used a batch size of 8, trained for 3 epochs, and~set load-best-model-at-end=True to ensure that the best checkpoint according to validation loss was restored before final evaluation. The~same batch size, number of epochs, and~best-model restoration logic were applied to multitask and hierarchical models as well, though~we occasionally experimented with ablation runs (e.g.,~removing stylometric features, adjusting task-specific loss weights) under similar or identical hyperparameters to maintain comparability. Our logging interval (logging-steps=50) provided enough granularity to monitor training progress without incurring excessive~overhead.
+
+Additionally, we occasionally invoked ablation protocols that removed or altered certain features (e.g.,~stylometric input, shared layers in a multitask architecture) while preserving the same batch size, number of epochs, and~validation strategy. This consistency allowed us to draw fair comparisons across different approaches without conflating changes in hyperparameters with changes in model~design.
+
+
+\subsection{Traditional Baseline Using Classical ML~Methods}
+
+Our traditional (baseline) approach employs bag-of-words representations with TF-IDF weighting to classify texts as either fake~vs.~real (authenticity) or human~vs.~AI (authorship). In~our TF-IDF baseline, each document is first transformed into a high-dimensional vector 
+$\mathbf{x} \in \mathbb{R}^d$, where $d$ corresponds to the size of the TF-IDF feature space 
+(e.g.,~unigrams or n-grams). We then feed $\mathbf{x}$ into one of several classical machine learning classifiers to predict the label $y \in \{0,1\}$ (e.g., fake~vs.~real or human~vs.~AI). An~overview of the approach is depicted in Figure \ref{fig4}.
+Specifically, we explore the following algorithms:
+
+First we discuss Logistic Regression, given a weight vector $\boldsymbol{\theta} \in \mathbb{R}^d$ and bias $b \in \mathbb{R}$, 
+logistic regression models the probability that $y=1$ as:
+\begin{equation}
+\label{eq:logistic}
+P(y=1 \mid \mathbf{x}) \;=\; \sigma\big(\boldsymbol{\theta}^\top \mathbf{x} + b\big),
+\end{equation}
+where $\sigma(z) = \tfrac{1}{1 + \exp(-z)}$ is the sigmoid function. The~prediction 
+$\hat{y}$ is then obtained by thresholding $P(y=1 \mid \mathbf{x})$ at~0.5.
+
+Next, Random Forest is an ensemble of $M$ decision trees. Each tree is trained on a bootstrapped 
+sample of the data and~uses a subset of features to split nodes. The~final classification is 
+determined by majority vote among the $M$ trees:
+\begin{equation}
+\hat{y} \;=\; \mathrm{majority\_vote}\bigl(\mathrm{Tree}_1(\mathbf{x}), \dots, \mathrm{Tree}_M(\mathbf{x})\bigr).
+\end{equation}
+
+Further, an SVC attempts to find a maximum-margin hyperplane in $\mathbf{x} \in \mathbb{R}^d$. In~its basic linear form:
+\begin{equation}
+\hat{y} \;=\; \mathrm{sign}\!\bigl(\boldsymbol{w}^\top \mathbf{x} + b\bigr),
+\end{equation}
+though we often employ kernelized SVC for non-linear decision boundaries (e.g.,~RBF kernel).
+
+Also, Multinomial Naive Bayes assumes word occurrences follow a multinomial distribution and treats features 
+independently given the class. For~a vocabulary size $d$, the~posterior probability of class $k$ 
+given $\mathbf{x}$ is:
+\begin{equation}
+\label{eq:mnb}
+P(y=k \mid \mathbf{x}) \;\propto\; P(y=k)\,\prod_{j=1}^{d} P(x_j \mid y=k)^{\,x_j},
+\end{equation}
+where $x_j$ is the count (or TF-IDF weight) of the $j$-th token and~$P(x_j \mid y=k)$ is 
+estimated from training~data.
+
+Moreover, XGBoost is a gradient boosting framework that incrementally fits an ensemble of decision trees 
+to minimize a specified loss (often logistic loss for classification). Let $F_{m-1}(\mathbf{x})$ 
+be the ensemble’s prediction after $m-1$ trees; the $m$-th tree is fitted to the negative gradient 
+of the loss with respect to $F_{m-1}(\mathbf{x})$, producing $h_m(\mathbf{x})$. The~model update is then:
+\begin{equation}
+F_{m}(\mathbf{x}) \;=\; F_{m-1}(\mathbf{x}) + \eta \, h_m(\mathbf{x}),
+\end{equation}
+where $\eta$ is the learning rate. The~final prediction is obtained by the sign or threshold 
+of $F_{M}(\mathbf{x})$ after $M$ trees.
+\begin{figure}[H] %Attention: Please remove spacing after forward slash, e.g., revise "MNB/ XGB" to "MNB/XGB"
+    \centering
+    \includegraphics[width=\linewidth]{figures/traditional_pipeline.png}
+    \caption{Pipeline for traditional baseline~classification.}
+    \label{fig4}
+\end{figure}
+
+All of these methods take as input the same TF-IDF vectors derived from lowercased, tokenized text. We tune hyperparameters (e.g.,~regularization strength in logistic regression, max depth in  XGBoost) via a validation set to maximize classification performance on each specific task (authenticity or authorship). Despite the more limited representational capacity of these models compared to deep neural networks, they serve as a computationally efficient and interpretable baseline that often performs competitively on text classification tasks involving TF-IDF~features.
+
+
+\subsection{Ablation~Studies}
+
+A key contribution of our approach is the flexible architecture that can toggle on or off: 
+(\textit{i}) the shared layer after the PLM, 
+(\textit{ii}) the private layers for each task, and~
+(\textit{iii}) different loss weights for authenticity (fake~vs.~real) and authorship (human~vs.~AI). To systematically evaluate which components and hyperparameters lead to gains, we conduct a set of ablation experiments, modifying the configuration in the following ways:
+
+\begin{enumerate}
+  \item Shared Layer On/Off: 
+  When shared layer is used, we insert an additional linear + ReLU block 
+  to transform the pooled BERT output (\(\mathbf{h}_{\text{CLS}}\)). 
+  If set to False, the~model directly passes \(\mathbf{h}_{\text{CLS}}\) into either private layers 
+  or heads without the extra shared~projection. 
+  
+  Mathematically, if~shared layer is used, we compute:
+\begin{equation}
+  \label{eq:ablation_shared}
+  \mathbf{z}_\mathrm{shared} \;=\; \mathrm{ReLU}\Bigl(\mathbf{W}_\mathrm{shared}\,\mathbf{h}_{\text{CLS}} \;+\; \mathbf{b}_\mathrm{shared}\Bigr),
+  \end{equation}
+  else we set \(\mathbf{z}_\mathrm{shared} = \mathbf{h}_{\text{CLS}}\) directly.
+
+  \item Private Layers On/Off:
+  If private layers is turned on, each task obtains its own feed-forward (FF) head, 
+  e.g.,~\(\mathrm{PrivateFF}_{\mathrm{auth}}\) for authorship and \(\mathrm{PrivateFF}_{\mathrm{fake}}\) 
+  for authenticity. Otherwise, the~model 
+  simply applies two linear heads (one for authenticity, one for authorship) directly to \(\mathbf{z}_\mathrm{shared}\). 
+  In the private layers scenario:
+\begin{equation}
+  \mathbf{z}_{\mathrm{auth}} \;=\; \mathrm{PrivateFF}_{\mathrm{auth}}\!\bigl(\mathbf{z}_\mathrm{shared}\bigr),\;\;\;
+  \mathbf{z}_{\mathrm{fake}} \;=\; \mathrm{PrivateFF}_{\mathrm{fake}}\!\bigl(\mathbf{z}_\mathrm{shared}\bigr),
+  \end{equation}
+  which then feed two distinct classifier heads. Disabling private layers merges the two tasks' feed-forward paths 
+  so that each classification head sees the same~representation.
+
+  \item Loss Weight Modifications:
+  By varying authenticity loss weight (\(\alpha\)) and authorship loss weight (\(\beta\)), we emphasize one task's loss over the other. Our total loss is:
+\begin{equation}
+  \label{eq:ablation_loss_total}
+  \mathcal{L}_{\text{total}} \;=\; \alpha\,\mathcal{L}_{\text{authenticity}} + \beta\,\mathcal{L}_{\text{authorship}},
+  \end{equation}
+  where each \(\mathcal{L}\) represents cross-entropy for its respective output logits. %EE: Please check that intended meaning has been retained.
+  %Gurunameh: Yes.
+  Typically, 
+  \(\alpha = \beta = 1.0\) indicates equal importance, but~we test an ablation where authenticity is weighted more~heavily.
+
+\end{enumerate}
+
+
+\hl{For implementation} %MDPI: We added indention for this para. Please confirm.
+%Gurunameh: Yes.
+ and Forward Pass each ablation run instantiates the base BERT model and applies the~following toggles: 
+\begin{itemize}
+    \item  If Equation~\eqref{eq:ablation_shared} is used or skipped;
+    \item use\_private\_layers decides if task-specific FF transformations are added; 
+    \item  Set \(\alpha\) and \(\beta\) in Equation~\eqref{eq:ablation_loss_total}.
+\end{itemize}
+
+\hl{During} %MDPI: We added indention for this para. Please confirm.
+%Gurunameh: Confirmed.
+ training, the~forward pass produces both authenticity logits and authorship logits from whichever structure emerges after toggling. 
+These logits go into separate cross-entropy losses, scaled by \(\alpha\) or \(\beta\), then summed. 
+Such design lets us confirm whether the shared block or private layers significantly boost synergy between~tasks.
+
+Table~\ref{tab:ablation_variants} summarizes the ablation variants we explore. In~practice, 
+each variant is launched with the same training hyperparameters (3 epochs, batch size 8, 
+learning rate $2\times 10^{-5}$), and a final evaluation is performed on test data for both authorship 
+and authenticity. We detail performance differences in the Results~Section.
+
+
+\begin{table}[H]
+\tablesize{\small}
+\caption{Ablation configurations toggling shared/private layers and loss~weighting.}
+\label{tab:ablation_variants}
+\setlength{\tabcolsep}{15pt}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\linewidth}{lcccc}
+\toprule
+\textbf{Variant Name} & \textbf{Shared Layer?} & \textbf{Private Layers?} & \boldmath$\alpha$ & \boldmath$\beta$ \\
+\midrule
+full\_model          & True  & True  & 1.0 & 1.0 \\
+no\_shared\_layer    & False & True  & 1.0 & 1.0 \\
+no\_private\_layers  & True  & False & 1.0 & 1.0 \\
+authenticity\_loss\_2x & True  & True  & 2.0 & 1.0 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+Table~\ref{tab:ablation_variants} displays the four main variations: 
+(1) full\_model sets everything on with equal weighting, 
+(2) no\_shared\_layer removes the additional linear + ReLU block, 
+(3) no\_private\_layers omits separate feed-forward transformations for each task, 
+and (4) authenticity\_loss\_2x doubles the weighting for fake~vs.~real. 
+By evaluating test accuracy and F1 for each configuration, we ascertain the individual impact of each design element (shared layer, private layers, task weighting) on overall~performance.
+
+We anticipate that no\_shared\_layer and no\_private\_layers might hinder the model’s ability to capture cross-task or task-specific nuances, thus lowering the synergy between authorship and authenticity. On~the other hand, multiplying \(\alpha\) by 2.0 in authenticity\_loss\_2x should strengthen fake~vs.~real classification, albeit possibly at the cost of 
+slightly weaker human~vs.~AI metrics. Results from these ablation runs, compared to full\_model, clarify how each structural or weighting choice contributes to the model’s final accuracy and~F1-scores.
+
+
+
+\section{Results}\label{S6}
+
+\textls[-15]{In this section, we present our empirical findings for classifying authenticity (fake~vs.~real)} and authorship (human~vs.~AI). Our experiments encompass a broad range of models, starting with baselines, which include not only straightforward approaches (e.g.,~classical machine learning pipelines) but also some of the most recent and best performing models in the domain. Further, we move into PLM-based approaches, including single-task and multitask setups. We then perform ablation studies to measure how toggling key architectural elements (such as shared or private layers) affects performance on both~tasks. 
+
+Next, we explore a stylometric analysis, relying solely on handcrafted linguistic features to highlight whether explicit lexical and syntactic cues can match or complement the accuracy of end-to-end neural methods. Finally, we evaluate prompt-based classification with large language models, comparing how zero- or few-shot queries to GPT-4o and Llama3.2 stack up against our supervised or feature-driven methods. Throughout these experiments, we report both accuracy and F1-scores (macro or weighted) to account for any class imbalance in real~vs.~fake or human~vs.~AI. In~some cases, we also examine precision, recall, and~confusion matrices to clarify which error patterns arise most~often.
+
+By contrasting all these results, we aim to identify which techniques effectively capture the nuances of authorship and authenticity and~which design decisions---hierarchical constraints, prompt-based questions, or stylometric signals---meaningfully enhance performance and explainability. In~the paragraphs that follow, we present each method’s outcomes and discuss their comparative~advantages.
+
+
+\subsection{Baseline~Results}
+\label{sec:res_traditional_baselines}
+
+We begin our empirical evaluation with traditional machine learning baselines, which leverage a TF-IDF feature pipeline to classify authenticity (fake~vs.~real) and authorship (human~vs.~AI). Our evaluation initially considers five classifiers: Logistic Regression, Random Forest, SVC, Multinomial Naive Bayes, and~XGBoost (XGB). Their performance---reported in terms of accuracy, precision, recall, and~F1-scores (both weighted and macro)---is summarized in Table~\ref{tab:traditional_baselines}.
+
+In addition to these traditional methods, we extend our analysis to include several state-of-the-art models. First, we evaluate graph neural network (GNN)-based algorithms~\cite{kuntur2024comparative} (GCN, graphSAGE, GIN, and~GAT), which treat TF-IDF vectorized articles as nodes in a synthetic graph to capture inter-document relationships. We then consider deep learning architectures from the recent literature~\cite{das2025fake,wani2021evaluating}: CNN, LSTM, and~a bi-LSTM attention-based model. In~these neural models, fasttext~\cite{bojanowski2016enriching} embeddings are used for tokenization and feature representation. Finally, for~authorship detection, we incorporate two popular machine-generated text (MGT) detection algorithms, GPTZero~\cite{tian2023gptzero} and DetectGPT~\cite{mitchell_detectgpt_2023}.
+
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.2}
+\tablesize{\small}
+\caption{\hl{Performance} %MDPI: We removed the extra empty column. Please confirm.
+%Gurunameh: Confirmed.
+ of baselines on authenticity (fake~vs.~real) and authorship (human~vs.~AI). We report accuracy, precision, recall, and~F1-scores (weighted and macro).}
+\label{tab:traditional_baselines}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+\multirow{2}{*}{\textbf{Approach\vspace{-5pt}}} & \multicolumn{5}{c}{\textbf{Authenticity (Fake~vs.~Real)}} & 
+ \multicolumn{5}{c}{\textbf{Authorship (Human~vs.~AI)}} \\
+\cmidrule{2-11}
+ & 
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} &
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} \\
+\midrule
+
+\hl{Logistic Regression} %MDPI: Please confirm if the bold is unnecessary and can be removed. The following are the same.
+%Gurunameh: Removed and updated.
+ & 
+89.16 & 89.16 & 88.74 & 88.74 & 88.75 & 
+90.91 & 89.98 & 89.96 & 89.98 & 88.43 \\
+
+Random Forest & 
+84.34 & 83.63 & 83.65 & 83.63 & 83.65 &
+ 86.88 & 85.62 & 85.64 & 85.62 & 85.62 \\
+
+SVC & 
+87.65 & 87.82 & 87.82 & 87.84 & 87.83 &
+ 87.75 & 87.06 & 87.11 & 87.06 & 87.06 \\
+
+MultinomialNB & 
+83.61 & 84.17 & 84.17 & 84.11 & 84.18 &
+ 75.76 & 72.89 & 72.88 & 72.89 & 72.88 \\
+
+XGB & 
+88.39 & 87.94 & 87.94 & 87.94 & 87.94 &
+90.21 & 89.22 & 89.22 & 89.22 & 89.22 \\
+
+GCN &
+54.25 & 29.43 & 54.25 & 38.16 & 35.17 &
+46.46 & 50.62 & 46.45 & 45.33 & 46.08 \\
+
+graphSAGE &
+54.11 & 49.68 & 54.11 & 39.03 & 36.15 &
+58.53 & 34.26 & 58.53 & 43.22 & 36.92 \\
+
+GAT &
+54.25 & 29.43 & 54.25 & 38.16 & 35.17 &
+58.53 & 34.26 & 58.53 & 43.22 & 36.92 \\
+
+GIN &
+53.96 & 50.40 & 53.96 & 40.69 & 38.01 &
+41.47 & 17.20 & 41.47 & 24.31 & 29.31 \\
+
+CNN &
+92.92 & 93.00 & 92.92 & 92.93 & 92.90 &
+ 94.53 & 94.67 & 94.53 & 94.55 & 94.40 \\
+
+LSTM &
+93.37 & 93.64 & 93.37 & 93.33 & 93.27 &
+ 95.20 & 95.26 & 95.20 & 95.17 & 95.00 \\
+
+bi-LSTM attn &
+94.61 & 94.74 & 94.61 & 94.59 & 94.54 &
+ 95.17 & 95.17 & 95.17 & 95.05 & 95.17 \\
+
+GPTZero &
+NA & NA & NA & NA & NA &
+ 64.74 & 67.89 & 64.74 & 64.55 & 64.70 \\
+
+DetectGPT &
+NA & NA & NA & NA & NA &
+49.89 & 53.31 & 49.89 & 49.15 & 49.65 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+
+
+
+
+
+Table~\ref{tab:traditional_baselines} reveals several trends. Among~the traditional baselines, Logistic Regression and XGB yield robust performance, achieving authenticity accuracies of 89.16\% and 88.39\% and~authorship accuracies of 90.91\% and 90.21\%, respectively. In~contrast, deep learning models significantly outperform these methods: the CNN, LSTM, and~bi-LSTM attention networks reach authenticity accuracies of 92.92\%, 93.37\%, and~94.61\% and authorship accuracies of 94.53\%, 95.20\%, and~95.17\%, respectively. These results indicate that convolutional and recurrent architectures---especially when augmented with attention mechanisms---are highly effective at capturing complex textual~patterns.
+
+On the other hand, the~GNN-based models (GCN, graphSAGE, GAT, and~GIN) exhibit considerably lower performance, with~authenticity accuracies hovering around 54\% and authorship accuracies ranging between 41.47\% and 58.53\%. This suggests that representing articles as nodes with TF-IDF features and synthetic connections does not capture the nuanced relationships required for accurate classification in these tasks. For~authorship detection specifically, the~specialized MGT detection algorithms---GPTZero and DetectGPT---yield much lower accuracies (64.74\% and 49.89\%, respectively). Their subpar performance underscores the challenges these approaches face when distinguishing human-written texts from AI-generated content, as~compared to both traditional and deep learning~classifiers.
+
+Overall, while traditional methods such as Logistic Regression and XGB remain competitive, the~deep learning architectures, particularly the bi-LSTM attention model, deliver superior performance across both authenticity and authorship classification~tasks.
+
+
+\subsection{PLM-Based~Approaches}
+\label{sec:res_transformers}
+
+In the prior literature, the~best performing strategies for both authenticity and authorship classification have been based on pretrained language models (PLMs)~\cite{iceland2023good,su2023adapting}. In~our work, we have incorporated all of these top-performing strategies to ensure a comprehensive comparison. We now present our PLM-based approaches for both tasks. Table~\ref{tab:transformer_results} shows the accuracy, precision, recall, and~F1-scores (weighted and macro) achieved by various configurations, including single-task versus multitask fine-tuning, a~shared--private sub-network (SPSM) approach, hierarchical variants, and~an authenticity\_loss\_2x configuration that emphasizes the authenticity~objective.
+
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.2}
+\tablesize{\small}
+\caption{\hl{Performance} %MDPI: We removed the extra empty column. Please confirm.
+%Gurunameh: Confirmed.
+ of PLM-based models, including single-task or multitask BERT, shared--private, hierarchical variants, and~doubled authenticity loss weighting. Each row reports accuracy, precision, recall, and~F1 (weighted and macro) for both \textit{authenticity} (fake~vs.~real) and \textit{authorship} (human~vs.~AI).}
+\label{tab:transformer_results}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+\multirow{2}{*}{\textbf{Approach\vspace{-5pt}}} & \multicolumn{5}{c}{\textbf{Authenticity (Fake~vs.~Real)}} & 
+ \multicolumn{5}{c}{\textbf{Authorship (Human~vs.~AI)}} \\
+\cmidrule{2-11}
+
+ & 
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} &
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} \\
+\midrule
+
+BERT w/ Multitask & 
+95.94 & 95.98 & 95.94 & 95.94 & 95.90 &
+ 98.19 & 98.04 & 98.19 & 98.19 & 98.14 \\
+
+BERT Separate & 
+95.33 & 95.33 & 95.27 & 95.33 & 95.29 &
+ 98.61 & 98.56 & 98.58 & 98.61 & 98.57 \\
+
+SPSM & 
+96.97 & 96.98 & 96.88 & 96.97 & 96.95 &
+ 98.84 & 98.74 & 98.84 & 98.85 & 98.84 \\
+
+\hl{SPSM(authenticity\_loss\_2x)} %MDPI: Please confirm if the bold is unnecessary and can be removed.
+%Gurunameh: Removed.
+ & 
+97.09 & 97.12 & 97.36 & 97.09 & 96.98 &
+ 98.92 & 99.07 & 99.08 & 98.92 & 98.89 \\
+
+distilBERT (Multitask) & 
+95.21 & 95.22 & 95.21 & 95.20 & 95.17 &
+ 97.85 & 97.86 & 97.85 & 97.85 & 97.78 \\
+
+ELECTRA (Multitask) & 
+96.84 & 96.86 & 96.84 & 96.84 & 96.81 &
+ 98.80 & 98.72 & 98.82 & 98.80 & 98.77 \\
+
+Hierarchical B & 
+96.20 & 96.24 & 96.20 & 96.16 & 96.19 &
+ 98.45 & 98.45 & 98.45 & 98.45 & 98.41 \\
+
+Hierarchical A & 
+94.07 & 94.07 & 93.97 & 94.06 & 94.01 &
+ 98.01 & 98.03 & 98.03 & 98.01 & 97.92 \\
+
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+
+ %MDPI: We removed the period. Please confirm.
+ %Gurunameh: The paragraph heading is removed.
+
+The SPSM surpasses naive multitask or separate training (96.97\%~vs.~95--96\% authenticity), indicating that partial parameter sharing plus private sub-networks effectively capture cross-task~cues. 
+
+Notably, authenticity\_loss\_2x improves authenticity accuracy to 97.09\%---a jump from the original BERT metrics---by weighting authenticity’s cross-entropy loss more heavily. Though~this also slightly elevates authorship performance (98.92\% accuracy), the~difference is smaller, highlighting how scaling one task’s objective can yield an overall synergy without excessively penalizing the other~task. 
+
+Meanwhile, DistilBERT (Multitask) and ELECTRA (Multitask) remain competitive, with~ELECTRA hitting 96.84\% for authenticity and 98.80\% for authorship. Finally, Hierarchical B/A show how authorship signals can be used to drive authenticity classification in a single-pass or two-stage approach, with Hierarchical B surpassing basic multitask BERT in authenticity by about 0.26\% (96.20\%~vs.~95.94\%). 
+
+Overall, these results reinforce that multitask architectures leveraging shared representation and task-specific specialization can exceed simpler single-task or naive two-head solutions. Moreover, adjusting loss weights (e.g.,~doubling authenticity’s contribution) can significantly boost that particular task’s performance without unduly harming the other classification~goal.
+
+
+\subsection{Ablation~Studies}
+\label{sec:res_ablation}
+
+To isolate the impact of shared layers, private layers, and loss weighting, we carry out a series of ablation experiments. Table~\ref{tab:ablation_results} summarizes how toggling each component affects authenticity (fake~vs.~real) and authorship (human~vs.~AI) metrics. Below, we discuss the four configurations:
+
+\begin{itemize}
+    \item full\_model w both loss: It enables both shared and private layers with default weighting (\(\alpha = \beta = 1.0\)).
+    \item no\_shared\_layer: It disables the shared feed-forward transformation while keeping private layers.
+    \item no\_private\_layers: It retains the shared layer but removes per-task private layers, mapping the shared representation directly to logits.
+    \item authenticity\_loss\_2x: It doubles the authenticity loss weight (\(\alpha=2.0\)), amplifying the fake~vs.~real objective.
+\end{itemize}
+
+full\_model with both loss achieves 96.95\% authenticity accuracy and 98.53\% authorship accuracy, validating that including both shared and private layers balances synergy and task-specific nuance. no\_shared\_layer slightly reduces authenticity accuracy to 96.71\%, indicating that the additional feed-forward block may indeed help general representation. Interestingly, no\_private\_layers yields identical metrics to the full model in this case, suggesting the shared feed-forward transformation alone can suffice under certain data~conditions.
+
+
+
+\begin{table}[H]
+\tablesize{\small}
+\caption{\hl{Ablation} %MDPI: We removed the extra empty column. Please confirm.
+%Gurunameh: Confirmed.
+ results comparing different architectural toggles (shared~vs.~private layers) and modifying authenticity loss weighting. We report accuracy, precision, recall, weighted F1, and~macro F1 for both~tasks.}
+\label{tab:ablation_results}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+\multirow{2}{*}{\textbf{Approach\vspace{-5pt}}} & \multicolumn{5}{c}{\textbf{Authenticity (Fake~vs.~Real)}} & 
+ \multicolumn{5}{c}{\textbf{Authorship (Human~vs.~AI)}} \\
+\cmidrule{2-11}
+ & 
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} &
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} \\
+\midrule
+\hl{full\_model w both loss} %MDPI: Please confirm if the bold is unnecessary and can be removed. The following highlights are the same.
+%Gurunameh: It is removed.
+ &
+96.95 & 96.36 & 98.09 & 96.95 & 96.93 &
+ 98.53 & 99.39 & 98.07 & 98.53 & 98.49 \\
+
+no\_shared\_layer &
+96.71 & 97.18 & 96.75 & 96.71 & 96.69 &
+ 98.35 & 99.32 & 97.85 & 98.35 & 98.31 \\
+
+no\_private\_layers &
+96.95 & 96.36 & 98.09 & 96.95 & 96.93 &
+ 98.53 & 99.39 & 98.07 & 98.53 & 98.49 \\
+
+authenticity\_loss\_2x &
+97.09 & 97.12 & 97.36 & 97.09 & 96.98 &
+ 98.92 & 99.07 & 99.08 & 98.92 & 98.89 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+
+
+
+
+
+Finally, authenticity\_loss\_2x raises authenticity accuracy to 97.09\% while also nudging authorship up to 98.92\%, showing that boosting one task’s weight (\(\alpha=2.0\)) can still improve joint performance without noticeably harming the secondary objective. This further underscores that controlling relative loss terms can help a multitask network prioritize more difficult tasks (fake~vs.~real in this scenario) while retaining high performance on~authorship.
+
+Figure~\ref{fig:ablation-radar} presents a superimposed radar chart comparing the performance of four model variants across multiple authenticity and authorship metrics. Each axis represents an individual metric, with~higher values toward the outer edge indicating better performance. To~accentuate subtle differences, the~radial axis is limited to the range 96--100. The authenticity\_loss\_2x variant, highlighted in purple, demonstrates consistently strong performance across all metrics. In~contrast, the~ablated variants---where either shared or private layers are removed---exhibit declines in specific areas. For~example, the~removal of shared layers primarily affects authenticity metrics, suggesting that shared representations are critical for accurate authenticity classification. Similarly, the~drop in authorship-related performance observed in the variant lacking private layers indicates that these layers are important for capturing nuances required to distinguish between~authors.
+
+\begin{figure}[H]
+    \includegraphics[width=0.75\linewidth]{figures/ablation.png}
+    \caption{\hl{Radar} %MDPI: Number 97 is not complete, please check if this will affect reading, if so, please provide a new image.
+    %Gurunameh: This will not affect the reading as values before and after are visible.
+ chart comparing performance of four model~variants.}
+    \label{fig:ablation-radar}
+\end{figure}
+
+
+\subsection{Stylometric-Based~Approaches}
+\label{sec:res_stylometric}
+
+We next evaluate how well stylometric feature vectors (Section~\ref{sec:stylometric_analysis}) alone can classify authenticity (fake~vs.~real) and authorship (human~vs.~AI). Table~\ref{tab:stylometric_results} presents performance for a shallow neural network (Stylometric NN) and three classical ML algorithms (Logistic Regression, Random Forest, SVC) trained solely on handcrafted linguistic attributes (e.g.,~word count, TTR, punctuation usage, reading ease). 
+
+\begin{table}[H]
+\tablesize{\small}
+\caption{\hl{Accuracy}%MDPI: We removed the extra empty column. Please confirm.
+%Gurunameh: Confirmed.
+, precision, recall, and~F1 (weighted and macro) for \textbf{stylometric-based} classification. Each method uses only the stylometric feature vectors (no TF-IDF or deep embeddings).}
+\label{tab:stylometric_results}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+\multirow{2}{*}{\textbf{Approach\vspace{-5pt}}} & \multicolumn{5}{c}{\textbf{Authenticity (Fake~vs.~Real)}} & 
+ \multicolumn{5}{c}{\textbf{Authorship (Human~vs.~AI)}} \\
+\cmidrule{2-11}
+ & 
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} &
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} \\
+\midrule
+Stylometric NN %MDPI: Please confirm if the bold is unnecessary and can be removed. The following highlights are the same.
+%Gurunameh: Removed.
+ &
+86.14 & 86.21 & 85.78 & 86.14 & 85.96 &
+ 85.06 & 85.03 & 84.28 & 84.98 & 84.57 \\
+
+Stylometric LR &
+83.50 & 83.69 & 83.50 & 83.37 & 83.11 &
+ 55.13 & 54.76 & 55.13 & 54.90 & 53.69 \\
+
+Stylometric RF &
+86.75 & 86.89 & 86.75 & 86.67 & 86.48 &
+ 57.87 & 57.66 & 57.87 & 57.75 & 56.68 \\
+
+Stylometric SVC &
+85.75 & 85.82 & 85.75 & 85.68 & 85.49 &
+ 58.63 & 58.50 & 58.63 & 58.56 & 57.56 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+
+ %MDPI: We removed the period. Please confirm.
+ %Gurunameh: Paragraph heading was removed.
+
+For \textbf{authenticity}, both the shallow NN and Random Forest surpass 86\% accuracy, suggesting that certain textual cues (e.g.,~average word length, punctuation usage, or~entity counts) correlate with whether an article is real or fake. In~contrast, \textbf{Stylometric LR} lags behind, possibly due to linear constraints on feature interactions. Meanwhile, \textbf{Stylometric SVC} and \textbf{Stylometric RF} offer comparable authenticity metrics (around 85--86\%), showing that tree-based or margin-based classifiers can partially exploit these linguistic~signals.
+
+For \textbf{authorship}, performance is notably lower---ranging from 55--58\% for classical methods to 85.06\% for the NN. This indicates that identifying AI~vs.~human texts purely from stylometric attributes is \emph{more challenging} than detecting factual consistency. The~shallow NN, possibly benefiting from non-linear transformations of the stylometric features, outperforms classical ML by a wide margin (85.06\%~vs.~57--59\%). This underscores that while stylometry alone may capture some aspects of AI writing, it might require a more flexible (e.g.,~neural) model to glean subtle~patterns.
+
+
+ %MDPI: We removed the period. Please confirm.
+ %Gurunameh: Paragraph heading was removed.
+Although stylometric classifiers remain behind PLM-based pipelines (Section~\ref{sec:res_transformers}), they provide interpretability and computational efficiency. Feature importances (e.g.,~from~Random Forest or logistic coefficients) can \emph{explain} whether, for~instance, an~unusual ratio of first-person pronouns or a high Gunning Fog Index signals AI authorship or misinformation. As~a standalone method, stylometry yields moderate success---particularly for authenticity---but struggles more with authorship classification, possibly because advanced LLMs adopt varied and increasingly human-like styles. Nonetheless, these results highlight how explicit linguistic features can still distinguish certain phenomena in real~vs.~fake or human~vs.~AI~content.
+
+
+\subsection{Prompt-Based~Classification}
+\label{sec:res_prompt}
+
+Finally, we explore prompt-based classification using large language models, specifically a version of GPT (labeled Prompt classifier gpt) and Llama3.2 (Prompt classifier llama). Rather than fine-tuning, each article’s title and text are fed into a carefully designed system plus user prompt (Section~\ref{sec:prompt_based}), and~the model returns a short label (Real or Fake, Human or AI). Table~\ref{tab:prompt_results} lists the accuracy, precision, recall, and~F1-scores (weighted and macro) for both authenticity and authorship tasks under these zero-/few-shot~paradigms.
+
+\begin{table}[H]
+\tablesize{\small}
+\caption{\hl{The performance} %MDPI: We removed the extra empty column. Please confirm.
+%Gurunameh: Confirmed.
+ of prompt-based LLM classifiers on authenticity (fake~vs.~real) and authorship (human~vs.~AI). The~prompts supply each article’s \{title\} and \{text\}, and~the LLM outputs a single~label.}
+\label{tab:prompt_results}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+\multirow{2}{*}{\textbf{Approach\vspace{-5pt}}} & \multicolumn{5}{c}{\textbf{Authenticity (Fake~vs.~Real)}} & 
+ \multicolumn{5}{c}{\textbf{Authorship (Human~vs.~AI)}} \\
+\cmidrule{2-11}
+ & 
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} &
+\textbf{Acc} & 
+\textbf{Prec} & 
+\textbf{Rec} & 
+\textbf{F1 wtd} & 
+\textbf{F1 mac} \\
+\midrule
+Prompt classifier gpt %MDPI: Please confirm if the bold is unnecessary and can be removed. The following highlights are the same.
+%Gurunameh: Removed.
+ &
+88.95 & 90.05 & 89.32 & 88.90 & 88.92 &
+ 51.86 & 54.35 & 51.86 & 49.16 & 49.74 \\
+
+Prompt classifier llama &
+73.08 & 81.51 & 73.08 & 70.55 & 73.08 &
+ 52.77 & 52.66 & 52.77 & 39.81 & 38.27 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+
+%MDPI: We removed the period. Please confirm.
+%Gurunameh: Paragraph heading was removed.
+
+For authenticity, the~GPT-based prompt classification achieves a respectable 88.95\% accuracy, with~strong precision and recall. However, the~same GPT prompt falls sharply on authorship accuracy (51.86\%), suggesting the model struggles to discern subtle stylistic cues of AI~vs.~human text under the provided instructions. Conversely, Llama3.2 yields only 73.08\% authenticity accuracy but obtains a slightly higher authorship accuracy (52.77\%), though~with lower F1 metrics due to class imbalances and off-format answers in some~cases.
+
+
+%MDPI: We removed the period. Please confirm.
+%Gurunameh: Paragraph heading was removed.
+
+These results confirm that while LLM prompts can perform reasonably well on simpler tasks (like identifying factual consistency), distinguishing human~vs.~AI writing may require more carefully engineered prompts or additional context. The~typical zero-shot or few-shot setup also lacks the domain-specific tuning that our supervised or multitask models enjoy. Nevertheless, such prompt-based classifiers remain appealing for quick deployment, especially if training data or computation for fine-tuning are limited, and~can serve as a flexible baseline for new tasks with minimal~overhead.
+
+
+
+\section{Further Analysis of Experimental~Results}\label{S7}
+
+Overall, our results highlight a clear performance gap between classical or stylometric methods and the top-scoring PLM-based architectures (see Figure~\ref{fig:all_approaches_accuracy}). Proposed models with the SPSM architecture secure the highest accuracy on both authorship (human~vs.~AI) and authenticity (fake~vs.~real). In~contrast, stylometric-only or traditional ML baselines typically hover below 90\% accuracy for authenticity and~even lower for authorship---suggesting that detecting AI-written text from handcrafted features alone can be more~challenging.
+
+
+A closer inspection of feature importance (shown in the top and bottom panels of Figure~\ref{fig:stylo_importances}) helps explain why stylometric methods can still provide meaningful signals for each task, even if they do not match PLM performance. For authorship, features like Date Entity Count, Noun Count, and Syntax Variety rank among the highest in importance scores. This suggests that AI-generated text might differ slightly in how it employs (or omits) date references, uses certain noun constructions, or~varies its part-of-speech patterns. Seeing Complex Sentence Count and Average Word Length relatively high also indicates that advanced LLMs may simulate complex grammar but do so in ways detectably different from human authors. Hence, while these explicit counts do not guarantee perfect classification, they do reveal observable linguistic traits that can be used for partial explainability---e.g.,~if~a model leans on unusual date usage to flag an article as~AI-written.
+
+For authenticity, the~lower panel in Figure~\ref{fig:stylo_importances} shows that exclamation marks, question marks, and~certain entity counts (particularly Date Entity Count and Person Entity Count) can prove indicative of fake vs. real. Evidently, emotional emphasis (many exclamation marks) or overuse of dates/people might signal attempts at sensationalism or fabricated storytelling. However, these features alone sometimes fail to capture the deeper context that PLMs learn from massive pretraining---explaining why stylometric models plateau around the mid-80\% range of authenticity~accuracy.
+
+\begin{figure}[H] %Attention AE: Please revise "Random forest" to "Random Forest" and "Bert" to "BERT" in all instances.
+%Gurunameh: Updated.
+    \includegraphics[width=0.98\linewidth]{figures/final_comparison2.png}\vspace{-4pt}
+    \caption{Performance comparison of all approaches in both~tasks.}
+    \label{fig:all_approaches_accuracy}
+\end{figure}
+\vspace{-6pt}
+
+
+\begin{figure}[H]
+    \includegraphics[width=0.85\linewidth]{figures/feature_importance.png}\vspace{-4pt}
+    \caption{Top features in stylometric analysis for both~tasks.}
+    \label{fig:stylo_importances}
+\end{figure}
+
+
+
+
+In terms of architectural differences, hierarchical architectures and the SPSM significantly outperform naive two-head multitask or separate-task baselines (Figure~\ref{fig:all_approaches_accuracy}). The~hierarchical models impose a cascade where authorship logits guide authenticity classification (or vice~versa), which can boost synergy if AI writing correlates strongly with misinformation styles. Meanwhile, shared--private layers allow a common feed-forward network to model universal language cues while devoting private layers to each label’s unique nuances. This design often yields a higher synergy than purely “two tasks, two heads”, as it enforces partial parameter sharing and preserves specialized capacity for each~objective.
+
+Lastly, prompt-based classifiers using GPT or Llama for zero-/few-shot classification exhibit variable success. They score moderate to strong accuracy on authenticity---arguably because factual correctness can be partially inferred by large LLMs---but they fall behind for authorship (especially Llama) with near 50--55\% accuracy. This discrepancy indicates that distinguishing AI from human text requires more precise prompting or additional training. In~all, the SPSM(authenticity\_loss\_2x) approach shows that weighting tasks differently can improve performance on the more difficult classification (fake~vs.~real) while still retaining high performance on the secondary authorship~task.
+
+In summary, these findings illustrate that PLM-based pipelines---particularly those with multitask synergy and carefully tuned architectures---consistently yield top-tier results. Stylistic features, though~less powerful in isolation, provide valuable explanatory insights: we can pinpoint which punctuation marks, entity references, or~syntactic complexities signal AI authorship or potential misinformation. Meanwhile, hierarchical and shared--private models leverage both task interdependence and partial specialization to outperform naive baselines, reaffirming that how tasks share or separate parameters profoundly affects real-world classification~accuracy.
+
+\subsection{Computational and Resource Requirements for~Deployment}
+
+The SPSM multitask framework presents significant computational requirements due to the model's large number of parameters and high resource requirements. A~standard BERT-based model consists of 110 million parameters, with~a hidden size of 768 and 12~attention heads, resulting in a memory footprint of approximately 400 MB when stored on a disk. The~BERT-large variant, which scales up to 340 million parameters with 1024 hidden dimensions and 24 attention heads, requires even more computational power, often demanding 32GB+ of GPU VRAM for training. Since the SPSM shares a single transformer encoder across multiple tasks, the~additional parameters primarily come from task-specific classification heads, each adding 1--2 million parameters per task. While this setup reduces the number of parameters compared to separate models for each task, the~overall computational demand increases with the number of tasks, requiring careful~optimization.
+
+Training is computationally intensive due to the quadratic complexity (O(n\textsuperscript{2})) of self-attention, which makes processing long input sequences expensive in terms of both memory and computation time. A~typical BERT-based SPSM with two to three tasks requires at least 16GB of GPU VRAM (e.g.,~NVIDIA RTX 3090, A100, or~V100) to handle batch sizes of 16--32~efficiently. For~larger models like BERT-large, training becomes impractical on consumer-grade GPUs, necessitating gradient accumulation or very small batch sizes ($\leq$8) to avoid out-of-memory (OOM) errors. On~CPU-only systems, training is virtually infeasible, as~the model requires heavy matrix multiplication in the self-attention layers, leading to training times that can stretch over several days per~epoch.
+
+Inference with the SPSM also presents scalability challenges, especially in real-time applications. On~high-end GPUs such as the NVIDIA A100 or RTX 4090, inference times range from 20 to 50~ms per query, making deployment feasible in cloud-based environments. However, on~mid-range GPUs (RTX 3060, T4), inference latency increases to 50--100~ms per query, while on a CPU-only system, it can take 300--500~ms per query, making real-time response impractical. The~problem worsens for edge devices like Jetson Nano, Raspberry Pi, or~mobile processors, where memory limitations (1--2GB RAM per model instance) and slow processing speeds (1--2 s per query) severely impact feasibility. Furthermore, high power consumption makes battery-powered deployment inefficient, significantly reducing device~runtime.
+
+The primary challenges in deploying models in real time or on edge devices stem from high memory usage, latency issues, and~power constraints. Real-time applications, such as fraud detection, chatbots, and~speech recognition, require inference times below 10~ms, which BERT-based models struggle to achieve without optimization. To~make deployment practical, various optimization techniques can be applied, including model distillation (TinyBERT, MiniLM), quantization (reducing model precision to 8-bit), and~hardware acceleration (using TensorRT, ONNX for faster inference). Without~such optimization, deploying the SPSM directly on edge devices remains impractical, making cloud-based hosting the most viable option for real-world applications requiring multitask~transformers.
+
+
+\subsection{Explainability Using LIME and~SHAP}
+\label{subsec:explainability}
+
+In order to provide deeper insight into the model's decision-making process for both the authenticity (real~vs.~fake) and authorship (human~vs.~AI) tasks, we employed two popular post hoc explainability methods: LIME (Local Interpretable Model-Agnostic Explanations) and SHAP (SHapley Additive exPlanations) on our best performing SPSM model. Below, we summarize the key findings from both local and global~perspectives.
+
+Figure~\ref{fig:global-lime} shows the top 30 global LIME features for both tasks. On~the x-axis, we have the average LIME weight of each word, and~on the y-axis, we list the most influential words. Positive bars (to the right) indicate that a word contributes positively to predicting the class at index 1 (\hl{e.g.,} %MDPI: We changed all \eg to e.g.,~please check if it is correct.
+%Gurunameh: correct.
+ fake for authenticity or AI for authorship), whereas negative bars (to the left) indicate a contribution toward the class at index 0 (\hl{e.g.,} real or human).  
+
+\vspace{-4pt}
+\begin{figure}[H] %Attention: Please revise "vs" to "vs."
+    \includegraphics[width=\linewidth]{figures/global_lime.png}\vspace{-4pt}
+    \caption{Top 30 global LIME features for authenticity and~authorship.}
+    \label{fig:global-lime}
+\end{figure}
+
+
+Several interesting observations can be drawn: Words such as ``russia'', ``taiwan'', and ``propaganda'' appear to strongly influence the authenticity classifier, suggesting that the model associates these terms more with ``fake'' content. For~authorship, words like ``emerging'' and ``agency'' show high positive weights, indicating they push the model's decision toward AI-generated text, whereas words such as ``none'' and ``senator'' steer the model toward human-generated~text.
+
+
+
+Figure~\ref{fig:global-shap-auth} displays the global SHAP feature importance for authenticity, showing the top 30 tokens ranked by their average absolute SHAP value. Larger values indicate greater impact on the prediction (real~vs.~fake). Common words (\hl{e.g.,} ``the'', ``of'', ``and'') appear among the top tokens, likely because they frequently co-occur in certain linguistic patterns within either real or fake news articles. Proper nouns such as ``trump'' and ``donald'' have a high impact, suggesting the classifier uses political references to distinguish real from~fake.
+
+\vspace{-4pt}
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{figures/shap_avg.png}\vspace{-4pt}
+    \caption{Global SHAP feature importance for authenticity (top 30).}
+    \label{fig:global-shap-auth}
+\end{figure}
+
+
+Such tokens can reflect data distribution biases, especially if the training corpus contains articles heavily referencing political figures in fake~contexts.
+
+Figure~\ref{fig:shap-summary} presents a SHAP summary plot over many tokens (the x-axis is the mean absolute SHAP value). It highlights how a large portion of the predictive power can be attributed to a small set of highly influential tokens. Additionally, it underscores the long tail of ``other features'', each contributing marginally. This aligns with the intuition that in text classification, many words contribute small, context-dependent~signals.
+
+Figure~\ref{fig:local-lime} shows a pair of local LIME bar charts for a single test sample, one for authenticity (left) and one for authorship (right). The~top portion of each bar chart indicates a feature (token) that pushes the model toward predicting ``fake'' or ``AI'', whereas negative bars push toward ``real'' or ``human.'' The predicted probabilities are included in the figure captions. For~authenticity, words like ``u-'', ``congress'', or ``raucous'' are more strongly associated with the model’s decision to classify the article as real. In~contrast, ``contentious'', ``polling'', and ``gamered'' nudge the authorship classifier toward AI, illustrating how distinct features can influence the two tasks~differently.
+
+Overall, these explainability methods help validate that our model is leveraging semantically meaningful features rather than relying on spurious correlations. Global explanations reveal the top words driving the classifier across the entire dataset, whereas local explanations show which tokens matter most for a single example. These insights can inform data curation (\hl{e.g.,} identifying biases or over-reliance on specific keywords) and guide model improvements in future~work.
+
+
+\begin{figure}[H] %Attention AE: Please revise "mean(SHAP" to "mean (SHAP"
+%Gurunameh: Updated.
+    \includegraphics[width=0.75\linewidth]{figures/shap_mean.png}\vspace{-4pt}
+    \caption{SHAP summary plot for~authenticity.}
+    \label{fig:shap-summary}
+\end{figure}
+\vspace{-6pt}
+
+
+\begin{figure}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+    \includegraphics[width=\linewidth]{figures/local_lime.png}
+\end{adjustwidth}
+    \caption{Local explanation for authenticity (left) and authorship (right) with~LIME.}
+    \label{fig:local-lime}
+\end{figure}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}\label{S8}
+
+In this study, we proposed and evaluated a comprehensive framework for addressing the challenges of classifying news articles across two dimensions: authenticity (real~vs.~fake) and authorship (human~vs.~AI). Our approach spanned multiple methodologies, including traditional machine learning baselines, stylometric feature-based analysis, prompt-based classifiers, and~advanced PLM-based architectures with multitask and hierarchical capabilities. Through extensive experimentation, we demonstrated that our proposed SPSM architecture with synergetic layers and hierarchical task dependencies consistently outperforms simpler baselines, achieving state-of-the-art results with accuracies exceeding 96\% for authenticity and 98\% for authorship. Furthermore, our analysis highlighted the value of stylometric features in providing interpretable insights, revealing linguistic and structural patterns unique to fake news and AI-generated content. These findings underscore the importance of integrating modern architectures with interpretable features for addressing misinformation in the age of~AI.
+
+
+\subsection{Limitations}
+\label{subsec:limitations}
+
+Despite the promising results, this work has several limitations that warrant further investigation. First, our dataset was limited to textual news articles, which may not capture the nuances of multimodal misinformation that often includes images, videos, or~other contextual metadata. Incorporating such multimodal data could improve the applicability and robustness of our models. Second, while stylometric features offered interpretability, they were less effective for standalone classification compared to PLM-based methods, especially as AI-generated content continues to evolve in sophistication. This limitation highlights the need for richer feature engineering to capture subtle patterns in modern AI-generated~text.
+
+Another limitation lies in the performance of prompt-based classifiers, which were sensitive to prompt design and often underperformed compared to fine-tuned PLMs. This suggests the need for more advanced prompt optimization techniques. Additionally, our PLM-based models, while highly accurate, rely heavily on pretrained models like BERT and Electra, limiting their scalability to less-resourced languages or domains. Finally, the~computational cost of training and evaluating these models presents a challenge for deployment in real-time or resource-constrained~settings.
+
+Furthermore, the~current version of the FAANR dataset was constructed using outputs from a select group of best performing and popular generative models---specifically, GPT-4, Llama, gemma, and~Mistral. While these models are widely recognized for their performance and have been chosen to represent diverse characteristics of AI-generated content, their inclusion may introduce inherent biases. In~particular, since these models can share similar stylistic or linguistic features, the~dataset might not fully capture the broader spectrum of AI-generated text produced by other emerging architectures. Furthermore, as~the dataset primarily comprises English-language content, its applicability to non-English or cross-lingual contexts remains~limited.
+
+
+\subsection{Future~Work}
+\label{subsec:future_work}
+
+Building on this work, several avenues for future research can be pursued to address the limitations and further advance the field. A~key direction is the integration of multimodal data, such as text combined with images, videos, or~metadata, using advanced architectures like multimodal transformers or graph neural networks. This would enable a more holistic approach to misinformation detection. Additionally, improving the performance of prompt-based classifiers through automated prompt optimization techniques, such as reinforcement learning or prompt tuning, could make these methods more robust and adaptable to diverse tasks and~domains.
+
+Extending this study to multilingual datasets or domain-specific corpora, such as scientific misinformation, is another important direction. Evaluating cross-lingual and cross-domain transferability would provide insights into the generalizability of the proposed methods. Enhancing interpretability remains a critical area, and~future work could combine feature importance metrics with attention visualizations to make model predictions more transparent and trustworthy. Additionally, future iterations of the FAANR dataset will seek to incorporate a wider array of generative models, including those that are emerging and potentially offer different stylistic or domain-specific outputs. We plan to expand the dataset by integrating cross-lingual content to enhance its robustness and ensure broader applicability. Additionally, further empirical studies will be conducted to assess the impact of these biases on detection performance, with~the aim of refining the dataset and improving the generalizability of the associated detection frameworks. Lastly, the~development of lightweight and parameter-efficient architectures, or~the pruning of existing models, could reduce computational costs, making these solutions accessible for real-time applications and deployment in low-resource~settings.
+
+Moreover, we will focus on developing advanced fusion strategies to better integrate stylometric features with deep transformer-based representations. Our initial experiments using simple concatenation showed a decrease in performance, likely due to the inherent heterogeneity between the explicit, surface-level signals of stylometric features and the deep, context-rich embeddings produced by transformers. To~address this, we plan to explore techniques such as attention-based mechanisms and multi-view learning frameworks that can dynamically weight and harmonize these disparate feature sets. Future studies can aim to conduct a more granular analysis of the interactions between stylistic and semantic features, with~the goal of enhancing both detection performance and model interpretability in practical deployment~scenarios.
+
+In conclusion, this work provides a robust foundation for tackling the dual challenges of misinformation detection and authorship classification in the context of AI-generated content. By~leveraging the strengths of advanced PLM-based architectures alongside interpretable stylometric features, we achieved not only high classification performance but also meaningful insights into the linguistic and structural patterns of fake and AI-generated text. These contributions lay the groundwork for future innovations in this rapidly evolving~field.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{6pt} 
+
+
+%\supplementary{The following supporting information can be downloaded at:  \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\authorcontributions{\hl{Conceptualization, G.S.C. and J.Z.; Methodology, G.S.C. and J.Z.; Software, G.S.C.; Formal analysis, G.S.C.; Investigation, G.S.C. and J.Z.; Resources, J.Z.; Data curation, G.S.C.; Writing---original draft, G.S.C.; Writing---review \& editing, J.Z.; Supervision, J.Z.; Project administration, J.Z.; Funding acquisition, J.Z. All authors have read and agreed to the published version of the manuscript.}}
+%MDPI: We added Author Contributions section according to the submitting system. Please confirm.
+%Gurunameh: Confirmed
+
+\funding{This research was funded by NSERC Discovery RGPIN-2020-05588.}
+%MDPI: Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX.'' and  and ``The APC was funded by XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.
+
+\dataavailability{All the data and codes are public and will be available at  \url{https://github.com/gurnameh-99/misinfo-detect} (accessed on 11 March 2025)}
+%MDPI: Please provide the access date of the URL in the following format: "URL (accessed on Day Month Year)", e.g., accessed on 1 January 2020.
+%Gurunameh: updated
+
+\acknowledgments{We acknowledge the support of the Natural Sciences and Engineering Research Council of Canada (NSERC).}
+
+\conflictsofinterest{The authors declare no conflicts of interest.}
+%MDPI: Declare conflicts of interest or state ``The authors declare no conflicts of interest.'' Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results. Any role of the funders in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript; or in the decision to publish the results must be declared in this section. If there is no role, please state ``The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results''.
+%Gurunameh: Added.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\abbreviations{Abbreviations}{
+The following abbreviations are used in this manuscript:\\
+
+\noindent 
+\begin{tabular}{@{}p{30pt}l  p{100pt}c}
+\hl{MDPI} %MDPI: Please check if this is template content and should be removed.
+%Gurunameh: No I added it in the paper as shown in the template.
+ & \hl{Multidisciplinary Digital Publishing Institute}\\
+AI & artificial intelligence\\
+SPSM & Shared--Private Synergy Model\\
+LLM & large language model\\
+PLM & pretrained language model\\
+ML & machine learning\\
+DL & deep learning\\
+CNN & Convolutional Neural Network\\
+RNN & Recurrent Neural Network\\
+\end{tabular}
+ 
+\noindent
+\begin{tabular}{@{}p{30pt}l  p{100pt}c}
+LSTM & Long Short-Term Memory\\
+TF-IDF & Term Frequency-Inverse Document Frequency\\
+GNN & graph neural network\\
+GPT & General Pretrained Transformer\\
+
+\end{tabular}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{adjustwidth}{-\extralength}{0cm}
+\reftitle{References}
+
+\begin{thebibliography}{999}
+
+\bibitem[Saleh et~al.(2021)Saleh, Alharbi, and Alsamhi]{saleh_opcnn-fake_2021}
+Saleh, H.; Alharbi, A.; Alsamhi, S.H.
+\newblock {OPCNN}-{FAKE}: {Optimized} {Convolutional} {Neural} {Network} for
+  {Fake} {News} {Detection}.
+\newblock {\em IEEE Access} {\bf 2021}, {\em 9},~129471--129489.
+\newblock {\url{https://doi.org/10.1109/ACCESS.2021.3112806}}.
+
+\bibitem[Dou et~al.(2021)Dou, Shu, Xia, Yu, and Sun]{dou_user_2021}
+Dou, Y.; Shu, K.; Xia, C.; Yu, P.S.; Sun, L.
+\newblock User {Preference}-aware {Fake} {News} {Detection}.
+\newblock In Proceedings of the 44th {International} {ACM}
+  {SIGIR} {Conference} on {Research} and {Development} in {Information}
+  {Retrieval}, Virtual Event, \hl{11--15 July} %MDPI: We added the date of the conference. Please confirm.
+  %Gurunameh: Confirmed
+ 2021; pp. 2051--2055.
+\newblock {\url{https://doi.org/10.1145/3404835.3462990}}.
+
+\bibitem[Choudhary and Arora(2021)]{choudhary_linguistic_2021}
+Choudhary, A.; Arora, A.
+\newblock Linguistic feature based learning model for fake news detection and
+  classification.
+\newblock {\em Expert Syst. Appl.} {\bf 2021}, {\em 169},~114171.
+\newblock {\url{https://doi.org/10.1016/j.eswa.2020.114171}}.
+
+\bibitem[Zhang et~al.(2023)Zhang, Guo, Zhu, Vijayakumar, Castiglione, and
+  Gupta]{zhang_deep_2023}
+Zhang, Q.; Guo, Z.; Zhu, Y.; Vijayakumar, P.; Castiglione, A.; Gupta, B.B.
+\newblock A {Deep} {Learning}-based {Fast} {Fake} {News} {Detection} {Model}
+  for {Cyber}-{Physical} {Social} {Services}.
+\newblock {\em Pattern Recognit. Lett.} {\bf 2023}, {\em 168},~31--38.
+\newblock {\url{https://doi.org/10.1016/j.patrec.2023.02.026}}.
+
+\bibitem[Alonso et~al.(2021)Alonso, Vilares, Gómez-Rodríguez, and
+  Vilares]{alonso_sentiment_2021}
+Alonso, M.A.; Vilares, D.; Gómez-Rodríguez, C.; Vilares, J.
+\newblock Sentiment {Analysis} for {Fake} {News} {Detection}.
+\newblock {\em Electronics} {\bf 2021}, {\em 10},~1348.
+\newblock {\url{https://doi.org/10.3390/electronics10111348}}.
+
+\bibitem[Nan et~al.(2021)Nan, Cao, Zhu, Wang, and Li]{nan_mdfend_2021}
+Nan, Q.; Cao, J.; Zhu, Y.; Wang, Y.; Li, J.
+\newblock {MDFEND}: {Multi}-domain {Fake} {News} {Detection}.
+\newblock In Proceedings of the  30th {ACM} {International}
+  {Conference} on {Information} \& {Knowledge} {Management}, Queensland, Australia, \hl{1--5 	November} %MDPI: We added the date of the conference. Please confirm.
+  %Gurunameh: Confirmed
+ 2021; pp. 3343--3347.
+\newblock {\url{https://doi.org/10.1145/3459637.3482139}}.
+
+\bibitem[Khanam et~al.(2021)Khanam, Alwasel, Sirafi, and
+  Rashid]{khanam_fake_2021}
+Khanam, Z.; Alwasel, B.N.; Sirafi, H.; Rashid, M.
+\newblock Fake {News} {Detection} {Using} {Machine} {Learning} {Approaches}.
+\newblock {\em IOP Conf. Ser. Mater. Sci. Eng.} {\bf
+  2021}, {\em 1099},~012040.
+\newblock {\url{https://doi.org/10.1088/1757-899X/1099/1/012040}}.
+
+\bibitem[Sahoo and Gupta(2021)]{sahoo_multiple_2021}
+Sahoo, S.R.; Gupta, B.B.
+\newblock Multiple features based approach for automatic fake news detection on
+  social networks using deep learning.
+\newblock {\em Appl. Soft Comput.} {\bf 2021}, {\em 100},~106983.
+\newblock {\url{https://doi.org/10.1016/j.asoc.2020.106983}}.
+
+\bibitem[Xia et~al.(2023)Xia, Wang, Zhang, Zheng, Kamal, and
+  Arya]{xia_covid-19_2023}
+Xia, H.; Wang, Y.; Zhang, J.Z.; Zheng, L.J.; Kamal, M.M.; Arya, V.
+\newblock {COVID}-19 fake news detection: {A} hybrid {CNN}-{BiLSTM}-{AM} model.
+\newblock {\em Technol. Forecast. Soc. Chang.} {\bf 2023}, {\em 195},~122746.
+\newblock {\url{https://doi.org/10.1016/j.techfore.2023.122746}}.
+
+\bibitem[Qu et~al.(2024)Qu, Meng, Muhammad, and Tiwari]{qu_qmfnd_2024}
+Qu, Z.; Meng, Y.; Muhammad, G.; Tiwari, P.
+\newblock {QMFND}: {A} quantum multimodal fusion-based fake news detection
+  model for social media.
+\newblock {\em Inf. Fusion} {\bf 2024}, {\em 104},~102172.
+\newblock {\url{https://doi.org/10.1016/j.inffus.2023.102172}}.
+
+\bibitem[Luvembe et~al.(2023)Luvembe, Li, Li, Liu, and Xu]{luvembe_dual_2023}
+Luvembe, A.M.; Li, W.; Li, S.; Liu, F.; Xu, G.
+\newblock Dual emotion based fake news detection: {A} deep attention-weight
+  update approach.
+\newblock {\em Inf. Process. Manag.} {\bf 2023}, {\em 60},~103354.
+\newblock {\url{https://doi.org/10.1016/j.ipm.2023.103354}}.
+
+\bibitem[Hua et~al.(2023)Hua, Cui, Li, Tang, and Zhu]{hua_multimodal_2023}
+Hua, J.; Cui, X.; Li, X.; Tang, K.; Zhu, P.
+\newblock Multimodal fake news detection through data augmentation-based
+  contrastive learning.
+\newblock {\em Appl. Soft Comput.} {\bf 2023}, {\em 136},~110125.
+\newblock {\url{https://doi.org/10.1016/j.asoc.2023.110125}}.
+
+\bibitem[Uchendu et~al.(2020)Uchendu, Le, Shu, and
+  Lee]{uchendu_authorship_2020}
+Uchendu, A.; Le, T.; Shu, K.; Lee, D.
+\newblock Authorship {Attribution} for {Neural} {Text} {Generation}.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), \hl{Online, 16--20 November 2020}%MDPI: We added the location and date of the conference. Please confirm.
+%Gurunameh: Confirmed
+}; Webber, B.; Cohn, T.; He, Y.; Liu, Y., Eds.; \hl{Association for Computational Linguistics: Stroudsburg, PA, USA,} %MDPI: We added the name of the publisher and location. Please confirm.
+%Gurunameh: Confirmed
+ 2020; pp.~8384--8395.
+\newblock {\url{https://doi.org/10.18653/v1/2020.emnlp-main.673}}.
+
+\bibitem[Clark et~al.(2021)Clark, August, Serrano, Haduong, Gururangan, and
+  Smith]{clark_all_2021}
+Clark, E.; August, T.; Serrano, S.; Haduong, N.; Gururangan, S.; Smith, N.A.
+\newblock All {That}'s '{Human}' {Is} {Not} {Gold}: {Evaluating} {Human}
+  {Evaluation} of {Generated} {Text}. \emph{arXiv} \textbf{2021}, arXiv:2107.00061.
+  {\url{https://doi.org/10.48550/arXiv.2107.00061}}.
+
+\bibitem[Guo et~al.(2023)Guo, Zhang, Wang, Jiang, Nie, Ding, Yue, and
+  Wu]{guo_how_2023}
+Guo, B.; Zhang, X.; Wang, Z.; Jiang, M.; Nie, J.; Ding, Y.; Yue, J.; Wu, Y.
+\newblock How {Close} is {ChatGPT} to {Human} {Experts}? {Comparison} {Corpus},
+  {Evaluation}, and {Detection}. \emph{arXiv} \textbf{2023}, arXiv:2301.07597.
+  {\url{https://doi.org/10.48550/arXiv.2301.07597}}.
+
+\bibitem[Mitchell et~al.(2023)Mitchell, Lee, Khazatsky, Manning, and
+  Finn]{mitchell_detectgpt_2023}
+\hl{Mitchell, E.; Lee, Y.; Khazatsky, A.; Manning, C.D.; Finn, C.} %MDPI: Refs. 16 and 54 are duplicated. Please just check if the references cited in the main text are correct. If yes, we will help delete the latter one and re-arrange the reference order.
+%Gurunameh: The references in the text are updated to the 16 one, so you can delete the latter.
+\newblock {DetectGPT}: {Zero}-{Shot} {Machine}-{Generated} {Text} {Detection}
+  using {Probability} {Curvature}.
+\newblock In Proceedings of the 40th {International} {Conference} on {Machine} {Learning},  \hl{Honolulu, HI, USA, 23--29 July 2023}%MDPI: We added the location and date of the conference. Please confirm.
+%Gurunameh: Confirmed
+; pp.~24950--24962.
+
+
+\bibitem[Sadasivan et~al.(2024)Sadasivan, Kumar, Balasubramanian, Wang, and
+  Feizi]{sadasivan_can_2024}
+Sadasivan, V.S.; Kumar, A.; Balasubramanian, S.; Wang, W.; Feizi, S.
+\newblock Can {AI}-{Generated} {Text} be {Reliably} {Detected}? \emph{arXiv} \textbf{2024}, arXiv:2303.11156.
+\newblock {\url{https://doi.org/10.48550/arXiv.2303.11156}}.
+
+\bibitem[Schuster et~al.(2020)Schuster, Schuster, Shah, and
+  Barzilay]{schuster_limitations_2020}
+Schuster, T.; Schuster, R.; Shah, D.J.; Barzilay, R.
+\newblock The {Limitations} of {Stylometry} for {Detecting}
+  {Machine}-{Generated} {Fake} {News}.
+\newblock {\em Comput. Linguist.} {\bf 2020}, {\em 46},~499--510.
+\newblock {\url{https://doi.org/10.1162/coli_a_00380}}.
+
+\bibitem[Krishna et~al.()Krishna, Song, Karpinska, Wieting, and
+  Iyyer]{krishna_paraphrasing_nodate}
+Krishna, K.; Song, Y.; Karpinska, M.; Wieting, J.; Iyyer, M.
+\newblock Paraphrasing evades detectors of {AI}-generated text, but retrieval
+  is an effective defense. \emph{\hl{Adv. Neural Inf. Process. Syst.}} \textbf{\hl{2023}}, \emph{\hl{36}}, \hl{27469--27500}.
+%MDPI: Newly added information. Please confirm.
+%Gurunameh: Confirmed
+
+
+\bibitem[Orenstrakh et~al.(2024)Orenstrakh, Karnalim, Suárez, and
+  Liut]{orenstrakh_detecting_2024}
+Orenstrakh, M.S.; Karnalim, O.; Suárez, C.A.; Liut, M.
+\newblock Detecting {LLM}-{Generated} {Text} in {Computing} {Education}:
+  {Comparative} {Study} for {ChatGPT} {Cases}.
+\newblock In Proceedings of the 2024 IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC), \hl{Osaka, Japan, 2--4 July 2024}%MDPI: We added the location and date of the conference. Please confirm.
+%Gurunameh: Confirmed
+; pp.~121--126.
+\newblock  {\url{https://doi.org/10.1109/COMPSAC61105.2024.00027}}.
+
+\bibitem[Dergaa et~al.(2023)Dergaa, Chamari, Zmijewski, and
+  Saad]{dergaa_human_2023}
+Dergaa, I.; Chamari, K.; Zmijewski, P.; Saad, H.B.
+\newblock From human writing to artificial intelligence generated text:
+  examining the prospects and potential threats of {ChatGPT} in academic
+  writing.
+\newblock {\em Biol. Sport} {\bf 2023}, {\em 40},~615--622.
+\newblock {\url{https://doi.org/10.5114/biolsport.2023.125623}}.
+
+\bibitem[Zhou et~al.(2023)Zhou, Zhang, Luo, Parker, and
+  De~Choudhury]{zhou_synthetic_2023}
+Zhou, J.; Zhang, Y.; Luo, Q.; Parker, A.G.; De~Choudhury, M.
+\newblock Synthetic {Lies}: {Understanding} {AI}-{Generated} {Misinformation}
+  and {Evaluating} {Algorithmic} and {Human} {Solutions}.
+\newblock In Proceedings of the  2023 {CHI} {Conference} on
+  {Human} {Factors} in {Computing} {Systems}, Hamburg, Germany, \hl{23--28 April} %MDPI: We added the date of the conference. Please confirm.
+  %Gurunameh: Confirmed
+ 2023; pp.~1--20.
+\newblock {\url{https://doi.org/10.1145/3544548.3581318}}.
+
+\bibitem[Shoaib et~al.(2023)Shoaib, Wang, Ahvanooey, and
+  Zhao]{shoaib_deepfakes_2023}
+Shoaib, M.R.; Wang, Z.; Ahvanooey, M.T.; Zhao, J.
+\newblock Deepfakes, {Misinformation}, and {Disinformation} in the {Era} of
+  {Frontier} {AI}, {Generative} {AI}, and {Large} {AI} {Models}.
+\newblock In Proceedings of the 2023 {International} {Conference} on {Computer}
+  and {Applications} ({ICCA}),  \hl{Cairo, Egypt,  28--30 November 2023}; pp.~1--7.
+\newblock {\url{https://doi.org/10.1109/ICCA59364.2023.10401723}}.
+
+\bibitem[Kreps et~al.(2022)Kreps, McCain, and Brundage]{kreps_all_2022}
+Kreps, S.; McCain, R.M.; Brundage, M.
+\newblock All the {News} {That}’s {Fit} to {Fabricate}: {AI}-{Generated}
+  {Text} as a {Tool} of {Media} {Misinformation}.
+\newblock {\em J. Exp. Political Sci.} {\bf 2022}, {\em 9},~104--117.
+\newblock {\url{https://doi.org/10.1017/XPS.2020.37}}.
+
+\bibitem[Demartini et~al.()Demartini, Mizzaro, and
+  Spina]{demartini_human---loop_nodate}
+Demartini, G.; Mizzaro, S.; Spina, D.
+\newblock Human-in-the-loop {Artiﬁcial} {Intelligence} for {Fighting}
+  {Online} {Misinformation}: {Challenges} and {Opportunities}.
+\emph{\hl{IEEE Data Eng. Bull.}} \hl{\textbf{2020}, \emph{43}, 65--74.}
+%MDPI: Newly added information. Please confirm.
+%Gurunameh: Confirmed
+
+\bibitem[Chen and Shu(2024)]{chen_can_2024}
+Chen, C.; Shu, K.
+\newblock Can {LLM}-{Generated} {Misinformation} {Be} {Detected}? \emph{arXiv} \textbf{2024}, arXiv:2309.13788. {\url{https://doi.org/10.48550/arXiv.2309.13788}}.
+
+\bibitem[Blauth et~al.(2022)Blauth, Gstrein, and
+  Zwitter]{blauth_artificial_2022}
+Blauth, T.F.; Gstrein, O.J.; Zwitter, A.
+\newblock Artificial {Intelligence} {Crime}: {An} {Overview} of {Malicious}
+  {Use} and {Abuse} of {AI}.
+\newblock {\em IEEE Access} {\bf 2022}, {\em 10},~77110--77122.
+\newblock {\url{https://doi.org/10.1109/ACCESS.2022.3191790}}.
+
+\bibitem[Kumari et~al.(2021)Kumari, Ashok, Ghosal, and
+  Ekbal]{kumari_multitask_2021}
+Kumari, R.; Ashok, N.; Ghosal, T.; Ekbal, A.
+\newblock A {Multitask} {Learning} {Approach} for {Fake} {News} {Detection}:
+  {Novelty}, {Emotion}, and {Sentiment} {Lend} a {Helping} {Hand}.
+\newblock In Proceedings of the 2021 International Joint Conference on Neural Networks (IJCNN), \hl{Shenzhen, China, 18--22 July 2021}%MDPI: We added the location and date of the conference. Please confirm.
+%Gurunameh: Confirmed
+; pp.~1--8.
+\newblock {\url{https://doi.org/10.1109/IJCNN52387.2021.9534218}}.
+
+\bibitem[Choudhry et~al.(2024)Choudhry, Khatri, Jain, and
+  Vishwakarma]{choudhry_emotion-aware_2024}
+Choudhry, A.; Khatri, I.; Jain, M.; Vishwakarma, D.K.
+\newblock An {Emotion}-{Aware} {Multitask} {Approach} to {Fake} {News} and
+  {Rumor} {Detection} {Using} {Transfer} {Learning}.
+\newblock {\em IEEE Trans. Comput. Soc. Syst.} {\bf 2024}, {\em 11},~588--599.
+\newblock {\url{https://doi.org/10.1109/TCSS.2022.3228312}}.
+
+\bibitem[Jing et~al.(2021)Jing, Yao, Fan, Wang, Tan, Bu, and Bi]{jing_transfake_2021}
+Jing, Q.; Yao, D.; Fan, X.; Wang, B.; Tan, H.; Bu, X.; Bi, J.
+\newblock {TRANSFAKE}: {Multi}-task {Transformer} for {Multimodal} {Enhanced}
+  {Fake} {News} {Detection}.
+\newblock In Proceedings of the 2021 International Joint Conference on Neural Networks (IJCNN), \hl{Shenzhen, China, 18--22 July 2021}%MDPI: We added the location and date of the conference. Please confirm.
+%Gurunameh: Confirmed
+; pp.~1--8.
+\newblock {\url{https://doi.org/10.1109/IJCNN52387.2021.9533433}}.
+
+\bibitem[Wu et~al.(2024)Wu, Guo, and Hooi]{wu_fake_2024}
+Wu, J.; Guo, J.; Hooi, B.
+\newblock Fake {News} in {Sheep}'s {Clothing}: {Robust} {Fake} {News}
+  {Detection} {Against} {LLM}-{Empowered} {Style} {Attacks}.
+\newblock In Proceedings of the  30th {ACM} {SIGKDD}
+  {Conference} on {Knowledge} {Discovery} and {Data} {Mining}, Barcelona, Spain, 25--29 August 2024; pp.~3367--3378.
+\newblock {\url{https://doi.org/10.1145/3637528.3671977}}.
+
+\bibitem[Satapara et~al.(2024)Satapara, Mehta, Ganguly, and
+  Modha]{satapara_fighting_2024}
+Satapara, S.; Mehta, P.; Ganguly, D.; Modha, S.
+\newblock Fighting {Fire} with {Fire}: {Adversarial} {Prompting} to {Generate}
+  a {Misinformation} {Detection} {Dataset}. \emph{arXiv} \textbf{2024}, arXiv:2401.04481.
+\newblock {\url{https://doi.org/10.48550/arXiv.2401.04481}}.
+
+\bibitem[Hu et~al.(2022)Hu, Ding, Wang, Liu, Wang, Li, Wu, and
+  Sun]{hu_knowledgeable_2022}
+Hu, S.; Ding, N.; Wang, H.; Liu, Z.; Wang, J.; Li, J.; Wu, W.; Sun, M.
+\newblock Knowledgeable {Prompt}-tuning: {Incorporating} {Knowledge} into
+  {Prompt} {Verbalizer} for {Text} {Classification}. \emph{arXiv} \textbf{2022}, arXiv:2108.02035.
+\newblock {\url{https://doi.org/10.48550/arXiv.2108.02035}}.
+
+\bibitem[Thaminkaew et~al.(2024)Thaminkaew, Lertvittayakumjorn, and
+  Vateekul]{thaminkaew_prompt-based_2024}
+Thaminkaew, T.; Lertvittayakumjorn, P.; Vateekul, P.
+\newblock Prompt-{Based} {Label}-{Aware} {Framework} for {Few}-{Shot}
+  {Multi}-{Label} {Text} {Classification}.
+\newblock {\em IEEE Access} {\bf 2024}, {\em 12},~28310--28322.
+\newblock {\url{https://doi.org/10.1109/ACCESS.2024.3367994}}.
+
+\bibitem[Hou et~al.(2023)Hou, O’Connor, Andreas, Chang, and
+  Zhang]{hou_promptboosting_2023}
+Hou, B.; O’Connor, J.; Andreas, J.; Chang, S.; Zhang, Y.
+\newblock {PromptBoosting}: {Black}-{Box} {Text} {Classification} with {Ten}
+  {Forward} {Passes}.
+\newblock In Proceedings of the 40th {International} {Conference} on {Machine} {Learning},  \hl{Honolulu, HI, USA, 23--29 July 2023}%MDPI: We added the location and date of the conference. Please confirm.
+%Gurunameh: Confirmed
+; pp.~13309--13324.
+
+
+\bibitem[Sun et~al.(2023)Sun, Li, Li, Wu, Guo, Zhang, and Wang]{sun_text_2023}
+Sun, X.; Li, X.; Li, J.; Wu, F.; Guo, S.; Zhang, T.; Wang, G.
+\newblock Text {Classification} via {Large} {Language} {Models}. \emph{arXiv} \textbf{2023}, arXiv:2305.08377.
+\newblock {\url{https://doi.org/10.48550/arXiv.2305.08377}}.
+
+\bibitem[Chen et~al.(2024)Chen, Li, and He]{chen_concept_2024}
+Chen, Q.; Li, D.; He, X.
+\newblock Concept {Based} {Continuous} {Prompts} for {Interpretable} {Text}
+  {Classification}. \emph{arXiv} \textbf{2024}, arXiv:2412.01644.
+  {\url{https://doi.org/10.48550/arXiv.2412.01644}}.
+
+\bibitem[Balkus and Yan(2024)]{balkus_improving_2024}
+Balkus, S.V.; Yan, D.
+\newblock Improving short text classification with augmented data using {GPT}-3.
+\newblock {\em Nat. Lang. Eng.} {\bf 2024}, {\em 30},~943--972.
+\newblock {\url{https://doi.org/10.1017/S1351324923000438}}.
+
+\bibitem[Xie and Li(2022)]{xie_discriminative_2022}
+Xie, Z.; Li, Y.
+\newblock Discriminative {Language} {Model} as {Semantic} {Consistency}
+  {Scorer} for {Prompt}-based {Few}-{Shot} {Text} {Classification}. \emph{arXiv} \textbf{2022}, arXiv:2210.12763.
+\newblock {\url{https://doi.org/10.48550/arXiv.2210.12763}}.
+
+\bibitem[Wang(2017)]{wang2017liar}
+Wang, W.Y.
+\newblock ``liar, liar pants on fire'': A new benchmark dataset for fake news detection.
+\newblock \emph{arXiv} {\bf 2017}, arXiv:1705.00648.
+
+\bibitem[Shu et~al.(2020)Shu, Zheng, Li, Mukherjee, Awadallah, Ruston, and
+  Liu]{shu2020leveraging}
+Shu, K.; Zheng, G.; Li, Y.; Mukherjee, S.; Awadallah, A.H.; Ruston, S.; Liu, H.
+\newblock Leveraging multi-source weak social supervision for early detection
+  of fake news.
+\newblock \emph{arXiv} {\bf 2020}, arXiv:2004.01732.
+
+\bibitem[Luger et~al.(2020)Luger, Anto-Ocrah, Tapo, Homan, Zampieri, and
+  Leventhal]{luger2020health}
+Luger, S.; Anto-Ocrah, M.; Tapo, A.; Homan, C.; Zampieri, M.; Leventhal, M.
+\newblock Health Care Misinformation: An Artificial Intelligence Challenge for
+  Low-resource languages.
+\newblock In Proceedings of the AI4SG@ AAAI Fall Symposium, \hl{Arlington, VA, USA, 13--14 November} %MDPI: We added the location and date of the conference. Please confirm.
+%Gurunameh: Confirmed
+ 2020.
+
+\bibitem[De et~al.(2022)De, Bandyopadhyay, Gain, and
+  Ekbal]{de_transformer-based_2022}
+De, A.; Bandyopadhyay, D.; Gain, B.; Ekbal, A.
+\newblock A {Transformer}-{Based} {Approach} to {Multilingual} {Fake} {News}
+  {Detection} in {Low}-{Resource} {Languages}.
+\newblock {\em ACM Trans. Asian Low-Resour. Lang. Inf. Process.} {\bf 2022}, {\em 21},~1--20.
+\newblock {\url{https://doi.org/10.1145/3472619}}.
+
+\bibitem[Ahmed et~al.(2018)Ahmed, Traore, and Saad]{ahmed2018detecting}
+Ahmed, H.; Traore, I.; Saad, S.
+\newblock Detecting opinion spams and fake news using text classification.
+\newblock {\em Secur. Priv.} {\bf 2018}, {\em 1},~e9.
+
+\bibitem[Traore et~al.(2017)Traore, Woungang, and Awad]{traore2017intelligent}
+Traore, I.; Woungang, I.; Awad, A. (Eds.)
+\newblock {\em Intelligent, Secure, and Dependable Systems in Distributed and Cloud Environments: First International Conference, ISDDC 2017, Vancouver, BC, Canada, 26--28 October 2017}; Springer:  \hl{Berlin/Heidelberg, Germany,} %We added the location of publisher. Please confirm
+%Gurunameh: Confirmed
+ 2017; Volume 10618.
+
+\bibitem[Rahman and Raza(2023)]{rahman2023analyzing}
+Rahman, M.; Raza, S.
+\newblock Analyzing the Influence of Fake News in the 2024 Elections: A
+  Comprehensive Dataset.
+\newblock \emph{arXiv} {\bf 2023}, arXiv:2312.03750.
+
+\bibitem[Opara(2024)]{opara2024styloai}
+Opara, C.
+\newblock \emph{StyloAI}: Distinguishing AI-generated content with stylometric analysis.
+\newblock In \emph{Artificial Intelligence in Education: \hl{Posters and Late Breaking Results, Workshops and Tutorials, Industry and Innovation Tracks, Practitioners, Doctoral Consortium and Blue Sky, Recife, Brazil, 8--12 July 2024}}; Springer: Cham, Switzerland, 2024; pp.~105--114.
+%MDPI: Newly added information. Please confirm.
+%Gurunameh: Confirmed
+
+
+\bibitem[Kumarage et~al.(2023)Kumarage, Garland, Bhattacharjee, Trapeznikov,
+  Ruston, and Liu]{kumarage2023stylometric}
+Kumarage, T.; Garland, J.; Bhattacharjee, A.; Trapeznikov, K.; Ruston, S.; Liu, H.
+\newblock Stylometric detection of ai-generated text in twitter timelines.
+\newblock \emph{arXiv} \textbf{2023}, arXiv:2303.03697.
+
+\bibitem[Kuntur et~al.(2024)Kuntur, Krzywda, Wr{\'o}blewska, Paprzycki, and
+  Ganzha]{kuntur2024comparative}
+Kuntur, S.; Krzywda, M.; Wr{\'o}blewska, A.; Paprzycki, M.; Ganzha, M.
+\newblock Comparative Analysis of Graph Neural Networks and Transformers for
+  Robust Fake News Detection: A Verification and Reimplementation Study.
+\newblock {\em Electronics} {\bf 2024}, {\em 13},~4784.
+
+\bibitem[Das and Dodge(2025)]{das2025fake}
+Das, R.K.; Dodge, J.
+\newblock Fake News Detection After LLM Laundering: Measurement and Explanation.
+\newblock \emph{arXiv} \textbf{2025}, arXiv:2501.18649.
+
+\bibitem[Wani et~al.(2021)Wani, Joshi, Khandve, Wagh, and
+  Joshi]{wani2021evaluating}
+Wani, A.; Joshi, I.; Khandve, S.; Wagh, V.; Joshi, R.
+\newblock Evaluating deep learning approaches for covid19 fake news detection.
+\newblock In \emph{Combating Online Hostile Posts in Regional Languages During Emergency Situation: First International Workshop, CONSTRAINT 2021, Collocated with AAAI 2021, Virtual Event, 8 February 2021}; Revised Selected Papers 1; Springer: \hl{Berlin/Heidelberg, Germany,} %We added the location of publisher. Please confirm
+%Gurunameh: Confirmed
+ 2021; pp.~153--163.
+
+\bibitem[Bojanowski et~al.(2016)Bojanowski, Grave, Joulin, and
+  Mikolov]{bojanowski2016enriching}
+Bojanowski, P.; Grave, E.; Joulin, A.; Mikolov, T.
+\newblock Enriching Word Vectors with Subword Information.
+\newblock \emph{arXiv} {\bf 2016}, arXiv:1607.04606.
+
+\bibitem[Tian and Cui(2023)]{tian2023gptzero}
+Tian, E.; Cui, A.
+\newblock GPTZero: Towards detection of AI-generated text using zero-shot and supervised methods. 2023. \hl{Available online:} %MDPI: Newly added web link. Please confirm.
+ \url{https://gptzero.me/} \hl{(accessed on 11 March 2025). } %MDPI: Please add the access date (Format: Date Month Year). e.g., (accessed on 1 January 2020).
+ %Gurunameh: Confirmed
+
+
+
+\bibitem[Mitchell et~al.(2023)Mitchell, Lee, Khazatsky, Manning, and
+  Finn]{mitchell2023detectgpt}
+\hl{Mitchell, E.; Lee, Y.; Khazatsky, A.; Manning, C.D.; Finn, C.} %MDPI: %MDPI: Refs. 16 and 54 are duplicated. Please just check if the references cited in the main text are correct. If yes, we will help delete the latter one and re-arrange the reference order.
+%Gurunameh: The references in the text are updated to the 16 one, so you can delete this one.
+\newblock Detectgpt: Zero-shot machine-generated text detection using
+  probability curvature.
+\newblock In Proceedings of the 40th {International} {Conference} on {Machine} {Learning},  \hl{Honolulu, HI, USA, 23--29 July 2023}%MDPI: We added the location and date of the conference. Please confirm.
+%Guruna,eh: Confirmed.
+; pp.~24950--24962.
+
+\bibitem[Iceland(2023)]{iceland2023good}
+Iceland, M.
+\newblock How good are SOTA fake news detectors.
+\newblock \emph{arXiv} {\bf 2023}, arXiv:2308.02727.
+
+\bibitem[Su et~al.(2023)Su, Cardie, and Nakov]{su2023adapting}
+Su, J.; Cardie, C.; Nakov, P.
+\newblock Adapting fake news detection to the era of large language models.
+\newblock \emph{arXiv} {\bf 2023}, arXiv:2311.04917.
+
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\PublishersNote{}
+\end{adjustwidth}
+\end{document}
+
